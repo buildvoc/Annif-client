@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="200 130 500 650" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="d">
+   <path d="m376 139.21h22v323.79h-22z"/>
+  </clipPath>
+  <clipPath id="c">
+   <path d="m381 139.21h111v115.79h-111z"/>
+  </clipPath>
+  <clipPath id="b">
+   <path d="m282 139.21h110v115.79h-110z"/>
+  </clipPath>
+  <clipPath id="a">
+   <path d="m225 289h324v323.79h-324z"/>
+  </clipPath>
+ </defs>
+ <g>
+  <g clip-path="url(#d)">
+   <path d="m376 462.11h21.527v-322.87h-21.527z" fill-rule="evenodd"/>
+  </g>
+  <g clip-path="url(#c)">
+   <path d="m381.78 153.95 94.008 100.27 15.715-14.746-94.008-100.23z" fill-rule="evenodd"/>
+  </g>
+  <g clip-path="url(#b)">
+   <path d="m282.04 239.48 15.715 14.723 93.832-100.05-15.691-14.723z" fill-rule="evenodd"/>
+  </g>
+  <g clip-path="url(#a)">
+   <path d="m526.69 289.89h-86.105v21.527h86.105v279.84h-279.84v-279.84h86.105v-21.527h-86.105c-11.883 0-21.527 9.6445-21.527 21.527v279.84c0 11.883 9.6445 21.527 21.527 21.527h279.84c11.883 0 21.523-9.6445 21.523-21.527v-279.84c0-11.883-9.6406-21.527-21.523-21.527" fill-rule="evenodd"/>
+  </g>
+ </g>
+</svg>
