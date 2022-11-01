@@ -81,6 +81,27 @@ Here is the output from a typical example session:
     
     
   # Annif-mobile
+  
+ Try the demo at https://m.text-analytics.buildvoc.co.uk/
+ 
+ Instructions for using the app
+1. First, take a picture of a document (or a part of it such as the introduction section) using your mobile device. 
+Then the app will automatically:
+![](https://notes.buildvoc.co.uk/uploads/upload_5ecc408b44dc2e692930e9ccc9a75428.png)
+
+
+1. Convert it to text using Optical Character Recognition (OCR) technology.
+
+3. Analyse the text using Annif
+Present you with a list of suggested subjects of interest that have been detected in the article. Also will provide you with search results for fire safety guidance.
+![](https://notes.buildvoc.co.uk/uploads/upload_393c0fda7032819e654c1baa407b63a1.png)
+
+search results with diagrams
+![](https://notes.buildvoc.co.uk/uploads/upload_e21f240d38e53ba4ee57dac745f74ba7.png)
+
+
+## OCR Function
+  Take photo of text content with a webcam (code snippet from Colab), run optical character recognition on it with Tesseract (wrapper for Google’s Tesseract-OCR), and send the text to Annif.
 
 ## License
 
