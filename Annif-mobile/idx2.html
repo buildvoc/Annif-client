@@ -158,48 +158,28 @@
           background: url(https://code.jquery.com/mobile/1.5.0-alpha.1/images/ajax-loader.gif);
           background-size: 2.875em 2.875em;
       }
-      .metadata-results {
-        display: block;
-        margin-bottom: 15px;
-      }
-      .metadata-title {
-        margin-bottom: 0;
-      }
-      .metadata-image {
-        width: 250px;
-        margin: 10px 0;
-      }
     </style>
     
     <script>
       var presentationTextResults = [];
       var clickTimer;
       var OCR_BACKEND_URL = "cgi-bin/ocr.cgi";
-      var EPRINTS_BACKEND_URL = "cgi-bin/eprints.cgi";
       var ANNIF_BASE_URL = "https://text-analytics.buildvoc.co.uk/v1/";
       var enablePostToVocabseditor = false;
 
       // hardcoded projects for now
       // TODO read available projects from API instead
       var PROJECTS = {
-		 "nn-ensemble-en": {
-          name: "Neural Network,Terms Frequency & MLLM",
+        "nn-omikuji-ensemble-en": {
+          name: "Neural Network,Omikuji & MLLM",
           language: "en",
-        },		
-        "tfidf-en": {
+        },
+        "bldg-ensemble-omikuji-mllm-en": {
+          name: "Omikuji & MLLM",
+          language: "en",
+        },
+        "bldg-tfidf-en": {
           name: "Terms Frequency(TFIDF)",
-          language: "en",
-		"omikuji-parabel-en": {
-		},
-          name: "Omikuji",
-          language: "en",
-		},		
-        "pav-en": {
-          name: "PAV Ensemble",
-          language: "en",
-		},		
-        "mllm-en": {
-          name: "MLLM",
           language: "en",
         },
       };
@@ -396,7 +376,6 @@
               VOICE_PER_LANGUAGE[current_language()]
             );
             $.mobile.loading("hide");
-            addMetadata(data.results.slice(0, 2));
           },
         });
 
@@ -436,7 +415,6 @@
               VOICE_PER_LANGUAGE[current_language()]
             );
             $.mobile.loading("hide");
-            addMetadata(data.results.slice(0, 2));
           },
         });
         
@@ -462,41 +440,6 @@
             $.mobile.loading("hide");
           }
         });
-      }
-
-      function addMetadata(results){
-        const topics = results.map(result => result.label);
-        const formData = new FormData();
-        formData.append('topics', JSON.stringify(topics));
-        jQuery.ajax({
-          url: EPRINTS_BACKEND_URL,
-          data: formData,
-          cache: false,
-          contentType: false,
-          processData: false,
-          type: "POST",
-          success(data){
-            try{
-              data = JSON.parse(data);
-              $('#metadata').append($("<b>").attr("class", "metadata-results").append("Search results for suggested fire safety guidance"));
-              const eprintids = Object.keys(data);
-              eprintids.forEach((eprintid) => {
-                const [_, id_number, edition, number, title, abstract, imageUrl, pos] = data[eprintid];
-                $("#metadata").append(`
-                <p class="metadata-title">${id_number ? id_number + ' ' : ''}${edition ? edition + ' ': ''} ${number ? `Para:${number} ` : ''}
-                  <a class="metadata-anchor" href="https://www.buildvoc.co.uk/id/eprint/${eprintid}">${title ? title : 'link'}</a>
-                </p>
-                ${abstract ? `<p class="metadata-abstract">${abstract}</p>` : ''}
-                `).append(
-                  imageUrl && pos ? `<img src="https://www.buildvoc.co.uk/id/eprint/${eprintid}/${pos}/${imageUrl}" alt=${imageUrl}" class="metadata-image" />` : ''
-                );
-              })
-            }
-            catch(e){
-              console.error(e);
-            }
-          }
-        })
       }
 
       function getTopicsText() {
@@ -558,7 +501,7 @@
                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
                      </svg>
-                     Take a picture of a brief article
+                     Take a picture
                    </span>
                  </label>
                </div>
@@ -586,8 +529,6 @@
           <div class="row pt-4 ps-2 pe-2 pb-5 mb-5">
             <div class="col-12 mb-2 ">
               <ul id="results" class="list-unstyled p-2 fs-4"></ul>
-              <div id="metadata">
-              </div>
             </div>
           </div>
         </div>
@@ -606,8 +547,8 @@
       <div class="navbar fixed-bottom " style="padding-bottom: 72px;">
         <div class="col-12 d-block d-sm-none">
           <div class="d-block float-end">
-            <div style="width: 400px;vertical-align: top;font-family: Arial;font-size: 0.8em;line-height: normal;">
-              <a rel="license" href="//responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float: left; padding-right: 2px; height: 14px;" /></a>
+            <div style="width: 300px;vertical-align: top;font-family: Arial;font-size: 0.6em;line-height: normal;">
+              <a rel="license" href="//responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float: left; padding-right: 2px; height: 12px;" /></a>
               <span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">
               <a href="//responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech" >ResponsiveVoice</a>
               </span>used under
@@ -630,11 +571,11 @@
       </div>
 
      <nav class="navbar fixed-bottom bg-light border navbar-expand p-0 d-block d-sm-none">
-      <ul class="nav nav-pills nav-justified w-100 row p-0 m-0" id="pills-tab" role="tablist">
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item capture-button" role="presentation">
-            <button title="Capture an image" class="nav-link text-center active" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+      <ul class="nav nav-pills justify-content-center w-100 row" id="pills-tab" role="tablist">
+        <div class="col-2">
+          <li class="nav-item float-start capture-button" role="presentation">
+            <button title="Capture an image" class="nav-link active" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
                 <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
                 <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
               </svg>
@@ -642,20 +583,20 @@
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item text-button" role="presentation">
-            <button title="Show extracted text" class="nav-link text-center  text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
+        <div class="col-2">
+          <li class="nav-item float-start text-button" role="presentation">
+            <button title="Show extracted text" class="nav-link text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
                 <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
               </svg>
               <span class="small d-block"  style="font-size: 0.6em;">Text</span>
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item topics-button" role="presentation">
-            <button title="Show extracted topics" class="nav-link text-center  topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+        <div class="col-2">
+          <li class="nav-item float-start topics-button" role="presentation">
+            <button title="Show extracted topics" class="nav-link topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
                 <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
                 <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
               </svg>
@@ -663,9 +604,9 @@
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item " title="Upload an image" role="presentation">
-            <label class="btn nav-link text-center " for="imagefile-upload">
+        <div class="col-2">
+          <li class="nav-item float-start" title="Upload an image" role="presentation">
+            <label class="btn nav-link" for="imagefile-upload">
               <input
                 id="imagefile-upload"
                 name="imagefile"
@@ -674,7 +615,7 @@
                 class="form-control d-none"
                 onchange="handleImage(this.files)"
               />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                 <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
               </svg>
@@ -682,10 +623,10 @@
             </label>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item copy-button" role="presentation">
-            <button title="Copy to clipboard" class="nav-link text-center " id="pills-clipboard-tab" data-bs-toggle="pill" data-bs-target="#pills-clipboard" type="button" role="tab" aria-controls="pills-clipboard" aria-selected="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+        <div class="col-2">
+          <li class="nav-item float-start copy-button" role="presentation">
+            <button title="Copy to clipboard" class="nav-link" id="pills-clipboard-tab" data-bs-toggle="pill" data-bs-target="#pills-clipboard" type="button" role="tab" aria-controls="pills-clipboard" aria-selected="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
                 <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
                 <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
               </svg>
@@ -693,9 +634,9 @@
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item " title="Start a presentation" role="presentation">
-            <label class="btn nav-link text-center " for="imagefile-capture-multiple">
+        <div class="col-2">
+          <li class="nav-item float-start" title="Start a presentation" role="presentation">
+            <label class="btn nav-link" for="imagefile-capture-multiple">
               <input
                 id="imagefile-capture-multiple"
                 name="imagefile"
@@ -704,7 +645,7 @@
                 capture="camera"
                 class="form-control d-none"
               />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
                 <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
               </svg>
               <span class="small d-block elipsis" style="font-size: 0.6em;">Presentation</span>
@@ -806,8 +747,7 @@
           <div class="modal-body">
             <div class="information-box">
               <p>This app was made available to you free of charge  by Phil Stacey with the support from <b><a style="text-decoration: none" href="https://www.digitalocean.com/"> DigitalOcean.</a></b></p>
-              <p>The purpose of the app is to showcase machine learning algorithms that analyse and <b>converts a picture -> to text -> to structured data.</b></p>                              
-
+              <p>The purpose of the app is to showcase Text Analytics in Fire Safety to newcomers.</p>
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
                   <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
@@ -819,17 +759,17 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
                     <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
                   </svg>
-                  <b>b)</b> Convert it to text using Optical Character Recognition (OCR) technology
+                  Convert it to text using Optical Character Recognition (OCR) technology with <b><a style="text-decoration: none" href="https://en.wikipedia.org/wiki/Tesseract_(software)">Tesseract</a></b>
                 </li>
                 <li style="margin: 1rem 0;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
                     <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
                     <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
                   </svg>
-                   <b>c)</b> Analyse the text using <b><a style="text-decoration: none" href="https://annif.org/">Annif</a></b>
+                   b) Analyse the text using <b><a style="text-decoration: none" href="https://annif.org/">Annif</a></b> (Tool for automated subject indexing and classification)
                 </li>
                 <li style="margin: 1rem 0;">
-                   Set of suggested subjects with links to <b><a style="text-decoration: none" href="https://data-dictionary.buildvoc.co.uk/buildvoc/en/">Buildvoc's data dictionary. </b></a>
+                   c) Set of suggested topics with links to <b><a style="text-decoration: none" href="https://data-dictionary.buildvoc.co.uk/buildvoc/en/">Buildvoc's data dictionary. </b></a>
                 </li>
                 <li style="margin: 1rem 0;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
@@ -861,11 +801,7 @@
                   Copy text and suggested subjects to notes
                 </li>
                 <li style="margin: 1rem 0;">
-				  <li><b>Additional Information</b>
-                  <li><b><a style="text-decoration: none" href="https://skosmos.org/">Skosmos</a></b>
-				  <li><b><a style="text-decoration: none" href="https://en.wikipedia.org/wiki/Tesseract_(software)">Tesseract</a></b>
-				  <li><b><a style="text-decoration: none" href="https://annif.org/">Annif</a></b>
-				  (Tool for automated subject indexing and classification)
+                  which uses <b><a style="text-decoration: none" href="https://skosmos.org/">Skosmos</a></b>
                 </li>
               </ul>
               <div class="enable-post-to-vocabseditor" title="Enable posting to vocabseditor.">
