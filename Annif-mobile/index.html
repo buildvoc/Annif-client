@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fire Safety Analytics</title>
+    <title>Identify Building Height from a photo</title>
     <link
       rel="favicon.ico"
       type="image/jpg"
-      href="https://m.text-analytics.buildvoc.co.uk/favicon.ico"
+      href="https://building-height.co.uk/favicon.ico"
     />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css"
-    /> -->
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    <script src="/compressor.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="/compressor.min.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/exif-reader.js"></script>
+
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
 
     <style type="text/css">
       .enable-post-to-vocabseditor {
@@ -169,47 +170,41 @@
         width: 250px;
         margin: 10px 0;
       }
+
+      /*Text over image*/
+      .img-text-container {
+        position: relative;
+      }
+      .inner {
+        position: absolute;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        padding: 30px;
+      }
+
+      body { margin:0; padding:0; }
+      #map { 
+        position: absolute; 
+        height: 100%;
+        width: 100%; 
+        top: 0;
+        left: 0;
+      }
+      #building-height { 
+        position: absolute; 
+        width: 100%; 
+        top: 300;
+        left: 0;
+        margin-top: 50px;
+        margin-left: 16px;
+      }
+
     </style>
     
     <script>
-      var presentationTextResults = [];
-      var clickTimer;
-      var OCR_BACKEND_URL = "cgi-bin/ocr.cgi";
-      var EPRINTS_BACKEND_URL = "cgi-bin/eprints.cgi";
-      var ANNIF_BASE_URL = "https://text-analytics.buildvoc.co.uk/v1/";
+
       var enablePostToVocabseditor = false;
-
-      // hardcoded projects for now
-      // TODO read available projects from API instead
-      var PROJECTS = {
-		 "nn-ensemble-en": {
-          name: "Neural Network,Terms Frequency & MLLM",
-          language: "en",
-        },		
-        "tfidf-en": {
-          name: "Terms Frequency(TFIDF)",
-          language: "en",
-		"omikuji-parabel-en": {
-		},
-          name: "Omikuji",
-          language: "en",
-		},		
-        "pav-en": {
-          name: "PAV Ensemble",
-          language: "en",
-		},		
-        "mllm-en": {
-          name: "MLLM",
-          language: "en",
-        },
-      };
-
-      // which voice setting to use for Responsive Voice synthesis, per language
-      var VOICE_PER_LANGUAGE = {
-        fi: "Finnish Female",
-        sv: "Swedish Female",
-        en: "UK English Female",
-      };
 
       $(function () {
         const resizeObserver = new ResizeObserver((entries) => {
@@ -225,41 +220,19 @@
         });
         resizeObserver.observe($('.information-box')[0]);
 
-        $("#tabs").tabs({
-          activate: function (event, ui) {
-            responsiveVoice.cancel();
-          },
+        $(".text-button").on("click", function (e) {
+          $('#previewtext').empty()
+          $('.exif-table-body:first').clone().appendTo('#previewtext');
         });
 
-        $.each(PROJECTS, function (project_id, project_data) {
-          $("#project").append(
-            $("<option>").attr("value", project_id).append(project_data.name)
-          );
-        });
-        $("#project").selectmenu("refresh");
         $(".copy-button").on("click", function () {
-          var textToBeCopied = $("#previewtext").val() + "\n" + getTopicsText();
-          copyToClipboard(textToBeCopied);
+          selectElementContents();
         });
         $(".upload-button").on("click", function (e) {
           $("#imagefile-upload").click();
         });
         $("#imagefile-upload").on("click", function (e) {
           e.stopPropagation();
-        });
-        $(".capture-presentation-button").on("click", function (e) {
-          $("#imagefile-capture-multiple").click();
-        });
-        $("#imagefile-capture-multiple").on("click", function (e) {
-          e.stopPropagation();
-        });
-        $("#imagefile-capture-multiple").on("change", function (e) {
-          handleImagePresentation(this.files);
-        });
-        $(".topics-button").on("click", function (e) {
-          if (presentationTextResults.length !== 0) {
-            endPresentation();
-          }
         });
 
         $('.info-icon').on('click', function(e){
@@ -276,81 +249,29 @@
             enablePostToVocabseditor = true;
           }
         });
+      
+        if (!supportsFileReader()) {
+          alert('Sorry, your web browser does not support the FileReader API.');
+          return;
+        }
 
       });
 
-      function current_language() {
-        var project = $("#project").val();
-        return PROJECTS[project].language;
+      function supportsFileReader() {
+        return window.FileReader !== undefined;
       }
 
-      function handleImagePresentation(files) {
-        new Compressor(files[0], {
-          quality: 0.2,
-          success(compressedImage) {
-            $.mobile.loading("show");
-            compressedImage = new File([compressedImage], compressedImage.name);
-            console.log(compressedImage);
-            var formData = new FormData();
-            formData.append("imagefile", compressedImage);
-            formData.append("language", current_language());
-            jQuery.ajax({
-              url: OCR_BACKEND_URL,
-              data: formData,
-              cache: false,
-              contentType: false,
-              processData: false,
-              type: "POST",
-              success: function (result) {
-                presentationTextResults.push(result);
-                var fullText = presentationTextResults.reduce(
-                  (prevText, text) => prevText + '\n' + text,
-                  ""
-                );
-                $("#previewtext").val(fullText);
-                $("#previewtext").keyup();
-                // $('a[href="#text"]').trigger("click");
-                $('.text-tab').click(); //
-                $.mobile.loading('hide');
-              },
-            });
-            var img = document.getElementById("previewimg");
-            var reader = new FileReader();
-            reader.onload = (function (aImg) {
-              return function (e) {
-                aImg.src = e.target.result;
-              };
-            })(img);
-            reader.readAsDataURL(compressedImage);
-          }
-        });
-      }
 
       function handleImage(files) {
-        new Compressor(files[0], {
-          quality: 0.2,
-          success(compressedImage){
-            $.mobile.loading("show");
-            compressedImage = new File([compressedImage], compressedImage.name);
-            console.log(compressedImage);
-            var formData = new FormData();
-            formData.append("imagefile", compressedImage);
-            formData.append("language", current_language());
-            jQuery.ajax({
-              url: OCR_BACKEND_URL,
-              data: formData,
-              cache: false,
-              contentType: false,
-              processData: false,
-              type: "POST",
-              success: function (result) {
-                $("#previewtext").val(result);
-                $("#previewtext").keyup();
-                // $('a[href="#text"]').trigger("click");
-                $('.text-tab').click(); //
-                autoindex();
-              },
-            });
+
+        //https://github.com/mattiasw/ExifReader
+
+        window.exifReaderClear();
+
+        $('.image-tab').click();
+
+        const file = files[0];
+
             var img = document.getElementById("previewimg");
             var reader = new FileReader();
             reader.onload = (function (aImg) {
@@ -358,165 +279,149 @@
                 aImg.src = e.target.result;
               };
             })(img);
-            reader.readAsDataURL(compressedImage);
-          }
-        });
+            reader.readAsDataURL(file);
+
+
+            ExifReader.load(file).then(function (tags) {
+                // The MakerNote tag can be really large. Remove it to lower
+                // memory usage if you're parsing a lot of files and saving the
+                // tags.
+                
+                // delete tags['MakerNote'];
+
+                // If you want to extract the thumbnail you can use it like
+                // this:
+                // if (tags['Thumbnail'] && tags['Thumbnail'].image) {
+                //     var image = document.getElementById('thumbnail');
+                //     image.classList.remove('hidden');
+                //     image.src = 'data:image/jpg;base64,' + tags['Thumbnail'].base64;
+                // }
+
+                // Use the tags now present in `tags`.
+
+                // >>> IGNORE: Helper code for interactive example.
+                window.exifReaderListTags(tags);
+
+                if (tags?.GPSLatitude?.description){
+                  getPolygon(tags.GPSLatitude.description, tags.GPSLongitude.description);
+                  setTimeout(() => {
+                    $('.topics-tab').click();
+                  }, 2000);
+                }else{
+                  alert("Image doesn't have gps");
+                  return;
+                }
+            }).catch(function (error) {
+                window.exifReaderError(error.toString());
+            });
       }
 
-      function autoindex() {
+      function getPolygon(lat, lon) {
         $.mobile.loading("show");
-        let uris = [];
-        let scores = [];
+        let lng = lon;
+        if (parseFloat(lon) > 0) lng = -Math.abs(parseFloat(lon));
         $.ajax({
-          url: ANNIF_BASE_URL + "projects/" + $("#project").val() + "/suggest",
-          method: "POST",
-          data: { text: $("#previewtext").val() },
+          url: "https://api.buildingshistory.co.uk/api/v1/layer-sx/nearest?latitude="+parseFloat(lat)+"&longitude="+parseFloat(lng),
+          method: "GET",
           success: function (data) {
-            $("#results").empty();
-            var labels = [];
-            $.each(data.results, function (idx, value) {
-              uris.push(value.uri);
-              scores.push(value.score.toFixed(2));
-              $("#results").append(
-                $("<li>").append(
-                  $("<meter>").attr("low", "0.33").attr("high", "0.66").attr("optimum", "1.0").attr("value", value.score),
-                  $("<a>").attr("href", value.uri).attr('target','_blank').append(value.label)
-                )
-              );
-              labels.push(value.label);
-            });
+            if (data.data.layer_sx.length > 0 && data.data.layer_sx[0].geojson) {
+              loadPolygon(data.data.layer_sx[0].geojson, parseFloat(lat), parseFloat(lng));
+              $("#RelHMax").text(data.data.layer_sx[0].rel_h_max + " m");
+            }else{
+              alert('No records found in our database');
+            }
+
             $.mobile.loading("hide");
-            // $('a[href="#topics"]').trigger("click");
-            $('.topics-tab').click(); //
-            var labellist = labels.join(". ");
-            if(enablePostToVocabseditor)
-              postToVocabseditor($("#previewtext").val(), uris, scores, current_language());
-            responsiveVoice.speak(
-              labellist,
-              VOICE_PER_LANGUAGE[current_language()]
-            );
-            $.mobile.loading("hide");
-            addMetadata(data.results.slice(0, 2));
           },
         });
 
       }
 
-      function endPresentation() {
-        var fullText = presentationTextResults.reduce(
-          (prevText, text) => prevText + '\n' + text,
-          ""
-        );
-        $.mobile.loading("show");
-        let uris = [];
-        let scores = [];
-        $.ajax({
-          url: ANNIF_BASE_URL + "projects/" + $("#project").val() + "/suggest",
-          method: "POST",
-          data: { text: fullText },
-          success: function (data) {
-            $("#results").empty();
-            var labels = [];
-            $.each(data.results, function (idx, value) {
-              uris.push(value.uri);
-              scores.push(value.score.toFixed(2));
-              $("#results").append(
-                $("<li>").append(
-                  $("<meter>").attr("low", "0.33").attr("high", "0.66").attr("optimum", "1.0").attr("value", value.score),
-                  $("<a>").attr("href", value.uri).append(value.label)
-                )
-              );
-              labels.push(value.label);
+      function loadPolygon(geojson, lat, lng){
+        const apiKey = 'wCujufkC5D7bjVRTf5goHOSQSu8lLAbT';
+        mapboxgl.accessToken = 'pk.eyJ1Ijoibm91ZmVsZ2hheWF0aSIsImEiOiJja3lmNWwwemEwOXNuMnhxcm9qNDF2ZXRhIn0.n0EDO6c611aAGh4r9-FwSg';
+
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'https://api.os.uk/maps/vector/v1/vts/resources/styles?key=' + apiKey,
+            center: [lng, lat],
+            zoom: 3,
+        });
+        var centroidPt = turf.centroid(geojson);
+        centroidPt.properties.title = 'label'; 
+
+        map.on('style.load', () => {
+            // Add a data source containing GeoJSON data.
+            map.addSource('maine', {
+              'type': 'geojson',
+              'data': geojson
             });
-            var labellist = labels.join(". ");
-            if(enablePostToVocabseditor)
-              postToVocabseditor(fullText, uris, scores, current_language());
-            responsiveVoice.speak(
-              labellist,
-              VOICE_PER_LANGUAGE[current_language()]
-            );
-            $.mobile.loading("hide");
-            addMetadata(data.results.slice(0, 2));
-          },
+
+            map.addSource('label', {
+              'type': 'geojson',
+              'data': centroidPt
+            });
+
+            map.addLayer({
+                'id': 'maine',
+                'type': 'fill',
+                'source': 'maine',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#0080ff',
+                    'fill-opacity': 0.1
+                }
+            });
+
+            map.addLayer({
+                'id': 'outline',
+                'type': 'line',
+                'source': 'maine',
+                'layout': {},
+                'paint': {
+                    'line-color': 'red',
+                    'line-width': 1
+                }
+            });
+
+            map.addLayer({
+                'id': 'label-style',
+                'type': 'symbol',
+                'source': 'label',
+                'layout': {
+                  'text-field': 'Label',
+                  
+                },
+                'paint': {
+                    'text-color': 'red'
+                }
+            });
+
         });
-        
-        $("#previewtext").val(result);
-        presentationTextResults = [];
       }
 
-      function postToVocabseditor(text, uris, scores, lang){
-        $.mobile.loading("show");
-        $.ajax({
-          url: "https://vocabseditor.buildvoc.co.uk/vocabs/concepts/import_from_annif_mobile/",
-          method: "POST",
-          data: JSON.stringify({
-            text,
-            uris,
-            scores,
-            lang,
-          }),
-          success(){
-            $.mobile.loading("hide");
-          }, 
-          error(){
-            $.mobile.loading("hide");
-          }
-        });
-      }
-
-      function addMetadata(results){
-        const topics = results.map(result => result.label);
-        const formData = new FormData();
-        formData.append('topics', JSON.stringify(topics));
-        jQuery.ajax({
-          url: EPRINTS_BACKEND_URL,
-          data: formData,
-          cache: false,
-          contentType: false,
-          processData: false,
-          type: "POST",
-          success(data){
-            try{
-              data = JSON.parse(data);
-              $('#metadata').append($("<b>").attr("class", "metadata-results").append("Search results for suggested fire safety guidance"));
-              const eprintids = Object.keys(data);
-              eprintids.forEach((eprintid) => {
-                const [_, id_number, edition, number, title, abstract, imageUrl, pos] = data[eprintid];
-                $("#metadata").append(`
-                <p class="metadata-title">${id_number ? id_number + ' ' : ''}${edition ? edition + ' ': ''} ${number ? `Para:${number} ` : ''}
-                  <a class="metadata-anchor" href="https://www.buildvoc.co.uk/id/eprint/${eprintid}">${title ? title : 'link'}</a>
-                </p>
-                ${abstract ? `<p class="metadata-abstract">${abstract}</p>` : ''}
-                `).append(
-                  imageUrl && pos ? `<img src="https://www.buildvoc.co.uk/id/eprint/${eprintid}/${pos}/${imageUrl}" alt=${imageUrl}" class="metadata-image" />` : ''
-                );
-              })
+      function selectElementContents() {
+        var el = document.getElementById('previewtext');
+        var body = document.body, range, sel;
+        if (document.createRange && window.getSelection) {
+            range = document.createRange();
+            sel = window.getSelection();
+            sel.removeAllRanges();
+            try {
+                range.selectNodeContents(el);
+                sel.addRange(range);
+            } catch (e) {
+                range.selectNode(el);
+                sel.addRange(range);
             }
-            catch(e){
-              console.error(e);
-            }
-          }
-        })
+        } else if (body.createTextRange) {
+            range = body.createTextRange();
+            range.moveToElementText(el);
+            range.select();
+        }
+        document.execCommand("Copy");
       }
-
-      function getTopicsText() {
-        var topicsText = "";
-        var topicsList = $("#results");
-        topicsList.find("a").each(function () {
-          var currentTopic = this.innerText;
-          topicsText += "#" + currentTopic.replace(/\s+/g, "-");
-          topicsText += "\n";
-        });
-        return topicsText;
-      }
-
-      function copyToClipboard(textToBeCopied) {
-        var $temp = $("<textarea>");
-        $("body").append($temp);
-        $temp.val(textToBeCopied).select();
-        document.execCommand("copy");
-        $temp.remove();
-      }
+    
     </script>
 
   </head>
@@ -533,15 +438,46 @@
         <div class="tab-pane fade show active" id="image" role="tabpanel" aria-labelledby="image-tab" tabindex="0">
           <div class="row pt-4 ps-2 pe-2 pb-5 mb-5">
             <div class="col-12 mb-2">
-              <div id="preview" class="rounded" style="background: black;">
+              <div id="preview" class="img-text-container rounded" style="background: white;">
                 <img id="previewimg" class="img-fluid opacity-75" />
+                <div class="d-block d-sm-none">
+                  <div class="bg-text">
+                    <table class="tags">
+                      <thead>
+                          <tr>
+                              <th class="tag-name"></th>
+                              <th class="tag-description"></th>
+                          </tr>
+                      </thead>
+                      <tbody class="exif-table-body">
+                      </tbody>
+                    </table>
+                    <span class="error text-danger"></span>
+                  </div>
+                </div>
+                <!--Dekstop-->
+                <div class="d-none d-sm-block">
+                  <div class="bg-text inner">
+                    <table class="tags">
+                      <thead>
+                          <tr>
+                              <th class="tag-name"></th>
+                              <th class="tag-description"></th>
+                          </tr>
+                      </thead>
+                      <tbody class="exif-table-body">
+                      </tbody>
+                    </table>
+                    <span class="error text-danger"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="navbar fixed-bottom" style="padding-bottom: 112px;">
             <div class="container">
              <div class="row w-100 p-0 m-0">
-              <div class="col-md-6">
+              <div class="col-md-12">
                <div class="d-grid">
                  <label class="btn btn-secondary mb-3" for="imagefile">
                    <input
@@ -558,15 +494,9 @@
                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
                      </svg>
-                     Take a picture of a brief article
+                     Take a picture
                    </span>
                  </label>
-               </div>
-              </div>
-              <div class="col-md-6">
-               <div class="d-grid">
-                 <!-- <label for="project" class="select">Language/Project:</label> -->
-                 <select name="project" id="project" class="form-select" aria-label="Language/Project:" ></select>
                </div>
               </div>
              </div>
@@ -574,66 +504,49 @@
           </div>
         </div>
 
-        <div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab" tabindex="0">
-          <div class="row pt-4 ps-2 pe-2 pb-5 mb-5">
-            <div class="col-12 mb-2">
-              <textarea id="previewtext" rows="20" cols="200" class="form-control form-control-lg bg-light p-2"> </textarea>
+        <div class="tab-pane fade" id="topics" role="tabpanel" aria-labelledby="topics-tab" tabindex="0">
+          <div class="row">
+            <div class="col-12">
+              <div id="map"></div>
             </div>
           </div>
-        </div>
-
-        <div class="tab-pane fade" id="topics" role="tabpanel" aria-labelledby="topics-tab" tabindex="0">
-          <div class="row pt-4 ps-2 pe-2 pb-5 mb-5">
-            <div class="col-12 mb-2 ">
-              <ul id="results" class="list-unstyled p-2 fs-4"></ul>
-              <div id="metadata">
+          <div class="row">
+            <div class="col-12">
+              <div id="building-height">
+                <br/>
+                <h5>Building Height: <strong id="RelHMax"></strong></h5>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="tab-pane fade" id="pills-clipboard" role="tabpanel" aria-labelledby="pills-clipboard-tab" tabindex="0">
-          <div class="row p-2">
-            <div class="col-12">
-              Extracted text copied!
+        <div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab" tabindex="0">
+          <div class="row pt-4 ps-2 pe-2 pb-5 mb-5">
+            <div class="col-12 mb-2">
+              <span class="error text-danger"></span>
+              <table id="previewtext" class="bg-light p-2">
+                <thead>
+                  <tr>
+                      <th>Tag name</th>
+                      <th>Tag description</th>
+                  </tr>
+                </thead>
+                <tbody id="result-tbody">
+                </tbody>
+              </table>
+              <input class="btn btn-sm btn-secondary float-end" type="button" value="Copy to Clipboard" onclick="selectElementContents();" />
             </div>
           </div>
         </div>
+
       </div>
 
-
-
-      <div class="navbar fixed-bottom " style="padding-bottom: 72px;">
-        <div class="col-12 d-block d-sm-none">
-          <div class="d-block float-end">
-            <div style="width: 400px;vertical-align: top;font-family: Arial;font-size: 0.8em;line-height: normal;">
-              <a rel="license" href="//responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float: left; padding-right: 2px; height: 14px;" /></a>
-              <span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">
-              <a href="//responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech" >ResponsiveVoice</a>
-              </span>used under
-              <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial License</a>
-            </div>
-          </div>
-        </div>
-        <!--Dekstop-->
-        <div class="col-12 d-none d-sm-block">
-          <div class="d-block float-end pb-4">
-            <div style="width: 300px;vertical-align: top;font-family: Arial;font-size: 9pt;line-height: normal;">
-              <a rel="license" href="//responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png" style="float: left; padding-right: 2px;" /></a>
-              <span xmlns:dct="https://purl.org/dc/terms/" property="dct:title">
-              <a href="//responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech" >ResponsiveVoice</a>
-              </span>used under
-              <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial License</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
      <nav class="navbar fixed-bottom bg-light border navbar-expand p-0 d-block d-sm-none">
       <ul class="nav nav-pills nav-justified w-100 row p-0 m-0" id="pills-tab" role="tablist">
-        <div class="col-2 p-0 m-0">
+        <div class="col-3 p-0 m-0">
           <li class="nav-item capture-button" role="presentation">
-            <button title="Capture an image" class="nav-link text-center active" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
+            <button title="Capture an image" class="nav-link text-center active image-tab" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
                 <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
                 <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
@@ -642,28 +555,28 @@
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
+        <div class="col-3 p-0 m-0">
+          <li class="nav-item copy-button" role="presentation">
+            <button title="Result" class="nav-link text-center topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+              </svg>
+              <span class="small d-block"  style="font-size: 0.6em;">Result</span>
+            </button>
+          </li>
+        </div>
+        <div class="col-3 p-0 m-0">
           <li class="nav-item text-button" role="presentation">
-            <button title="Show extracted text" class="nav-link text-center  text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
+            <button title="Show Extracted Metadata" class="nav-link text-center  text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
                 <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
               </svg>
-              <span class="small d-block"  style="font-size: 0.6em;">Text</span>
+              <span class="small d-block"  style="font-size: 0.6em;">Metadata</span>
             </button>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item topics-button" role="presentation">
-            <button title="Show extracted topics" class="nav-link text-center  topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
-                <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
-                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
-              </svg>
-              <span class="small d-block"  style="font-size: 0.6em;">Subjects</span>
-            </button>
-          </li>
-        </div>
-        <div class="col-2 p-0 m-0">
+        <div class="col-3 p-0 m-0">
           <li class="nav-item " title="Upload an image" role="presentation">
             <label class="btn nav-link text-center " for="imagefile-upload">
               <input
@@ -682,35 +595,6 @@
             </label>
           </li>
         </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item copy-button" role="presentation">
-            <button title="Copy to clipboard" class="nav-link text-center " id="pills-clipboard-tab" data-bs-toggle="pill" data-bs-target="#pills-clipboard" type="button" role="tab" aria-controls="pills-clipboard" aria-selected="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-              </svg>
-              <span class="small d-block"  style="font-size: 0.6em;">Copy</span>
-            </button>
-          </li>
-        </div>
-        <div class="col-2 p-0 m-0">
-          <li class="nav-item " title="Start a presentation" role="presentation">
-            <label class="btn nav-link text-center " for="imagefile-capture-multiple">
-              <input
-                id="imagefile-capture-multiple"
-                name="imagefile"
-                type="file"
-                accept="image/*"
-                capture="camera"
-                class="form-control d-none"
-              />
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
-                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-              </svg>
-              <span class="small d-block elipsis" style="font-size: 0.6em;">Presentation</span>
-            </label>
-          </li>
-        </div>
       </ul>
      </nav>
 
@@ -719,7 +603,7 @@
       <ul class="nav nav-pills nav-justified w-100" id="pills-tab" role="tablist">
 
           <li class="nav-item capture-button" role="presentation">
-            <button title="Capture an image" class="nav-link active" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
+            <button title="Capture an image" class="nav-link active image-tab" id="image-tab" data-bs-toggle="pill" data-bs-target="#image" type="button" role="tab" aria-controls="image" aria-selected="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
                 <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
                 <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
@@ -728,22 +612,22 @@
             </button>
           </li>
 
-          <li class="nav-item  text-button" role="presentation">
-            <button title="Show extracted text" class="nav-link text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
-                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
-              </svg>
-              <span class="d-block"  >Extracted Text</span>
-            </button>
-          </li>
-
           <li class="nav-item  topics-button" role="presentation">
-            <button title="Show extracted topics" class="nav-link topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="false">
+            <button title="Building Height" class="nav-link topics-tab" id="topics-tab" data-bs-toggle="pill" data-bs-target="#topics" type="button" role="tab" aria-controls="topics" aria-selected="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
                 <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
                 <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
               </svg>
-              <span class="d-block"  >Suggested Subjects</span>
+              <span class="d-block"  >Building Height</span>
+            </button>
+          </li>
+
+          <li class="nav-item  text-button" role="presentation">
+            <button title="Show Extracted Metadata" class="nav-link text-tab" id="text-tab" data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
+                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+              </svg>
+              <span class="d-block"  >Extracted Metadata</span>
             </button>
           </li>
 
@@ -761,33 +645,6 @@
                 <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
               </svg>
               <span class="d-block"  >Upload</span>
-            </label>
-          </li>
-
-          <li class="nav-item  copy-button" role="presentation">
-            <button title="Copy to clipboard" class="nav-link" id="pills-clipboard-tab" data-bs-toggle="pill" data-bs-target="#pills-clipboard" type="button" role="tab" aria-controls="pills-clipboard" aria-selected="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
-                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-              </svg>
-              <span class="d-block"  >Copy to clipboard</span>
-            </button>
-          </li>
-
-          <li class="nav-item  capture-presentation-buttonnn" title="Start a presentation" role="presentation">
-            <label class="btn nav-link" for="imagefile-capture-multiple">
-              <input
-                id="imagefile-capture-multiple"
-                name="imagefile"
-                type="file"
-                accept="image/*"
-                capture="camera"
-                class="form-control d-none"
-              />
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
-                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-              </svg>
-              <span class="d-block" >Presentation</span>
             </label>
           </li>
 
