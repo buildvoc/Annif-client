@@ -2,6 +2,7 @@ version: '3'
 
 services:
   tutorial-generator:
+    container_name: tutorial-generator
     build:
       context: .
       dockerfile: Dockerfile
