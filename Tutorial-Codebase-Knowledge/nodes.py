@@ -5,6 +5,7 @@ from pocketflow import Node, BatchNode
 from utils.crawl_github_files import crawl_github_files
 from utils.call_llm import call_llm
 from utils.crawl_local_files import crawl_local_files
+from utils.process_uploaded_files import process_uploaded_files
 
 
 # Helper to get content for specific file indices
@@ -41,6 +42,7 @@ class FetchRepo(Node):
         return {
             "repo_url": repo_url,
             "local_dir": local_dir,
+            "input_files": shared.get("input_files"),
             "token": shared.get("github_token"),
             "include_patterns": include_patterns,
             "exclude_patterns": exclude_patterns,
@@ -59,7 +61,7 @@ class FetchRepo(Node):
                 max_file_size=prep_res["max_file_size"],
                 use_relative_paths=prep_res["use_relative_paths"],
             )
-        else:
+        elif prep_res["local_dir"]:
             print(f"Crawling directory: {prep_res['local_dir']}...")
 
             result = crawl_local_files(
@@ -68,6 +70,15 @@ class FetchRepo(Node):
                 exclude_patterns=prep_res["exclude_patterns"],
                 max_file_size=prep_res["max_file_size"],
                 use_relative_paths=prep_res["use_relative_paths"]
+            )
+        else:
+            file_names = [uploaded_file.name for uploaded_file in prep_res['input_files']]
+            print(f"Uploading files: {file_names}...")
+            result = process_uploaded_files(
+                uploaded_streamlit_files=prep_res["input_files"],
+                include_patterns=prep_res["include_patterns"],
+                exclude_patterns=prep_res["exclude_patterns"],
+                max_file_size=prep_res["max_file_size"],
             )
 
         # Convert dict to list of tuples: [(path, content), ...]

@@ -37,6 +37,12 @@ This app generates comprehensive tutorials for GitHub codebases using AI.
 Simply provide a GitHub repository URL and customize the generation settings.
 """)
 
+if "repo_url" not in st.session_state:
+    st.session_state.repo_url_disabled = False
+    st.session_state.files_disabled = True
+def toggle_file_source():
+    st.session_state.repo_url_disabled = not st.session_state.repo_url_disabled
+    st.session_state.files_disabled = not st.session_state.files_disabled
 # Sidebar for configuration
 with st.sidebar:
     st.header("Configuration")
@@ -80,18 +86,36 @@ with st.sidebar:
             help="File patterns to exclude (one per line)"
         )
 
+file_source = st.radio(
+    "Files source",
+    ["From Github URL", "Upload files"],
+    captions=[
+        "Files source by entering Github repository URL",
+        "Upload one or more files by you",
+    ],
+    horizontal=True,
+    on_change=toggle_file_source
+)
 # Main form
 with st.form("tutorial_form"):
     # Repository URL
     repo_url = st.text_input(
         "GitHub Repository URL",
         placeholder="https://github.com/username/repository",
-        help="URL of the public GitHub repository"
+        help="URL of the public GitHub repository",
+        key="repo_url",
+        disabled=st.session_state.repo_url_disabled,
+    )
+
+    files = st.file_uploader(
+        "Upload files",
+        accept_multiple_files=True,
+        disabled=st.session_state.files_disabled,
     )
 
     # Project name (optional)
     project_name = st.text_input(
-        "Project Name (optional)",
+        "Project Name",
         help="Custom name for the project (derived from URL if omitted)"
     )
 
@@ -100,8 +124,12 @@ with st.form("tutorial_form"):
 
 # Process form submission
 if submit_button:
-    if not repo_url:
+    if file_source == "From Github URL" and not repo_url:
         st.error("Please enter a GitHub repository URL")
+    elif file_source == "Upload files" and not files:
+        st.error("Please select one or more file(s)")
+    elif not project_name:
+        st.error("Please enter project name")
     else:
         # Show progress
         progress_bar = st.progress(0)
@@ -113,13 +141,14 @@ if submit_button:
 
         # Initialize shared dictionary
         shared = {
-            "repo_url": repo_url,
+            "repo_url": repo_url if file_source == "From Github URL" else None,
             "project_name": project_name if project_name else None,
             "github_token": github_token if github_token else os.environ.get("GITHUB_TOKEN"),
             "output_dir": output_dir,
             "include_patterns": include_patterns,
             "exclude_patterns": exclude_patterns,
             "max_file_size": max_file_size,
+            "input_files": files if file_source == "Upload files" else [],
             "files": [],
             "abstractions": [],
             "relationships": {},
