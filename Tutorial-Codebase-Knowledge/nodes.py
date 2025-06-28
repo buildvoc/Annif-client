@@ -48,6 +48,7 @@ class FetchRepo(Node):
             "exclude_patterns": exclude_patterns,
             "max_file_size": max_file_size,
             "use_relative_paths": True,
+            "project_name": project_name,
         }
 
     def exec(self, prep_res):
@@ -79,6 +80,7 @@ class FetchRepo(Node):
                 include_patterns=prep_res["include_patterns"],
                 exclude_patterns=prep_res["exclude_patterns"],
                 max_file_size=prep_res["max_file_size"],
+                project_name=prep_res["project_name"],
             )
 
         # Convert dict to list of tuples: [(path, content), ...]

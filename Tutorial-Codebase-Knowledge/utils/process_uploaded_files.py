@@ -7,6 +7,7 @@ def process_uploaded_files(
     include_patterns=None,
     exclude_patterns=None,
     max_file_size=None,
+    project_name=None,
 ):
     """
     Process multiple uploaded files from Streamlit's st.file_uploader.
@@ -23,10 +24,23 @@ def process_uploaded_files(
     files_dict = {}
     total_files = len(uploaded_streamlit_files)
     processed_files_count = 0
+    UPLOAD_DIRECTORY  = f"input/{project_name}"
+    os.makedirs(UPLOAD_DIRECTORY, exist_ok=True)
 
     for uploaded_file_obj in uploaded_streamlit_files:
         # Streamlit's UploadedFile object has 'name' and 'read()' methods
         filename = uploaded_file_obj.name
+
+        file_path = os.path.join(UPLOAD_DIRECTORY, filename)
+
+        try:
+            file_bytes_content = uploaded_file_obj.getvalue()
+            with open(file_path, "wb") as f:
+                f.write(file_bytes_content)
+            print(f"File '{filename}' saved to '{file_path}'")
+        except Exception as e:
+            print(f"Error saving '{filename}' to disk: {e}")
+            continue
         
         try:
             content = uploaded_file_obj.read().decode("utf-8")
