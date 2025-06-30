@@ -12,6 +12,7 @@ services:
       - ./output:/app/output
       - ./logs:/app/logs
       - ./llm_cache.json:/app/llm_cache.json
+      - ./input:/app/input
     env_file:
       - .env
     environment:
@@ -32,6 +33,8 @@ services:
       bash -c "
         mkdir -p /app/output &&
         chmod -R 777 /app/output &&
+        mkdir -p /app/input &&
+        chmod -R 777 /app/input &&
         mkdir -p /app/logs &&
         chmod -R 777 /app/logs &&
         touch /app/llm_cache.json &&
