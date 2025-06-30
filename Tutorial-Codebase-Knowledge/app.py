@@ -6,6 +6,7 @@ import json
 import time
 from flow import create_tutorial_flow
 from utils.markdown_converter import markdown_to_html, markdown_to_pdf, create_combined_markdown, get_file_contents
+from urllib.parse import urlparse
 
 # Load environment variables
 dotenv.load_dotenv()
@@ -33,27 +34,40 @@ st.set_page_config(
 # Title and description
 st.title("📚 Codebase Tutorial Generator")
 st.markdown("""
-This app generates comprehensive tutorials for GitHub codebases using AI.
-Simply provide a GitHub repository URL and customize the generation settings.
+This app generates comprehensive tutorials for codebases using AI.
+Simply provide a GitHub repository URL and customize the generation settings. You can also uploading your files or entering local directory. Local directory crawling only available on localhost.
 """)
 
-if "repo_url" not in st.session_state:
-    st.session_state.repo_url_disabled = False
-    st.session_state.files_disabled = True
-def toggle_file_source():
-    st.session_state.repo_url_disabled = not st.session_state.repo_url_disabled
-    st.session_state.files_disabled = not st.session_state.files_disabled
+github_token = None
+repo_url = None
+input_dir = None
+files = None
+local_path_dir = None
+
+if "file_source_radio" not in st.session_state:
+    st.session_state.file_source_radio = "From Github URL"
+    st.session_state.progress_bar = 0
+
+def is_localhost_or_127_0_0_1():
+    """
+    Checks if the host of a given URL is 'localhost' or '127.0.0.1'.
+    """
+    if st.context.url:
+        parsed_url = urlparse(st.context.url)
+        return parsed_url.hostname in ["localhost", "127.0.0.1"]
+    return False
 # Sidebar for configuration
 with st.sidebar:
     st.header("Configuration")
 
     # GitHub token input
-    github_token = st.text_input(
-        "GitHub Token (optional)", 
-        value=os.environ.get("GITHUB_TOKEN", ""),
-        type="password",
-        help="Personal access token for GitHub API. Helps avoid rate limits."
-    )
+    if st.session_state.file_source_radio == "From Github URL":
+        github_token = st.text_input(
+            "GitHub Token (optional)", 
+            value=os.environ.get("GITHUB_TOKEN", ""),
+            type="password",
+            help="Personal access token for GitHub API. Helps avoid rate limits."
+        )
 
     # Output directory
     output_dir = st.text_input(
@@ -86,41 +100,62 @@ with st.sidebar:
             help="File patterns to exclude (one per line)"
         )
 
+    # Input directory
+    if st.session_state.file_source_radio == "Upload files":
+        input_dir = st.text_input(
+            "Input Directory", 
+            value="input",
+            help="Input directory where the uploaded files will be saved",
+            disabled=st.session_state.file_source_radio != "Upload files",
+        )
+
 file_source = st.radio(
     "Files source",
-    ["From Github URL", "Upload files"],
+    ["From Github URL", "Upload files", "Local directory"] if is_localhost_or_127_0_0_1 else ["From Github URL", "Upload files"],
     captions=[
         "Files source by entering Github repository URL",
         "Upload one or more files by you",
+        "Crawl local directory (available on localhost)",
     ],
     horizontal=True,
-    on_change=toggle_file_source
+    key="file_source_radio"
 )
 # Main form
 with st.form("tutorial_form"):
     # Repository URL
-    repo_url = st.text_input(
-        "GitHub Repository URL",
-        placeholder="https://github.com/username/repository",
-        help="URL of the public GitHub repository",
-        key="repo_url",
-        disabled=st.session_state.repo_url_disabled,
-    )
+    if st.session_state.file_source_radio == "From Github URL":
+        repo_url = st.text_input(
+            "GitHub Repository URL",
+            placeholder="https://github.com/username/repository",
+            help="URL of the public GitHub repository",
+            key="repo_url",
+            disabled=st.session_state.file_source_radio != "From Github URL",
+        )
 
-    files = st.file_uploader(
-        "Upload files",
-        accept_multiple_files=True,
-        disabled=st.session_state.files_disabled,
-    )
+    if st.session_state.file_source_radio == "Upload files":
+        files = st.file_uploader(
+            "Upload files",
+            help="Ensure files extension are included and not excluded by Advanced Options!",
+            accept_multiple_files=True,
+            disabled=st.session_state.file_source_radio != "Upload files",
+        )
+    
+    if st.session_state.file_source_radio == "Local directory":
+        local_path_dir = st.text_input(
+            "Local Directory Path", 
+            placeholder="/path/to/your/codebase",
+            help="Crawl local directory (only available on localhost)",
+            disabled=st.session_state.file_source_radio != "Local directory",
+        )
 
-    # Project name (optional)
+    # Project name
     project_name = st.text_input(
         "Project Name",
-        help="Custom name for the project (derived from URL if omitted)"
+        help="Name for the project"
     )
 
     # Submit button
-    submit_button = st.form_submit_button("Generate Tutorial")
+    submit_button = st.form_submit_button("Generate Tutorial", disabled=st.session_state.progress_bar not in [0, 100])
 
 # Process form submission
 if submit_button:
@@ -128,11 +163,13 @@ if submit_button:
         st.error("Please enter a GitHub repository URL")
     elif file_source == "Upload files" and not files:
         st.error("Please select one or more file(s)")
+    elif file_source == "Local directory" and not local_path_dir:
+        st.error("Please enter Local Directory Path")
     elif not project_name:
         st.error("Please enter project name")
     else:
         # Show progress
-        progress_bar = st.progress(0)
+        progress_bar = st.progress(1)
         status_text = st.empty()
 
         # Parse include/exclude patterns
@@ -144,7 +181,9 @@ if submit_button:
             "repo_url": repo_url if file_source == "From Github URL" else None,
             "project_name": project_name if project_name else None,
             "github_token": github_token if github_token else os.environ.get("GITHUB_TOKEN"),
-            "output_dir": output_dir,
+            "input_dir": input_dir if input_dir else "input",
+            "output_dir": output_dir if output_dir else "output",
+            "local_dir": local_path_dir if file_source == "Local directory" else None,
             "include_patterns": include_patterns,
             "exclude_patterns": exclude_patterns,
             "max_file_size": max_file_size,
@@ -464,7 +503,7 @@ if submit_button:
 st.markdown("---")
 st.markdown("""
 ### How it works
-1. The app clones the GitHub repository
+1. The app clones the GitHub repository, reading local path or uploaded files
 2. It analyzes the codebase structure and identifies key abstractions
 3. It determines relationships between components
 4. It generates tutorial chapters in a logical order

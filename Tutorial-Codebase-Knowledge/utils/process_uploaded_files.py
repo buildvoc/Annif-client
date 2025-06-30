@@ -7,7 +7,7 @@ def process_uploaded_files(
     include_patterns=None,
     exclude_patterns=None,
     max_file_size=None,
-    project_name=None,
+    upload_directory="input",
 ):
     """
     Process multiple uploaded files from Streamlit's st.file_uploader.
@@ -24,7 +24,7 @@ def process_uploaded_files(
     files_dict = {}
     total_files = len(uploaded_streamlit_files)
     processed_files_count = 0
-    UPLOAD_DIRECTORY  = f"input/{project_name}"
+    UPLOAD_DIRECTORY  = upload_directory
     os.makedirs(UPLOAD_DIRECTORY, exist_ok=True)
 
     for uploaded_file_obj in uploaded_streamlit_files:

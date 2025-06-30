@@ -42,6 +42,7 @@ class FetchRepo(Node):
         return {
             "repo_url": repo_url,
             "local_dir": local_dir,
+            "input_dir": shared.get("input_dir"),
             "input_files": shared.get("input_files"),
             "token": shared.get("github_token"),
             "include_patterns": include_patterns,
@@ -80,7 +81,7 @@ class FetchRepo(Node):
                 include_patterns=prep_res["include_patterns"],
                 exclude_patterns=prep_res["exclude_patterns"],
                 max_file_size=prep_res["max_file_size"],
-                project_name=prep_res["project_name"],
+                upload_directory=f"{prep_res["input_dir"]}/{prep_res["project_name"]}",
             )
 
         # Convert dict to list of tuples: [(path, content), ...]
