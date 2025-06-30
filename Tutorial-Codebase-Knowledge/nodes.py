@@ -81,7 +81,7 @@ class FetchRepo(Node):
                 include_patterns=prep_res["include_patterns"],
                 exclude_patterns=prep_res["exclude_patterns"],
                 max_file_size=prep_res["max_file_size"],
-                upload_directory=f"{prep_res["input_dir"]}/{prep_res["project_name"]}",
+                upload_directory=f"{prep_res['input_dir']}/{prep_res['project_name']}",
             )
 
         # Convert dict to list of tuples: [(path, content), ...]
