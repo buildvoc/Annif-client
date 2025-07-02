@@ -143,8 +143,8 @@ with st.form("tutorial_form"):
     if st.session_state.file_source_radio == "Local directory":
         local_path_dir = st.text_input(
             "Local Directory Path", 
-            placeholder="/path/to/your/codebase",
-            help="Crawl local directory (only available on localhost)",
+            placeholder="input/path_to_your_codebase",
+            help="Crawl local directory (starting with /input directory)",
             disabled=st.session_state.file_source_radio != "Local directory",
         )
 
