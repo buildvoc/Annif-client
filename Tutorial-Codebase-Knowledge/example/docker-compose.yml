@@ -6,7 +6,7 @@ services:
     expose:
       - "8501"
     volumes:
-      - ./output:/app/output
+      - output:/app/output
       - ./logs:/app/logs
       - ./llm_cache.json:/app/llm_cache.json
       - ./input:/app/input
@@ -30,6 +30,10 @@ services:
     networks:
       - app-network
 
+volumes:
+  output:
+    driver: local
+    
 networks:
   app-network:
     driver: bridge
