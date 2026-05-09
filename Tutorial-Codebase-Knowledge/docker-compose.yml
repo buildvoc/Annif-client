@@ -6,15 +6,19 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    expose:
-      - "8501"
+    ports:
+      - "8501:8501"
     volumes:
       - ./output:/app/output
       - ./logs:/app/logs
       - ./llm_cache.json:/app/llm_cache.json
       - ./input:/app/input
+      - ./raw:/app/raw
+      - ./wiki:/app/wiki
     env_file:
       - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       - PYTHONUNBUFFERED=1
       - PYTHONDONTWRITEBYTECODE=1

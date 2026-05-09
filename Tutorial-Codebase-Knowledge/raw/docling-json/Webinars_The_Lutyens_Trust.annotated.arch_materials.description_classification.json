@@ -1,0 +1,2252 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.9.0",
+  "name": "Webinars_The_Lutyens_Trust_docling",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 10706048694562239291,
+    "filename": "Webinars_The_Lutyens_Trust_docling.html",
+    "uri": null
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "parent": null,
+    "children": [],
+    "content_layer": "furniture",
+    "meta": null,
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "parent": null,
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "meta": null,
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/82"
+        },
+        {
+          "$ref": "#/texts/86"
+        },
+        {
+          "$ref": "#/texts/90"
+        },
+        {
+          "$ref": "#/texts/94"
+        },
+        {
+          "$ref": "#/texts/98"
+        },
+        {
+          "$ref": "#/texts/103"
+        },
+        {
+          "$ref": "#/texts/107"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "name": "header-2",
+      "label": "section"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "meta": null,
+      "label": "title",
+      "prov": [],
+      "orig": "Webinars - cleaned for Docling",
+      "text": "Webinars - cleaned for Docling",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/groups/0"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "title",
+      "prov": [],
+      "orig": "Webinar Series",
+      "text": "Webinar Series",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Lutyens Trust America have produced this series of webinars in collaboration with The Lutyens Trust (UK). The series aims to educate both our members and the public on various topics on Lutyens's life, works and his relevance today. The webinars are available to watch online by kind permission of The Lutyens Trust America, who we would like to thank for their partnership and support, which continues across many of our ongoing projects.",
+      "text": "The Lutyens Trust America have produced this series of webinars in collaboration with The Lutyens Trust (UK). The series aims to educate both our members and the public on various topics on Lutyens's life, works and his relevance today. The webinars are available to watch online by kind permission of The Lutyens Trust America, who we would like to thank for their partnership and support, which continues across many of our ongoing projects.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/ocW3E4pgKPc",
+      "text": "Watch webinar video: https://youtu.be/ocW3E4pgKPc",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/ocW3E4pgKPc"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens’s Elevations: Evolutions and Revelations",
+      "text": "Lutyens's Elevations: Evolutions and Revelations",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Oliver Cope; Stuart Martin",
+      "text": "Oliver Cope; Stuart Martin",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens; Robin Prater",
+      "text": "Hosts: Martin Lutyens; Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "A discussion about the use of geometry in the buildings of Sir Edwin Lutyens.",
+      "text": "A discussion about the use of geometry in the buildings of Sir Edwin Lutyens.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Oliver Cope, AIA",
+      "text": "Oliver Cope, AIA",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Oliver Cope received an A.B. from Harvard College in 1980, a Master of Architecture from Harvard Graduate School of Design in 1985 and taught as a Visiting Assistant Professor of Architecture at the University of Cincinnati before establishing the firm of Oliver Cope Architect in New York City in 1988. A comprehensive architectural design firm with a solid base of experience in diverse projects, the firm is especially strong in traditional design and classically American homes in a variety of historic styles. Widely recognized as one of the premier firms for traditional residential architecture in the New York area, Mr. Cope's work is featured in the firm's monograph, Oliver Cope Architect - City Country Sea, published by Triglyph Books with an introduction by Clive Aslet as well as in Architectural Digest, Galarie, House Beautiful, House & Garden, Home, The New York Times and others. Mr. Cope is currently licensed in seven states.",
+      "text": "Oliver Cope received an A.B. from Harvard College in 1980, a Master of Architecture from Harvard Graduate School of Design in 1985 and taught as a Visiting Assistant Professor of Architecture at the University of Cincinnati before establishing the firm of Oliver Cope Architect in New York City in 1988. A comprehensive architectural design firm with a solid base of experience in diverse projects, the firm is especially strong in traditional design and classically American homes in a variety of historic styles. Widely recognized as one of the premier firms for traditional residential architecture in the New York area, Mr. Cope's work is featured in the firm's monograph, Oliver Cope Architect - City Country Sea, published by Triglyph Books with an introduction by Clive Aslet as well as in Architectural Digest, Galarie, House Beautiful, House & Garden, Home, The New York Times and others. Mr. Cope is currently licensed in seven states.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Stuart Martin",
+      "text": "Stuart Martin",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Stuart first encountered Lutyens through the Patrick Nuttgens TV programme that coincided with the Hayward Gallery Exhibition in 1981. He pursued this interest at Nottingham University, writing a dissertation on the development of Lutyens' Classical architecture, and beginning his own solo visits to the houses when he could. In his subsequent career as an architect of country houses, Stuart has sought to combine his reverence for Lutyens' work, with its love of traditional forms and materials, with sensitivity to the varying contexts of our own times. He has been a member of the Lutyens Trust for more than 20 years. A member of the Events Committee for more than 10 years, he recently became a volunteer caseworker for the Trust.",
+      "text": "Stuart first encountered Lutyens through the Patrick Nuttgens TV programme that coincided with the Hayward Gallery Exhibition in 1981. He pursued this interest at Nottingham University, writing a dissertation on the development of Lutyens' Classical architecture, and beginning his own solo visits to the houses when he could. In his subsequent career as an architect of country houses, Stuart has sought to combine his reverence for Lutyens' work, with its love of traditional forms and materials, with sensitivity to the varying contexts of our own times. He has been a member of the Lutyens Trust for more than 20 years. A member of the Events Committee for more than 10 years, he recently became a volunteer caseworker for the Trust.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/PCY8On3ttQI",
+      "text": "Watch webinar video: https://youtu.be/PCY8On3ttQI",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/PCY8On3ttQI"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and Lindisfarne",
+      "text": "Lutyens and Lindisfarne",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Nick Lewis; Hugh Dixon",
+      "text": "Nick Lewis; Hugh Dixon",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens; Robin Prater",
+      "text": "Hosts: Martin Lutyens; Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "A castle, fortress, or country home?",
+      "text": "A castle, fortress, or country home?",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Nick Lewis",
+      "text": "Nick Lewis",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Born and raised in Alnwick, Northumberland, Nick Lewis studied history at York St John College and then for a Masters in 18th Century History at York University. He then worked in the Collections & Archives department for the Northumberland Estates at Alnwick Castle for a number of years before moving to Lindisfarne Castle in 2007. Nick currently serves as Collections & House Officer for Lindisfarne which is owned by the U.K. National Trust.",
+      "text": "Born and raised in Alnwick, Northumberland, Nick Lewis studied history at York St John College and then for a Masters in 18th Century History at York University. He then worked in the Collections & Archives department for the Northumberland Estates at Alnwick Castle for a number of years before moving to Lindisfarne Castle in 2007. Nick currently serves as Collections & House Officer for Lindisfarne which is owned by the U.K. National Trust.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hugh Dixon, MBE, FSA",
+      "text": "Hugh Dixon, MBE, FSA",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hugh Dixon is an architectural historian. After seventeen years of establishing building history and conservation in Ulster, he was for 25 years National Trust Curator for Northumberland and Durham with responsibilities included Lindisfarne Castle. In retirement, he has been conservation advisor to Durham Cathedral and Hexham Abbey and continues as a consultant to National Trust properties.",
+      "text": "Hugh Dixon is an architectural historian. After seventeen years of establishing building history and conservation in Ulster, he was for 25 years National Trust Curator for Northumberland and Durham with responsibilities included Lindisfarne Castle. In retirement, he has been conservation advisor to Durham Cathedral and Hexham Abbey and continues as a consultant to National Trust properties.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/texts/13"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/tHps4MLeB3g",
+      "text": "Watch webinar video: https://youtu.be/tHps4MLeB3g",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/tHps4MLeB3g"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Thiepval: The Memorial to the Missing of the Somme",
+      "text": "Thiepval: The Memorial to the Missing of the Somme",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Imperial War Graves Commission and Sir Edwin Lutyens",
+      "text": "The Imperial War Graves Commission and Sir Edwin Lutyens",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Jon Gedling & Martin Lutyens",
+      "text": "Jon Gedling & Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Jon is Director of Works at the Commonwealth War Graves Commission (CWGC), where he is responsible for overseeing the care and upkeep of the CWGC's memorials and structures around the world and setting the policy and direction for the global conservation approach of the organisation. Jon is a Chartered Building Surveyor and has worked in private practice and for various client side organisations specialising in the management of historic estates. His background has been particularly focussed towards managing major conservation projects and in previous roles he was Assistant Property Manager for the Royal Household Property Section and Chief Surveyor at Eton College. Jon also acts as an Assessor for the Royal Institution of Chartered Surveyors.",
+      "text": "Jon is Director of Works at the Commonwealth War Graves Commission (CWGC), where he is responsible for overseeing the care and upkeep of the CWGC's memorials and structures around the world and setting the policy and direction for the global conservation approach of the organisation. Jon is a Chartered Building Surveyor and has worked in private practice and for various client side organisations specialising in the management of historic estates. His background has been particularly focussed towards managing major conservation projects and in previous roles he was Assistant Property Manager for the Royal Household Property Section and Chief Surveyor at Eton College. Jon also acts as an Assessor for the Royal Institution of Chartered Surveyors.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Martin was born in Kolkata and brought up and educated in England. After military service and a career in a major international consulting firm, he is now Co-Chairman of The Lutyens Trust in the UK and Chairman of its sister organisation in the US, The Lutyens Trust America. Both organisations are dedicated to the study, conservation and promotion of the work of Sir Edwin Lutyens OM KCIE PRA. In recent years he has also served as a trustee of Glyndebourne and as Chairman of Sir John Soane's Museum Society. He and his Spanish wife live in London.",
+      "text": "Martin was born in Kolkata and brought up and educated in England. After military service and a career in a major international consulting firm, he is now Co-Chairman of The Lutyens Trust in the UK and Chairman of its sister organisation in the US, The Lutyens Trust America. Both organisations are dedicated to the study, conservation and promotion of the work of Sir Edwin Lutyens OM KCIE PRA. In recent years he has also served as a trustee of Glyndebourne and as Chairman of Sir John Soane's Museum Society. He and his Spanish wife live in London.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://www.youtube.com/watch?v=h1z5jJdeYeo",
+      "text": "Watch webinar video: https://www.youtube.com/watch?v=h1z5jJdeYeo",
+      "formatting": null,
+      "hyperlink": "https://www.youtube.com/watch?v=h1z5jJdeYeo"
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Restrained Harmony: Edwin Lutyens’s Creation at Nashdom",
+      "text": "Restrained Harmony: Edwin Lutyens's Creation at Nashdom",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Jun Huang; Katy Simmons",
+      "text": "Jun Huang; Katy Simmons",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens; Robin Prater",
+      "text": "Hosts: Martin Lutyens; Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/9sDsxdgPufQ",
+      "text": "Watch webinar video: https://youtu.be/9sDsxdgPufQ",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/9sDsxdgPufQ"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Hampstead Garden Suburb",
+      "text": "Lutyens and the Hampstead Garden Suburb",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/texts/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Timothy Brittain-Catlin; Duncan Stroik",
+      "text": "Timothy Brittain-Catlin; Duncan Stroik",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/texts/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens; Robin Prater",
+      "text": "Hosts: Martin Lutyens; Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/texts/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "An exploration of Lutyens's church designs within the masterplan for the Central Square.",
+      "text": "An exploration of Lutyens's church designs within the masterplan for the Central Square.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/texts/32"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/-AJLPQLTAp8",
+      "text": "Watch webinar video: https://youtu.be/-AJLPQLTAp8",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/-AJLPQLTAp8"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Homage to The Salutation: A Hidden Masterpiece",
+      "text": "Homage to The Salutation: A Hidden Masterpiece",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Stuart Martin, Robin Prater",
+      "text": "Stuart Martin, Robin Prater",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host & Moderator: Martin Lutyens",
+      "text": "Host & Moderator: Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Salutation is one of Lutyens's most masterful essays into Neo-Georgian design. Located in Sandwich, Kent, the seemingly simple and straightforward design holds a myriad of surprises and intricacies.",
+      "text": "The Salutation is one of Lutyens's most masterful essays into Neo-Georgian design. Located in Sandwich, Kent, the seemingly simple and straightforward design holds a myriad of surprises and intricacies.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/texts/37"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/qn4v8jkkVlw",
+      "text": "Watch webinar video: https://youtu.be/qn4v8jkkVlw",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/qn4v8jkkVlw"
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens’s Architecture in New Delhi: Politics, Planning & Personality",
+      "text": "Lutyens's Architecture in New Delhi: Politics, Planning & Personality",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Swapna Liddle, Grant Marani",
+      "text": "Swapna Liddle, Grant Marani",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host & Moderator: Robin Prater",
+      "text": "Host & Moderator: Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Our speakers today represent the international interest evoked by the work of Sir Edwin Lutyens. Swapna Liddle is an author and historian with a specialization in the history of Delhi. Grant Marani is an architect and partner of Robert A.M. Stern Architects. Although Lutyens designed many buildings for New Delhi, this webinar will focus primarily on Lutyens's work at Rashtrapati Bhavan (President's House, formerly Viceroy's House).",
+      "text": "Our speakers today represent the international interest evoked by the work of Sir Edwin Lutyens. Swapna Liddle is an author and historian with a specialization in the history of Delhi. Grant Marani is an architect and partner of Robert A.M. Stern Architects. Although Lutyens designed many buildings for New Delhi, this webinar will focus primarily on Lutyens's work at Rashtrapati Bhavan (President's House, formerly Viceroy's House).",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/texts/42"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/mQr2_5i6czM",
+      "text": "Watch webinar video: https://youtu.be/mQr2_5i6czM",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/mQr2_5i6czM"
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens’s Plan for New Delhi",
+      "text": "Lutyens's Plan for New Delhi",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/texts/47"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "A.G. Krishna Menon, Dhiru Thadani",
+      "text": "A.G. Krishna Menon, Dhiru Thadani",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/texts/47"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host & Moderator: Martin Lutyens & Robin Prater",
+      "text": "Host & Moderator: Martin Lutyens & Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/texts/47"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "In 1912, Edwin Lutyens was asked to join what became the Delhi Planning Commision, charged with advising on the siting and layout of a new capital for India. Although Lutyens went on to design a number of the buildings in New Delhi, notably Rashtrapati Bhavan, this webinar focuses on the theories and concepts of the planning for the new city. Martin Lutyens discusses the work at New Delhi within the context of Edwin Lutyens's overall body of work. Dhiru Thadani looks at the connectivity between the planning of New Delhi and the layouts of other major capitals, such as Paris and Washington, D.C. Krishna Menon shares his insights into how the flexibility of Lutyens's plan for New Delhi allowed the city to transition into the modern Republican city that it is today.",
+      "text": "In 1912, Edwin Lutyens was asked to join what became the Delhi Planning Commision, charged with advising on the siting and layout of a new capital for India. Although Lutyens went on to design a number of the buildings in New Delhi, notably Rashtrapati Bhavan, this webinar focuses on the theories and concepts of the planning for the new city. Martin Lutyens discusses the work at New Delhi within the context of Edwin Lutyens's overall body of work. Dhiru Thadani looks at the connectivity between the planning of New Delhi and the layouts of other major capitals, such as Paris and Washington, D.C. Krishna Menon shares his insights into how the flexibility of Lutyens's plan for New Delhi allowed the city to transition into the modern Republican city that it is today.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/texts/47"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/_5eNH6slWxQ",
+      "text": "Watch webinar video: https://youtu.be/_5eNH6slWxQ",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/_5eNH6slWxQ"
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens at Lambay: Architecture and Arcadia",
+      "text": "Lutyens at Lambay: Architecture and Arcadia",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/texts/52"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "David Averill, Millie Baring & Stuart Martin",
+      "text": "David Averill, Millie Baring & Stuart Martin",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/texts/52"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host: Martin Lutyens",
+      "text": "Host: Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/texts/52"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Lambay Castle is the ancestral home of the Revelstokes, Maude & Cecil Baring, and is still protected by their family today, four generations later. The original Old Fort was built in the late 15th/early 16th century. The Lutyens Guest Wing and renovations were added in 1908-1910. Referred to as one of Lutyens's finest examples of domestic architecture, the two sections of Lambay Castle complement each other perfectly and are seamlessly, almost invisibly, connected by a long central corridor that runs beneath the East Terrace.",
+      "text": "Lambay Castle is the ancestral home of the Revelstokes, Maude & Cecil Baring, and is still protected by their family today, four generations later. The original Old Fort was built in the late 15th/early 16th century. The Lutyens Guest Wing and renovations were added in 1908-1910. Referred to as one of Lutyens's finest examples of domestic architecture, the two sections of Lambay Castle complement each other perfectly and are seamlessly, almost invisibly, connected by a long central corridor that runs beneath the East Terrace.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/texts/52"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://www.youtube.com/watch?v=RA4Z2P54yFE&t=4s",
+      "text": "Watch webinar video: https://www.youtube.com/watch?v=RA4Z2P54yFE&t=4s",
+      "formatting": null,
+      "hyperlink": "https://www.youtube.com/watch?v=RA4Z2P54yFE&t=4s"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Gertrude Jekyll and the Garden at Upton Grey",
+      "text": "Gertrude Jekyll and the Garden at Upton Grey",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/texts/57"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "How is a Jekyll Garden different without Lutyens?",
+      "text": "How is a Jekyll Garden different without Lutyens?",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/texts/57"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Rosamund Wallinger (Upton Grey), Claire Greenslade (Hestercombe)",
+      "text": "Rosamund Wallinger (Upton Grey), Claire Greenslade (Hestercombe)",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/texts/57"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host: Martin Lutyens",
+      "text": "Host: Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/texts/57"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/YTRy79KUe4A",
+      "text": "Watch webinar video: https://youtu.be/YTRy79KUe4A",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/YTRy79KUe4A"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens Plans: Accommodation and Enrichment",
+      "text": "Lutyens Plans: Accommodation and Enrichment",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/texts/62"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Oliver Cope, Stuart Martin",
+      "text": "Oliver Cope, Stuart Martin",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/texts/62"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens and Robin Prater",
+      "text": "Hosts: Martin Lutyens and Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/texts/62"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://www.youtube.com/watch?v=Y8a0RETOFik",
+      "text": "Watch webinar video: https://www.youtube.com/watch?v=Y8a0RETOFik",
+      "formatting": null,
+      "hyperlink": "https://www.youtube.com/watch?v=Y8a0RETOFik"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and The Cenotaph: Architecture of Profound Emotion",
+      "text": "Lutyens and The Cenotaph: Architecture of Profound Emotion",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Clive Aslet; Jane Ridley",
+      "text": "Clive Aslet; Jane Ridley",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hosts: Martin Lutyens & Robin Prater",
+      "text": "Hosts: Martin Lutyens & Robin Prater",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/9N0esWY9dF8",
+      "text": "Watch webinar video: https://youtu.be/9N0esWY9dF8",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/9N0esWY9dF8"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens: Speaking to the 21st Century – The Relevance of Lutyens to Contemporary Design",
+      "text": "Lutyens: Speaking to the 21st Century - The Relevance of Lutyens to Contemporary Design",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/texts/70"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Peter Inskip, Kulapat Yantrasast",
+      "text": "Peter Inskip, Kulapat Yantrasast",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/texts/70"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host: Martin Lutyens",
+      "text": "Host: Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/texts/70"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/qic8C0ug3g0",
+      "text": "Watch webinar video: https://youtu.be/qic8C0ug3g0",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/qic8C0ug3g0"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Arts and Crafts Beginnings: The Story of Goddards",
+      "text": "Arts and Crafts Beginnings: The Story of Goddards",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/texts/74"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Martin Lutyens, Tom Kligerman, Michael Imber",
+      "text": "Martin Lutyens, Tom Kligerman, Michael Imber",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/texts/74"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Overview of Lutyens designs of furniture and lighting. Not only did Edwin Lutyens design the iconic Lutyens Bench, but he designed lighting fixtures, tables, chairs for private homes and gardens, as well as public buildings.",
+      "text": "Overview of Lutyens designs of furniture and lighting. Not only did Edwin Lutyens design the iconic Lutyens Bench, but he designed lighting fixtures, tables, chairs for private homes and gardens, as well as public buildings.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/texts/74"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/ARILhNz-OJg",
+      "text": "Watch webinar video: https://youtu.be/ARILhNz-OJg",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/ARILhNz-OJg"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Life and Legacy of Sir Edwin Lutyens",
+      "text": "The Life and Legacy of Sir Edwin Lutyens",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/texts/78"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Martin Lutyens, Robin Prater, Jane Ridley",
+      "text": "Martin Lutyens, Robin Prater, Jane Ridley",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/texts/78"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "An overview of the career and life of Sir Edwin Lutyens, spanning from the American Civil War to the Second World War.",
+      "text": "An overview of the career and life of Sir Edwin Lutyens, spanning from the American Civil War to the Second World War.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/texts/78"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/6gILJaiLQsA",
+      "text": "Watch webinar video: https://youtu.be/6gILJaiLQsA",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/6gILJaiLQsA"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/83"
+        },
+        {
+          "$ref": "#/texts/84"
+        },
+        {
+          "$ref": "#/texts/85"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "3D Modeling of Lutyens’s Proposed Liverpool Cathedral: The Greatest Building Never Built",
+      "text": "3D Modeling of Lutyens's Proposed Liverpool Cathedral: The Greatest Building Never Built",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr. Nick Webb, Jeff Speakman",
+      "text": "Dr. Nick Webb, Jeff Speakman",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "A discussion of the design for a Roman Catholic Cathedral at Liverpool, based on physical and digital models.",
+      "text": "A discussion of the design for a Roman Catholic Cathedral at Liverpool, based on physical and digital models.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/texts/82"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/vY4l0rlaeYU",
+      "text": "Watch webinar video: https://youtu.be/vY4l0rlaeYU",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/vY4l0rlaeYU"
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/87"
+        },
+        {
+          "$ref": "#/texts/88"
+        },
+        {
+          "$ref": "#/texts/89"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and Jekyll: Architecture and the Garden Landscape",
+      "text": "Lutyens and Jekyll: Architecture and the Garden Landscape",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/texts/86"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Janice Parker, Sarah Dickinson, Virginia Burt, Judith Tankard",
+      "text": "Janice Parker, Sarah Dickinson, Virginia Burt, Judith Tankard",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/texts/86"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Come with us on an exploration of the unique partnership between Edwin Lutyens and Gertrude Jekyll, as we look at the spark that made \"A Lutyens house and a Jekyll garden\" something to be sought after at the turn of the last century and still an inspiration today.",
+      "text": "Come with us on an exploration of the unique partnership between Edwin Lutyens and Gertrude Jekyll, as we look at the spark that made \"A Lutyens house and a Jekyll garden\" something to be sought after at the turn of the last century and still an inspiration today.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/texts/86"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/SKeo27FU_O4",
+      "text": "Watch webinar video: https://youtu.be/SKeo27FU_O4",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/SKeo27FU_O4"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/91"
+        },
+        {
+          "$ref": "#/texts/92"
+        },
+        {
+          "$ref": "#/texts/93"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the British School at Rome",
+      "text": "Lutyens and the British School at Rome",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/texts/90"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Hugh Petter, Stephen Milner",
+      "text": "Hugh Petter, Stephen Milner",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/92",
+      "parent": {
+        "$ref": "#/texts/90"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The British School at Rome (BSR) is a highly respected research academy focused upon the art, history and culture of the western Mediterranean region, and upon contemporary arts and architecture. The building was designed by Sir Edwin Lutyens originally at the British Pavilion for an international exhibition of culture and arts in Rome in 1911.",
+      "text": "The British School at Rome (BSR) is a highly respected research academy focused upon the art, history and culture of the western Mediterranean region, and upon contemporary arts and architecture. The building was designed by Sir Edwin Lutyens originally at the British Pavilion for an international exhibition of culture and arts in Rome in 1911.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/93",
+      "parent": {
+        "$ref": "#/texts/90"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/0SKimUNbTZY",
+      "text": "Watch webinar video: https://youtu.be/0SKimUNbTZY",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/0SKimUNbTZY"
+    },
+    {
+      "self_ref": "#/texts/94",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/95"
+        },
+        {
+          "$ref": "#/texts/96"
+        },
+        {
+          "$ref": "#/texts/97"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Furniture and Lighting Designs of Sir Edwin Lutyens",
+      "text": "The Furniture and Lighting Designs of Sir Edwin Lutyens",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/95",
+      "parent": {
+        "$ref": "#/texts/94"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Candia Lutyens, Alan Powers, Martin Lutyens, Moderator",
+      "text": "Candia Lutyens, Alan Powers, Martin Lutyens, Moderator",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/96",
+      "parent": {
+        "$ref": "#/texts/94"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Overview of Lutyens designs of furniture and lighting. Not only did Edwin Lutyens design the iconic Lutyens Bench, but he designed lighting fixtures, tables, chairs for private homes and gardens, as well as public buildings.",
+      "text": "Overview of Lutyens designs of furniture and lighting. Not only did Edwin Lutyens design the iconic Lutyens Bench, but he designed lighting fixtures, tables, chairs for private homes and gardens, as well as public buildings.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/97",
+      "parent": {
+        "$ref": "#/texts/94"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/GsAthCf-5io",
+      "text": "Watch webinar video: https://youtu.be/GsAthCf-5io",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/GsAthCf-5io"
+    },
+    {
+      "self_ref": "#/texts/98",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/99"
+        },
+        {
+          "$ref": "#/texts/100"
+        },
+        {
+          "$ref": "#/texts/101"
+        },
+        {
+          "$ref": "#/texts/102"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "City Beautiful on the Rand: Lutyens in South Africa",
+      "text": "City Beautiful on the Rand: Lutyens in South Africa",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/99",
+      "parent": {
+        "$ref": "#/texts/98"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Anthony \"Ankie\" Barnes, Mervyn Miller, Martin Lutyens",
+      "text": "Anthony \"Ankie\" Barnes, Mervyn Miller, Martin Lutyens",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/100",
+      "parent": {
+        "$ref": "#/texts/98"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "A discussion and history of Edwin Lutyens's work in South Africa.",
+      "text": "A discussion and history of Edwin Lutyens's work in South Africa.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/101",
+      "parent": {
+        "$ref": "#/texts/98"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Edwin Lutyens came to South Africa following the footsteps of his then close friend, Herbert Baker. Designed before their work together in Delhi, Lutyens's designs for the Johannesburg Art Gallery and the Rand Regiments Memorial provide interesting insight into the evolution of Lutyens's body of work.",
+      "text": "Edwin Lutyens came to South Africa following the footsteps of his then close friend, Herbert Baker. Designed before their work together in Delhi, Lutyens's designs for the Johannesburg Art Gallery and the Rand Regiments Memorial provide interesting insight into the evolution of Lutyens's body of work.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/102",
+      "parent": {
+        "$ref": "#/texts/98"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/_TaRbhg4rxU",
+      "text": "Watch webinar video: https://youtu.be/_TaRbhg4rxU",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/_TaRbhg4rxU"
+    },
+    {
+      "self_ref": "#/texts/103",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/104"
+        },
+        {
+          "$ref": "#/texts/105"
+        },
+        {
+          "$ref": "#/texts/106"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Encounters at Greywalls: Lutyens in Scotland",
+      "text": "Encounters at Greywalls: Lutyens in Scotland",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/104",
+      "parent": {
+        "$ref": "#/texts/103"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Paul Whalen, Douglas, Wright, Robin Prater with special guest Ros Weaver",
+      "text": "Paul Whalen, Douglas, Wright, Robin Prater with special guest Ros Weaver",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/105",
+      "parent": {
+        "$ref": "#/texts/103"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Host: Martin Lutyens",
+      "text": "Host: Martin Lutyens",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/106",
+      "parent": {
+        "$ref": "#/texts/103"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "An exploration of Lutyens's design at Greywalls in Scotland through the eyes of two architects, an historian, and an owner.",
+      "text": "An exploration of Lutyens's design at Greywalls in Scotland through the eyes of two architects, an historian, and an owner.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/107",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Please make a donation to the Lutyens Trust",
+      "text": "Please make a donation to the Lutyens Trust",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

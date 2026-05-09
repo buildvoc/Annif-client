@@ -76,6 +76,21 @@ with st.sidebar:
         help="Directory where the tutorial will be saved"
     )
 
+    instructions_enabled = st.checkbox("Use tutorial instructions", value=True)
+    instructions_text = ""
+    if instructions_enabled:
+        default_path = "TUTORIAL_WIKI.md"
+        default_text = ""
+        if os.path.exists(default_path):
+            with open(default_path, "r", encoding="utf-8") as f:
+                default_text = f.read()
+        instructions_text = st.text_area(
+            "Tutorial instructions",
+            value=default_text,
+            height=220,
+            help="Optional extra instructions prepended to every LLM prompt"
+        )
+
     # Advanced options
     with st.expander("Advanced Options"):
         # File size limit
@@ -195,6 +210,8 @@ if submit_button:
             "chapters": [],
             "final_output_dir": None
         }
+
+        os.environ["CUSTOM_INSTRUCTIONS"] = instructions_text if instructions_enabled else ""
 
         try:
             # Create and run the flow

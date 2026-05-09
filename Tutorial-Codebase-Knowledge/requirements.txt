@@ -5,7 +5,7 @@ gitpython>=3.1.0
 google-cloud-aiplatform>=1.25.0
 google-genai>=1.9.0
 python-dotenv>=1.0.0
-streamlit>=1.32.0
+streamlit==1.32.0
 pathspec>=0.11.0
 markdown>=3.4.0
 pdfkit>=1.0.0

@@ -27,6 +27,15 @@ cache_file = "llm_cache.json"
 
 # By default, we Google Gemini 2.5 pro, as it shows great performance for code understanding
 def call_llm(prompt: str, use_cache: bool = True) -> str:
+    custom_instructions = os.getenv("CUSTOM_INSTRUCTIONS", "").strip()
+    if custom_instructions:
+        prompt = (
+            "Follow these additional tutorial instructions:\n"
+            f"{custom_instructions}\n\n"
+            "Now complete this task:\n"
+            f"{prompt}"
+        )
+
     # Log the prompt
     logger.info(f"PROMPT: {prompt}")
 
@@ -45,6 +54,38 @@ def call_llm(prompt: str, use_cache: bool = True) -> str:
         if prompt in cache:
             logger.info(f"RESPONSE: {cache[prompt]}")
             return cache[prompt]
+
+    if os.getenv("LLM_PROVIDER", "").lower() == "ollama":
+        import requests
+        base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
+        model = os.getenv("OLLAMA_MODEL", "qwen2.5-coder:7b")
+        r = requests.post(
+            f"{base_url}/api/generate",
+            json={
+                "model": model,
+                "prompt": prompt,
+                "stream": False,
+                "options": {"temperature": 0.2, "num_ctx": 2048, "num_predict": 700}
+            },
+            timeout=600,
+        )
+        r.raise_for_status()
+        response_text = r.json().get("response", "")
+        logger.info(f"RESPONSE: {response_text}")
+
+        if use_cache:
+            cache = {}
+            if os.path.exists(cache_file):
+                try:
+                    with open(cache_file, "r", encoding="utf-8") as f:
+                        cache = json.load(f)
+                except:
+                    pass
+            cache[prompt] = response_text
+            with open(cache_file, "w", encoding="utf-8") as f:
+                json.dump(cache, f)
+
+        return response_text
 
     # # Call the LLM if not in cache or cache disabled
     # client = genai.Client(

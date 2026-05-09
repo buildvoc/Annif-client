@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bookworm
 
 WORKDIR /app
 
@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Create necessary directories with proper permissions
-RUN mkdir -p logs output && chmod -R 777 logs output
+RUN mkdir -p logs output input .streamlit .config && chmod -R 777 logs output input .streamlit .config
 
 # Expose the Streamlit port
 EXPOSE 8501
@@ -40,6 +40,8 @@ ENV CACHE_FILE=/app/llm_cache.json
 ENV CACHE_ENABLED=true
 ENV GIT_PYTHON_REFRESH=quiet
 ENV OUTPUT_DIR=/app/output
+ENV HOME=/app
+ENV XDG_CONFIG_HOME=/app/.config
 
 # Default command (can be overridden by docker-compose)
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
