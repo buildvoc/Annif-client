@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Source Documents",
+    "description": "DoclingDocument JSON source files used as immutable evidence for the Building Memex wiki.",
+    "files": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Building Entity",
+    "description": "Buildings or architectural sites identified from the source documents.",
+    "files": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Place Entity",
+    "description": "Places, streets, towns, or locations mentioned in the source documents.",
+    "files": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Architectural Feature",
+    "description": "Architectural elements, materials, fittings, monuments, or historic features described in the sources.",
+    "files": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Associative Trail",
+    "description": "Relationships between sources, buildings, places, collections, and themes.",
+    "files": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+]
