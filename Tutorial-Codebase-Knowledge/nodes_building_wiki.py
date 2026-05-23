@@ -7,7 +7,7 @@ from datetime import date
 
 from pocketflow import Node
 from utils.call_llm import call_llm
-from nodes import AnalyzeRelationships
+from nodes import IdentifyAbstractions, AnalyzeRelationships
 
 
 def slug(text):
@@ -18,6 +18,10 @@ def slug(text):
 
 def clean(text):
     return re.sub(r"\s+", " ", str(text or "")).strip()
+
+
+def is_placeholder_entity(text):
+    return slug(text) in {"", "page", "empty", "none", "unknown", "null", "n-a", "not-applicable"}
 
 
 def extract_json_dict(text, required_key=None):
@@ -111,11 +115,14 @@ def make_source_blocks(docs, limit=60):
 
 class FetchDoclingDocuments(Node):
     def prep(self, shared):
-        return Path(shared.get("raw_dir", "raw/docling-json"))
+        return Path(shared.get("raw_dir", "raw/docling-json")), shared.get("limit")
 
-    def exec(self, raw_dir):
+    def exec(self, prep_res):
+        raw_dir, limit = prep_res
         print(f"Crawling DoclingDocuments: {raw_dir}")
         files = sorted(raw_dir.glob("*.json"))
+        if limit:
+            files = files[:int(limit)]
         if not files:
             raise ValueError(f"No DoclingDocument JSON files found in {raw_dir}")
 
@@ -139,6 +146,48 @@ class FetchDoclingDocuments(Node):
         shared.setdefault("project_name", "building-memex")
         shared.setdefault("language", "English")
         shared.setdefault("max_abstraction_num", 100)
+
+
+
+class SafeIdentifyAbstractions(IdentifyAbstractions):
+    def exec_fallback(self, prep_res, exc):
+        print(f"Abstraction identification failed; continuing with safe Building Memex abstractions: {exc}")
+
+        file_count = 1
+        try:
+            file_count = prep_res[2]
+        except Exception:
+            pass
+
+        files = list(range(file_count))
+
+        return [
+            {
+                "name": "Source Documents",
+                "description": "DoclingDocument JSON source files used as immutable evidence for the Building Memex wiki.",
+                "files": files,
+            },
+            {
+                "name": "Building Entity",
+                "description": "Buildings or architectural sites identified from the source documents.",
+                "files": files,
+            },
+            {
+                "name": "Place Entity",
+                "description": "Places, streets, towns, or locations mentioned in the source documents.",
+                "files": files,
+            },
+            {
+                "name": "Architectural Feature",
+                "description": "Architectural elements, materials, fittings, monuments, or historic features described in the sources.",
+                "files": files,
+            },
+            {
+                "name": "Associative Trail",
+                "description": "Relationships between sources, buildings, places, collections, and themes.",
+                "files": files,
+            },
+        ]
 
 
 class SafeAnalyzeRelationships(AnalyzeRelationships):
@@ -173,7 +222,7 @@ def normalise_entity_plan(plan, docs):
         title = clean(raw.get("title") or raw.get("name"))
         source_names = [Path(str(x)).name for x in normalise_list(raw.get("source_names"))]
         source_names = [x for x in source_names if x in docs_by_name]
-        if not title or not source_names:
+        if not title or is_placeholder_entity(title) or not source_names:
             continue
 
         b = {
@@ -205,7 +254,7 @@ def normalise_entity_plan(plan, docs):
             title = clean(raw.get("title") or raw.get("name"))
             source_names = [Path(str(x)).name for x in normalise_list(raw.get("source_names"))]
             source_names = [x for x in source_names if x in docs_by_name]
-            if not title:
+            if not title or is_placeholder_entity(title):
                 continue
             normalised[kind].append({
                 "slug": slug(raw.get("slug") or title),
