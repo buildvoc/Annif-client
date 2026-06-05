@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -30,4 +30,12 @@
 
 ## Related pages
 
-- Needs verification: no related entity matched.
+- [clayton-church](../buildings/clayton-church.md)
+- [clayton](../places/clayton.md)
+- [compton](../places/compton.md)
+- [coombes-church](../buildings/coombes-church.md)
+- [hardham](../places/hardham.md)
+- [preston-park](../places/preston-park.md)
+- [st-botolphs-church-hardham](../buildings/st-botolphs-church-hardham.md)
+- [st-peter-s-church-preston-park](../buildings/st-peter-s-church-preston-park.md)
+- [watts-chapel](../buildings/watts-chapel.md)

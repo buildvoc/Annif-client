@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -43,4 +43,6 @@
 
 ## Related pages
 
-- Needs verification: no related entity matched.
+- [compton](../places/compton.md)
+- [down-lane](../streets/down-lane.md)
+- [watts-memorial-chapel](../buildings/watts-memorial-chapel.md)

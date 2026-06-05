@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Mavis_Standing_the_real_story_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -31,7 +31,12 @@
 
 ## Related pages
 
-- [[empty]]
-- [[farnham-castle-history]]
-- [[farnham]]
-- [[willmer-house-farnham]]
+- [bishop-s-palace](../buildings/bishop-s-palace.md)
+- [east-street](../streets/east-street.md)
+- [farnham-castle](../buildings/farnham-castle.md)
+- [farnham](../places/farnham.md)
+- [gardener-s-cottage](../buildings/gardener-s-cottage.md)
+- [runwick](../places/runwick.md)
+- [south-lodge](../buildings/south-lodge.md)
+- [the-bourne](../places/the-bourne.md)
+- [upper-hale](../places/upper-hale.md)

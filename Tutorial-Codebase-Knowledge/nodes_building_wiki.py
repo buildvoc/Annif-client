@@ -3,7 +3,7 @@ import os
 import re
 import requests
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime
 
 from pocketflow import Node
 from utils.call_llm import call_llm
@@ -113,16 +113,64 @@ def make_source_blocks(docs, limit=60):
     return "\n\n".join(blocks)
 
 
+
+def _source_marker_slug(path):
+    name = Path(str(path)).name
+    name = name.replace(".annotated.arch_materials.description_classification.json", "")
+    name = name.replace(".json", "")
+    slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+    return "source-" + slug
+
+
+def _write_processed_source_marker(path, texts):
+    """Write durable source marker before LLM entity extraction."""
+    out_dir = Path("wiki/sources")
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    slug = _source_marker_slug(path)
+    out = out_dir / f"{slug}.md"
+
+    raw_path = str(path)
+    if raw_path.startswith("/app/"):
+        raw_path = raw_path.replace("/app/", "", 1)
+
+    preview = []
+    for t in texts[:12]:
+        txt = t.get("text", "") if isinstance(t, dict) else str(t)
+        txt = " ".join(txt.split())
+        if txt:
+            preview.append(txt[:500])
+
+    title = slug.replace("source-", "").replace("-", " ").title()
+
+    content = f"""# Source: {title}
+
+**Raw file**: {raw_path}  
+**Status**: processed  
+**Processed at**: {datetime.now().strftime("%Y-%m-%d %H:%M")}
+
+## Extracted text preview
+
+""" + "\n\n".join(f"- {x}" for x in preview) + "\n"
+
+    if not out.exists():
+        out.write_text(content, encoding="utf-8")
+        print(f"processed source marker: {out}")
+
+
 class FetchDoclingDocuments(Node):
     def prep(self, shared):
-        return Path(shared.get("raw_dir", "raw/docling-json")), shared.get("limit")
+        return Path(shared.get("raw_dir", "raw/docling-json")), shared.get("limit"), shared.get("offset", 0)
 
     def exec(self, prep_res):
-        raw_dir, limit = prep_res
+        raw_dir, limit, offset = prep_res
         print(f"Crawling DoclingDocuments: {raw_dir}")
         files = sorted(raw_dir.glob("*.json"))
+        offset = int(offset or 0)
         if limit:
-            files = files[:int(limit)]
+            files = files[offset:offset + int(limit)]
+        elif offset:
+            files = files[offset:]
         if not files:
             raise ValueError(f"No DoclingDocument JSON files found in {raw_dir}")
 
@@ -141,6 +189,9 @@ class FetchDoclingDocuments(Node):
         return docs
 
     def post(self, shared, prep_res, exec_res):
+        for doc in exec_res:
+            _write_processed_source_marker(doc.get("path", ""), doc.get("texts", []))
+
         shared["docling_documents"] = exec_res
         shared["files"] = [(rel_raw(doc), "\n".join(doc["texts"])) for doc in exec_res]
         shared.setdefault("project_name", "building-memex")
@@ -422,7 +473,11 @@ Sources:
         one_source = make_source_blocks([doc], limit=80)
         single_prompt = prompt.replace(all_sources, one_source)
 
-        response = call_ollama_json(single_prompt)
+        try:
+            response = call_ollama_json(single_prompt)
+        except Exception as e:
+            print(f"Entity plan failed for {doc.get('name', 'unknown')}; skipping source: {e}")
+            continue
         responses.append("## " + doc["name"] + "\n" + response + "\n")
 
         plan = extract_json_dict(response)

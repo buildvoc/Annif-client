@@ -65,7 +65,7 @@ def call_llm(prompt: str, use_cache: bool = True) -> str:
                 "model": model,
                 "prompt": prompt,
                 "stream": False,
-                "options": {"temperature": 0.2, "num_ctx": 2048, "num_predict": 700}
+                "options": {"temperature": 0.2, "num_ctx": int(os.getenv("OLLAMA_NUM_CTX", "8192")), "num_predict": 700}
             },
             timeout=600,
         )

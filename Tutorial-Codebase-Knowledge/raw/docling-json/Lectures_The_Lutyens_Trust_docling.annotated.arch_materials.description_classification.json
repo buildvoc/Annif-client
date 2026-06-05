@@ -1,0 +1,1633 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.9.0",
+  "name": "Lectures_The_Lutyens_Trust_docling",
+  "origin": {
+    "mimetype": "text/html",
+    "binary_hash": 15966651008522021523,
+    "filename": "Lectures_The_Lutyens_Trust_docling.html",
+    "uri": null
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "parent": null,
+    "children": [],
+    "content_layer": "furniture",
+    "meta": null,
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "parent": null,
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      }
+    ],
+    "content_layer": "body",
+    "meta": null,
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/79"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "name": "header-2",
+      "label": "section"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/texts/59"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "name": "group",
+      "label": "inline"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "meta": null,
+      "label": "title",
+      "prov": [],
+      "orig": "Cleaned for Docling",
+      "text": "Cleaned for Docling",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/groups/0"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "title",
+      "prov": [],
+      "orig": "Lecture Series",
+      "text": "Lecture Series",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Lutyens Trust regularly organises various lecture series on the topic of Lutyens and the world in which he lived.",
+      "text": "The Lutyens Trust regularly organises various lecture series on the topic of Lutyens and the world in which he lived.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/texts/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://www.youtube.com/live/Z9HdPMpOp1Q",
+      "text": "Watch webinar video: https://www.youtube.com/live/Z9HdPMpOp1Q",
+      "formatting": null,
+      "hyperlink": "https://www.youtube.com/live/Z9HdPMpOp1Q"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Nedi & Bumps: a Creative Alliance. Gertrude Jekyll & Edwin Lutyens Study Day",
+      "text": "Nedi & Bumps: a Creative Alliance. Gertrude Jekyll & Edwin Lutyens Study Day",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Lutyens Trust welcomes you to a special 40th anniversary event, taking place in central London. Inspired by the National Trust's recent acquisition of Gertrude Jekyll's home, Munstead Wood, designed in collaboration with the young Lutyens. This lively day will explore their unique and ingenious working relationship with inspiring lectures, discussions and a screening of our newly created film on Munstead Wood, featuring Clive Aslet and Annabel Watts. Speakers include: Cherrill Sands, Sarah Dickinson, Charles Hind and Caroline Ikin with panel discussions focusing on owning and living in Lutyens/Jekyll creations as well as those properties open to the public.",
+      "text": "The Lutyens Trust welcomes you to a special 40th anniversary event, taking place in central London. Inspired by the National Trust's recent acquisition of Gertrude Jekyll's home, Munstead Wood, designed in collaboration with the young Lutyens. This lively day will explore their unique and ingenious working relationship with inspiring lectures, discussions and a screening of our newly created film on Munstead Wood, featuring Clive Aslet and Annabel Watts. Speakers include: Cherrill Sands, Sarah Dickinson, Charles Hind and Caroline Ikin with panel discussions focusing on owning and living in Lutyens/Jekyll creations as well as those properties open to the public.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/texts/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/FJtvDBccxc4",
+      "text": "Watch webinar video: https://youtu.be/FJtvDBccxc4",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/FJtvDBccxc4"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: The Great Lutyens: Forty Years On",
+      "text": "Lecture Series: The Great Lutyens: Forty Years On",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture 2: In Conversation with Charles Hind and Piers Gough at The Bloomsbury Hotel",
+      "text": "Lecture 2: In Conversation with Charles Hind and Piers Gough at The Bloomsbury Hotel",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/texts/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "On 18th November 1981 Lutyens: The Work of the English Architect opened at The Hayward Gallery, and was to run for 3 months. It was the work of a team that would go on to found The Lutyens Trust in 1984-5. The original exhibition committee was chaired by Colin Amery and consisted of Jane Brown, Sir Hugh Casson, Roderick Gradidge, Piers Gough, Peter Inskip, Mary Lutyens, Margaret Richardson, Gavin Stamp, Nicholas Taylor and David Watkin. Now 40 years on The Lutyens Trust brings you two evenings to reflect on what became a landmark exhibition that made great leaps toward rekindling the flame of appreciation for the great man's work.",
+      "text": "On 18th November 1981 Lutyens: The Work of the English Architect opened at The Hayward Gallery, and was to run for 3 months. It was the work of a team that would go on to found The Lutyens Trust in 1984-5. The original exhibition committee was chaired by Colin Amery and consisted of Jane Brown, Sir Hugh Casson, Roderick Gradidge, Piers Gough, Peter Inskip, Mary Lutyens, Margaret Richardson, Gavin Stamp, Nicholas Taylor and David Watkin. Now 40 years on The Lutyens Trust brings you two evenings to reflect on what became a landmark exhibition that made great leaps toward rekindling the flame of appreciation for the great man's work.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/texts/8"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/qdpwVQJHHG4",
+      "text": "Watch webinar video: https://youtu.be/qdpwVQJHHG4",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/qdpwVQJHHG4"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: The Great Lutyens: Forty Years On",
+      "text": "Lecture Series: The Great Lutyens: Forty Years On",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture 1: In Conversation with Clive Aslet, Janet Allen, Jane Ridley and Martin Lutyens at Britannic House",
+      "text": "Lecture 1: In Conversation with Clive Aslet, Janet Allen, Jane Ridley and Martin Lutyens at Britannic House",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/texts/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "[This was the first hybrid event (online and in-person) so we had some technical issues - apologies. The second lecture went much more smoothly]",
+      "text": "[This was the first hybrid event (online and in-person) so we had some technical issues - apologies. The second lecture went much more smoothly]",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/texts/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "On 18th November 1981 Lutyens: The Work of the English Architect opened at The Hayward Gallery, and was to run for 3 months. It was the work of a team that would go on to found The Lutyens Trust in 1984-5. The original exhibition committee was chaired by Colin Amery and consisted of Jane Brown, Sir Hugh Casson, Roderick Gradidge, Piers Gough, Peter Inskip, Mary Lutyens, Margaret Richardson, Gavin Stamp, Nicholas Taylor and David Watkin. Now 40 years on The Lutyens Trust brings you two evenings to reflect on what became a landmark exhibition that made great leaps toward rekindling the flame of appreciation for the great man's work.",
+      "text": "On 18th November 1981 Lutyens: The Work of the English Architect opened at The Hayward Gallery, and was to run for 3 months. It was the work of a team that would go on to found The Lutyens Trust in 1984-5. The original exhibition committee was chaired by Colin Amery and consisted of Jane Brown, Sir Hugh Casson, Roderick Gradidge, Piers Gough, Peter Inskip, Mary Lutyens, Margaret Richardson, Gavin Stamp, Nicholas Taylor and David Watkin. Now 40 years on The Lutyens Trust brings you two evenings to reflect on what became a landmark exhibition that made great leaps toward rekindling the flame of appreciation for the great man's work.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/texts/12"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/iXAH0WjvnoQ",
+      "text": "Watch webinar video: https://youtu.be/iXAH0WjvnoQ",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/iXAH0WjvnoQ"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "‘No More Useless Lumps of Stone’: Mass Observers and changing attitudes to memorialisation in 1940s Britain",
+      "text": "'No More Useless Lumps of Stone': Mass Observers and changing attitudes to memorialisation in 1940s Britain",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/texts/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Prof. Lucy Noakes",
+      "text": "Prof. Lucy Noakes",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/texts/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "In 1944 Britain began to consider how it would commemorate the Second World War, and memorialise the dead of that war.  Looking at debates in the House of Lords, the work of the War memorials Advisory Committee, and responses to the social survey organisation Mass Observation's request for views on how the war dead should be commemorated, this talk discusses the support for 'living memorials', and the desire to avoid replicating the stone memorials that marked the dead of the Great War.",
+      "text": "In 1944 Britain began to consider how it would commemorate the Second World War, and memorialise the dead of that war.  Looking at debates in the House of Lords, the work of the War memorials Advisory Committee, and responses to the social survey organisation Mass Observation's request for views on how the war dead should be commemorated, this talk discusses the support for 'living memorials', and the desire to avoid replicating the stone memorials that marked the dead of the Great War.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/texts/17"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/HgFU0gBsDN0",
+      "text": "Watch webinar video: https://youtu.be/HgFU0gBsDN0",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/HgFU0gBsDN0"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "In Memoriam – The Graves and Memorials of Sir Edwin Lutyens",
+      "text": "In Memoriam - The Graves and Memorials of Sir Edwin Lutyens",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Tim Skelton",
+      "text": "Tim Skelton",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Although some of the various graves and memorials designed by Sir Edwin Lutyens have been recorded, they appear as a footnote alongside his more well-known work and, as a consequence, have been little researched and rarely illustrated.  And yet, numerically, they comprise a significant part of the architect's output and the people that they commemorate represent a cross-section of the society of which Lutyens was a key member.",
+      "text": "Although some of the various graves and memorials designed by Sir Edwin Lutyens have been recorded, they appear as a footnote alongside his more well-known work and, as a consequence, have been little researched and rarely illustrated.  And yet, numerically, they comprise a significant part of the architect's output and the people that they commemorate represent a cross-section of the society of which Lutyens was a key member.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The architect's work in this area covers a variety of styles, from simple stone slabs and chest tombs to fountains, entrance gates and statues and spans the globe from New York to Melbourne.  Throughout all the subtle hand of Lutyens is always present and, as a collection, they form a fascinating and integral part of his oeuvre that deserves to be more widely known, appreciated and understood.",
+      "text": "The architect's work in this area covers a variety of styles, from simple stone slabs and chest tombs to fountains, entrance gates and statues and spans the globe from New York to Melbourne.  Throughout all the subtle hand of Lutyens is always present and, as a collection, they form a fascinating and integral part of his oeuvre that deserves to be more widely known, appreciated and understood.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/texts/22"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/bxmoqCUFIe8",
+      "text": "Watch webinar video: https://youtu.be/bxmoqCUFIe8",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/bxmoqCUFIe8"
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Soldier’s Gaze: Junior Architects, War Experience and the Creation of the British War Cemeteries on the Western Front",
+      "text": "The Soldier's Gaze: Junior Architects, War Experience and the Creation of the British War Cemeteries on the Western Front",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr Tim Godden",
+      "text": "Dr Tim Godden",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The traditional view of the cemeteries of the Commonwealth War Graves Commission is one that focuses on the broader architectural language developed by the Principal Architects. It has imagined the architectural intervention in the landscapes of the old Western Front as one that considered only the selection and placement of predesigned elements into sites selected out of the carnage of war. This talk will present an alternative perspective that focuses on the Junior Architects of the Commission. It will show how their war experiences shaped the way they interpreted the architectural language to create a much more nuanced, spatial memorial to the landscapes and experience of the First World War.",
+      "text": "The traditional view of the cemeteries of the Commonwealth War Graves Commission is one that focuses on the broader architectural language developed by the Principal Architects. It has imagined the architectural intervention in the landscapes of the old Western Front as one that considered only the selection and placement of predesigned elements into sites selected out of the carnage of war. This talk will present an alternative perspective that focuses on the Junior Architects of the Commission. It will show how their war experiences shaped the way they interpreted the architectural language to create a much more nuanced, spatial memorial to the landscapes and experience of the First World War.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/texts/28"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/poybMxiozxI",
+      "text": "Watch webinar video: https://youtu.be/poybMxiozxI",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/poybMxiozxI"
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "The Memorials of Sergeant Jagger",
+      "text": "The Memorials of Sergeant Jagger",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Prof. Mark Connelly",
+      "text": "Prof. Mark Connelly",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "'There is no mistaking a giant howitzer': the Royal Artillery War Memorial and the work of the veteran as sculptor.",
+      "text": "'There is no mistaking a giant howitzer': the Royal Artillery War Memorial and the work of the veteran as sculptor.",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "The Royal Artillery War Memorial at Hyde Park Corner, London, is one of the most arresting and powerful memorials anywhere in the world. Designed and executed by Charles Sargeant Jagger, the memorial was an expression of his own war service and deep-felt admiration for the qualities shown by the British army throughout the conflict. This talk will explore Sargeant Jagger's work as well as other sculptors who served on the Western Front showing how their direct knowledge of the battlefield ensured a series of distinctive memorials. Although the memorials acknowledged death and sacrifice, these amazing works also saluted the British soldier by acknowledging their endurance, fortitude, and stoicism.",
+      "text": "The Royal Artillery War Memorial at Hyde Park Corner, London, is one of the most arresting and powerful memorials anywhere in the world. Designed and executed by Charles Sargeant Jagger, the memorial was an expression of his own war service and deep-felt admiration for the qualities shown by the British army throughout the conflict. This talk will explore Sargeant Jagger's work as well as other sculptors who served on the Western Front showing how their direct knowledge of the battlefield ensured a series of distinctive memorials. Although the memorials acknowledged death and sacrifice, these amazing works also saluted the British soldier by acknowledging their endurance, fortitude, and stoicism.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/texts/33"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/ARBkSzx6gDY",
+      "text": "Watch webinar video: https://youtu.be/ARBkSzx6gDY",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/ARBkSzx6gDY"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Memorial Design through the Ages: Sir Herbert Baker & the IWGC",
+      "text": "Memorial Design through the Ages: Sir Herbert Baker & the IWGC",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/texts/39"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Michael Baker and John Stewart",
+      "text": "Michael Baker and John Stewart",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/texts/39"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Sir Herbert Baker was one of the foremost British architects of the late nineteenth and early twentieth centuries. He had a lifelong relationship with Sir Edwin Lutyens following their early years together in the office of Ernest George before being appointed as Lutyens equal partner in New Delhi and as one of the three Principal Architects of the then Imperial War Graves Commission. In the late 1890's he established what became the most successful architectural practice in South Africa where he worked for and befriended Cecil Rhodes before moving to London where he built another new practice which by the 1920's was the largest in the country. His buildings include the Union Buildings in Pretoria, the Secretariats and Parliament Building in New Delhi, India House, South Africa House and Church House in London as well as the rebuilding of The Bank of England. He was the designer of numerous monuments throughout his career which will be the subject of this talk.",
+      "text": "Sir Herbert Baker was one of the foremost British architects of the late nineteenth and early twentieth centuries. He had a lifelong relationship with Sir Edwin Lutyens following their early years together in the office of Ernest George before being appointed as Lutyens equal partner in New Delhi and as one of the three Principal Architects of the then Imperial War Graves Commission. In the late 1890's he established what became the most successful architectural practice in South Africa where he worked for and befriended Cecil Rhodes before moving to London where he built another new practice which by the 1920's was the largest in the country. His buildings include the Union Buildings in Pretoria, the Secretariats and Parliament Building in New Delhi, India House, South Africa House and Church House in London as well as the rebuilding of The Bank of England. He was the designer of numerous monuments throughout his career which will be the subject of this talk.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/texts/39"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/IlyylcjTIzE",
+      "text": "Watch webinar video: https://youtu.be/IlyylcjTIzE",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/IlyylcjTIzE"
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens’ Memorials in the Edwardian Context",
+      "text": "Lutyens' Memorials in the Edwardian Context",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/texts/44"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr Roger Bowdler",
+      "text": "Dr Roger Bowdler",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/texts/44"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Where did Lutyens's war memorials come from? This talk looks at Edwardian monuments, by Lutyens and others, and seeks to identify some of the salient rends in funerary architecture in the period leading up to the outbreak of war. Particular attention will be paid to the Grade II* Philipson Mausoleum in Golders Green Crematorium, a circular structure with strong Indian influences, and to the Horner monuments at Mells, Somerset.",
+      "text": "Where did Lutyens's war memorials come from? This talk looks at Edwardian monuments, by Lutyens and others, and seeks to identify some of the salient rends in funerary architecture in the period leading up to the outbreak of war. Particular attention will be paid to the Grade II* Philipson Mausoleum in Golders Green Crematorium, a circular structure with strong Indian influences, and to the Horner monuments at Mells, Somerset.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/texts/44"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/vn_LwH43Yg8",
+      "text": "Watch webinar video: https://youtu.be/vn_LwH43Yg8",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/vn_LwH43Yg8"
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lecture Series: Memorial Design Through the Ages",
+      "text": "Lecture Series: Memorial Design Through the Ages",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "From Remembrance to Forgetting?",
+      "text": "From Remembrance to Forgetting?",
+      "formatting": {
+        "bold": true,
+        "italic": false,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/texts/49"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr Stefan Goebel",
+      "text": "Dr Stefan Goebel",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/texts/49"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Drawing on British and German examples, this talk explores the fate of First World War memorials (and cemeteries) in the aftermath of the Second World War. How did the new conflict impact the meaning of the surviving war memorials from the Great War? While in Britain there is (seemingly) significant continuity across the rupture of 1945, the (West) German case offers a contrasting example: here war cemeteries were dissolved or transplanted and war memorials redesigned and reinterpreted.",
+      "text": "Drawing on British and German examples, this talk explores the fate of First World War memorials (and cemeteries) in the aftermath of the Second World War. How did the new conflict impact the meaning of the surviving war memorials from the Great War? While in Britain there is (seemingly) significant continuity across the rupture of 1945, the (West) German case offers a contrasting example: here war cemeteries were dissolved or transplanted and war memorials redesigned and reinterpreted.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/texts/49"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/QFsLlLhLndE",
+      "text": "Watch webinar video: https://youtu.be/QFsLlLhLndE",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/QFsLlLhLndE"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Edwardians Series",
+      "text": "Lutyens and the Edwardians Series",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lasting Impressions: Twentieth-Century Portrait Prints",
+      "text": "Lasting Impressions: Twentieth-Century Portrait Prints",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Rosie Broadley",
+      "text": "Rosie Broadley",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "This lecture considers the print-making revival through portraits in the National Portrait Gallery's collection, drawing out fascinating connections between works of art and artists.  Beginning in the mid-nineteenth century the revival saw a renewed interest in traditional printmaking techniques such as etching, which stimulated immense creativity and led to innovation and technical advances.",
+      "text": "This lecture considers the print-making revival through portraits in the National Portrait Gallery's collection, drawing out fascinating connections between works of art and artists.  Beginning in the mid-nineteenth century the revival saw a renewed interest in traditional printmaking techniques such as etching, which stimulated immense creativity and led to innovation and technical advances.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/texts/54"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/SqgoCe3FG7o",
+      "text": "Watch webinar video: https://youtu.be/SqgoCe3FG7o",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/SqgoCe3FG7o"
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Edwardians Series",
+      "text": "Lutyens and the Edwardians Series",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Gardens Old and New",
+      "text": "Gardens Old and New",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/texts/59"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Michael Balston",
+      "text": "Michael Balston",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Gardens Old and New",
+      "text": "Gardens Old and New",
+      "formatting": {
+        "bold": false,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "appeared at the end of a century in which styles for architectural expression seemed uncertain. Gothic Revival jostled with the Neo-classical, the Jacobethan with the Italianate. Gardens followed suit until the Arts and Crafts movement emerged to become a functionally versatile approach to both home and garden-making and suitable for gardens large and small. In some respects, its principles still persist.",
+      "text": "appeared at the end of a century in which styles for architectural expression seemed uncertain. Gothic Revival jostled with the Neo-classical, the Jacobethan with the Italianate. Gardens followed suit until the Arts and Crafts movement emerged to become a functionally versatile approach to both home and garden-making and suitable for gardens large and small. In some respects, its principles still persist.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/texts/59"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Today, whatever the designer's vision and skill with plants and materials, the context of the work is all-important. This encompasses not only the Client's agenda but also the site and its characteristics, not only the immediate history of the site but also the historical context, which often shines a light on the reasoning behind the form we have inherited. The development of gardens over the nineteenth century and through the Arts and Crafts period is incredibly rich with wonderful artists, designers and contractors involved, mostly unassuming and generous with their time and knowledge. This talk explores the context and people that led up to and gave shape to the Arts and Crafts Garden - and, how, as the Movement gave way to Modernism in public architecture, its principles remained strong particularly in private domestic work.",
+      "text": "Today, whatever the designer's vision and skill with plants and materials, the context of the work is all-important. This encompasses not only the Client's agenda but also the site and its characteristics, not only the immediate history of the site but also the historical context, which often shines a light on the reasoning behind the form we have inherited. The development of gardens over the nineteenth century and through the Arts and Crafts period is incredibly rich with wonderful artists, designers and contractors involved, mostly unassuming and generous with their time and knowledge. This talk explores the context and people that led up to and gave shape to the Arts and Crafts Garden - and, how, as the Movement gave way to Modernism in public architecture, its principles remained strong particularly in private domestic work.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/texts/59"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/Mclnn_d67oc",
+      "text": "Watch webinar video: https://youtu.be/Mclnn_d67oc",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/Mclnn_d67oc"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Edwardians Series",
+      "text": "Lutyens and the Edwardians Series",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens & Edwardian Society",
+      "text": "Lutyens & Edwardian Society",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Professor Jane Ridley",
+      "text": "Professor Jane Ridley",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Lutyens was the favourite architect of the Edwardians but his country house clients fell away after the First World War. This talk shows how Lutyens worked to win the patronage of Queen Mary, and how he transformed himself into the leading public architect of the post-war era.",
+      "text": "Lutyens was the favourite architect of the Edwardians but his country house clients fell away after the First World War. This talk shows how Lutyens worked to win the patronage of Queen Mary, and how he transformed himself into the leading public architect of the post-war era.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/texts/66"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/k3coHN8UhAs",
+      "text": "Watch webinar video: https://youtu.be/k3coHN8UhAs",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/k3coHN8UhAs"
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Edwardians Series",
+      "text": "Lutyens and the Edwardians Series",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "An Introduction to Edwardian Film in Britain",
+      "text": "An Introduction to Edwardian Film in Britain",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/texts/71"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr Lawrence Napper",
+      "text": "Dr Lawrence Napper",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/texts/71"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "This talk considered the cinema as it developed in Britain during Lutyens's lifetime. Lawrence Napper showcased some well-known films as well as some recent rediscoveries from this period, and placed them in the context of the culture of film-making and film-going in the early twentieth century. The talk offered some illustrations of the ways in which cinema can be understood as a key resource for thinking about the visual culture of the Edwardian period, and particularly for thinking about the wider world of interior design, garden design and architecture in which Lutyens moved.",
+      "text": "This talk considered the cinema as it developed in Britain during Lutyens's lifetime. Lawrence Napper showcased some well-known films as well as some recent rediscoveries from this period, and placed them in the context of the culture of film-making and film-going in the early twentieth century. The talk offered some illustrations of the ways in which cinema can be understood as a key resource for thinking about the visual culture of the Edwardian period, and particularly for thinking about the wider world of interior design, garden design and architecture in which Lutyens moved.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/texts/71"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Watch webinar video: https://youtu.be/FiJ_TTEcUH0",
+      "text": "Watch webinar video: https://youtu.be/FiJ_TTEcUH0",
+      "formatting": null,
+      "hyperlink": "https://youtu.be/FiJ_TTEcUH0"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Lutyens and the Edwardians Series",
+      "text": "Lutyens and the Edwardians Series",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        }
+      ],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Old-New and New-Old: Edwardian houses",
+      "text": "Old-New and New-Old: Edwardian houses",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/texts/76"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "Dr Timothy Brittain-Catlin",
+      "text": "Dr Timothy Brittain-Catlin",
+      "formatting": {
+        "bold": true,
+        "italic": true,
+        "underline": false,
+        "strikethrough": false,
+        "script": "baseline"
+      },
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/texts/76"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "text",
+      "prov": [],
+      "orig": "What made the best Edwardian houses remarkable was the fact that they effortlessly mixed old and new material within a single building and their architects took great pleasure in creating surprising combinations of styles. This lecture looks at a series of beautiful and not always well-known houses of different sizes which characterise the era.",
+      "text": "What made the best Edwardian houses remarkable was the fact that they effortlessly mixed old and new material within a single building and their architects took great pleasure in creating surprising combinations of styles. This lecture looks at a series of beautiful and not always well-known houses of different sizes which characterise the era.",
+      "formatting": null,
+      "hyperlink": null
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "meta": null,
+      "label": "section_header",
+      "prov": [],
+      "orig": "Please make a donation to the Lutyens Trust",
+      "text": "Please make a donation to the Lutyens Trust",
+      "formatting": null,
+      "hyperlink": null,
+      "level": 2
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {}
+}

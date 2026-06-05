@@ -61,6 +61,7 @@ def main():
     parser.add_argument("--schema", default="schema/BUILDING_WIKI.md")
     parser.add_argument("--no-cache", action="store_true")
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--offset", type=int, default=0)
     args = parser.parse_args()
 
     shared = {
@@ -68,6 +69,7 @@ def main():
         "schema_path": args.schema,
         "use_cache": not args.no_cache,
         "limit": args.limit,
+        "offset": args.offset,
         "wiki_files_written": [],
     }
 

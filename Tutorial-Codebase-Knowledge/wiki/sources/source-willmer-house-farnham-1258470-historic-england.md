@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Willmer_House_Farnham_1258470_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -31,6 +31,4 @@
 
 ## Related pages
 
-- [[farnham]]
-- [[west-street]]
-- [[willmer-house-farnham]]
+- Needs verification: no related entity matched.

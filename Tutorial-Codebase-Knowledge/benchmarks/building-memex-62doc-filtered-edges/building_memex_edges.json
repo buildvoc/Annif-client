@@ -1,0 +1,4659 @@
+{
+  "edges": [
+    {
+      "from": "1099-west-street",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "1099-west-street",
+      "from_type": "building",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "arts-and-crafts",
+      "from_type": "theme",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "basingstoke",
+      "from_type": "place",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "bishop-s-palace",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "bishops-mead",
+      "from_type": "place",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "bognor-road",
+      "from_type": "street",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "busbridge",
+      "from_type": "place",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "busbridge-church",
+      "from_type": "building",
+      "to": "busbridge",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "busbridge-church",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "castle-street",
+      "from_type": "street",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "castle-street",
+      "from_type": "street",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "chelsea",
+      "from_type": "place",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "clayton",
+      "from_type": "place",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "clayton-church",
+      "from_type": "building",
+      "to": "clayton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "compton",
+      "from_type": "place",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "compton",
+      "from_type": "place",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "compton",
+      "from_type": "place",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "compton-village",
+      "from_type": "place",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "cottages-at-park-hatch",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "cottages-at-shere",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "crooksbury",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "crooksbury",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "daneshill",
+      "from_type": "street",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "daneshill-brick-and-tile-company",
+      "from_type": "building",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "daneshill-cottage",
+      "from_type": "building",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "daneshill-house",
+      "from_type": "building",
+      "to": "basingstoke",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "daneshill-lodge",
+      "from_type": "building",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "down-lane",
+      "from_type": "street",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "from_type": "building",
+      "to": "bishops-mead",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "from_type": "building",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "elstead",
+      "from_type": "place",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham",
+      "from_type": "place",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "farnham-castle",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "from_type": "building",
+      "to": "castle-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "farnham-institute",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "farnham-liberal-club",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "farnham-library-vernon-house",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "farnham-library-vernon-house",
+      "from_type": "building",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "fig-tree-court",
+      "from_type": "building",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "frith-hill",
+      "from_type": "place",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "fulbrook-house",
+      "from_type": "building",
+      "to": "elstead",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "fulbrook-house",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "gardener-s-cottage",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "grade-ii-listed-buildings-in-waverley-surrey",
+      "from_type": "building",
+      "to": "waverley-surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "grade-ii-listed-buildings-in-waverley-surrey",
+      "from_type": "building",
+      "to": "castle-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "hardham",
+      "from_type": "place",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-pdf-export-photo-88-annotated-auto-place-picture0-compressed-docling",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-2-3-4-west-street-farnham-1258090-historic-england-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-amy-anderson-saves-the-castle-farnham-castle-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-edwin-lutyens-1869-1944-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-our-story-farnham-district-museum-society-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-watts-chapel-alexi-francis-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "index",
+      "from_type": "wiki",
+      "to": "source-source-watts-chapel-surrey-fold-gently-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "limnerslease",
+      "from_type": "building",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-farnham-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-unknown-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "street-unknown-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "street-west-street-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "theme-theme-architectural-feature-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "theme-theme-associative-trail-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "theme-theme-building-entity-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "theme-theme-place-entity-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "theme-theme-source-documents-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-edwin-lutyens-1869-1944-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-basingstoke-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-compton-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-daneshill-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-frith-hill-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "place-surrey-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "street-castle-street-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "street-daneshill-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-2-3-4-west-street-farnham-1258090-historic-england-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-amy-anderson-saves-the-castle-farnham-castle-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-our-story-farnham-district-museum-society-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-watts-chapel-alexi-francis-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "log",
+      "from_type": "wiki",
+      "to": "source-source-watts-chapel-surrey-fold-gently-buildings",
+      "to_type": "collection",
+      "label": "in collection"
+    },
+    {
+      "from": "milford",
+      "from_type": "place",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "milford-house",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "munstead-heath",
+      "from_type": "place",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "munstead-wood",
+      "from_type": "building",
+      "to": "munstead-heath",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "norman-chapel",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "old-basing",
+      "from_type": "place",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "park-hatch",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "place-basingstoke-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-basingstoke-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-basingstoke-buildings",
+      "from_type": "collection",
+      "to": "basingstoke",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "place-compton-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-compton-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-compton-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-compton-buildings",
+      "from_type": "collection",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "place-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-farnham-buildings",
+      "from_type": "collection",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "place-frith-hill-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-frith-hill-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-frith-hill-buildings",
+      "from_type": "collection",
+      "to": "frith-hill",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "place-surrey-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-surrey-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-surrey-buildings",
+      "from_type": "collection",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "place-unknown-buildings",
+      "from_type": "collection",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "preston-park",
+      "from_type": "place",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "rake-manor",
+      "from_type": "building",
+      "to": "milford",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "rake-manor",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "red-house",
+      "from_type": "building",
+      "to": "frith-hill",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "red-house",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "red-house-at-frith-hill",
+      "from_type": "building",
+      "to": "frith-hill",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "red-house-at-frith-hill",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "rowhook-manor",
+      "from_type": "building",
+      "to": "warnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "rowhook-manor",
+      "from_type": "building",
+      "to": "bognor-road",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "shere-cottages",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-2-3-4-west-street-farnham-1258090-historic-england",
+      "from_type": "source",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-2-3-4-west-street-farnham-1258090-historic-england",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-2-3-4-west-street-farnham-1258090-historic-england",
+      "from_type": "source",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "guildford",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "lincolnshire",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "winchester",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-a-brief-history-farnham-castle-trust",
+      "from_type": "source",
+      "to": "worcester",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "from_type": "source",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "from_type": "source",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "from_type": "source",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-arcaid-images",
+      "from_type": "source",
+      "to": "basingstoke",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-arcaid-images",
+      "from_type": "source",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-bibliography-the-lutyens-trust",
+      "from_type": "source",
+      "to": "london",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-camouflage-development-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnborough",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-camouflage-development-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-camouflage-development-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-camouflage-development-farnham-castle-trust",
+      "from_type": "source",
+      "to": "london",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-damaged-brick-paving-in-goddards-garden-has-been-expertly-restored-the-lutyens-trust",
+      "from_type": "source",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-damaged-brick-paving-in-goddards-garden-has-been-expertly-restored-the-lutyens-trust",
+      "from_type": "source",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-daneshill-david-walter-hoare-school-diary",
+      "from_type": "source",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-daneshill-david-walter-hoare-school-diary",
+      "from_type": "source",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-daneshill-david-walter-hoare-school-diary",
+      "from_type": "source",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-daneshill-david-walter-hoare-school-diary",
+      "from_type": "source",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-daneshill-david-walter-hoare-school-diary",
+      "from_type": "source",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-daneshill-house-old-basing-and-lychpit-1339563-historic-england",
+      "from_type": "source",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-daneshill-house-old-basing-and-lychpit-1339563-historic-england",
+      "from_type": "source",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-daneshill-house-old-basing-and-lychpit-1339563-historic-england",
+      "from_type": "source",
+      "to": "old-basing",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-discover-the-watts-gallery-and-memorial-chapel-surrey",
+      "from_type": "source",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-discover-the-watts-gallery-and-memorial-chapel-surrey",
+      "from_type": "source",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-discover-the-watts-gallery-and-memorial-chapel-surrey",
+      "from_type": "source",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-east-garden-wall-to-willmer-house-facing-on-to-bishops-mead-farnham-1273425-historic-england",
+      "from_type": "source",
+      "to": "bishops-mead",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-east-garden-wall-to-willmer-house-facing-on-to-bishops-mead-farnham-1273425-historic-england",
+      "from_type": "source",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-east-garden-wall-to-willmer-house-facing-on-to-bishops-mead-farnham-1273425-historic-england",
+      "from_type": "source",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "busbridge",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "elstead",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "frith-hill",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "milford",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-edwin-lutyens-1869-1944",
+      "from_type": "source",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-famous-people-the-farnham-society",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-farnham-castle-comprising-castle-buildings-to-the-south-only-farnham-1044677-historic-england",
+      "from_type": "source",
+      "to": "castle-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-farnham-castle-comprising-castle-buildings-to-the-south-only-farnham-1044677-historic-england",
+      "from_type": "source",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-farnham-castle-comprising-castle-buildings-to-the-south-only-farnham-1044677-historic-england",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-farnham-castle-farnham-1012181-historic-england",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-farnham-castle-farnham-1012181-historic-england",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-farnham-library-vernon-house-farnham-1258122-historic-england",
+      "from_type": "source",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-farnham-library-vernon-house-farnham-1258122-historic-england",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-farnham-library-vernon-house-farnham-1258122-historic-england",
+      "from_type": "source",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-farnham-the-earlier-historic-period",
+      "from_type": "source",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia",
+      "from_type": "source",
+      "to": "castle-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia",
+      "from_type": "source",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia",
+      "from_type": "source",
+      "to": "waverley-surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-history-and-origins-farnham-craft-town",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-history-and-origins-farnham-craft-town",
+      "from_type": "source",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-history-of-st-andrews-church-st-andrews-church-farnham",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-history-of-st-andrews-church-st-andrews-church-farnham",
+      "from_type": "source",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears",
+      "from_type": "source",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears",
+      "from_type": "source",
+      "to": "basingstoke",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears",
+      "from_type": "source",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears",
+      "from_type": "source",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-inside-watts-chapel-a-little-known-arts-and-crafts-delight-the-world-of-interiors",
+      "from_type": "source",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-inside-watts-chapel-a-little-known-arts-and-crafts-delight-the-world-of-interiors",
+      "from_type": "source",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-key-dates-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-key-dates-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-lectures-the-lutyens-trust-docling",
+      "from_type": "source",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-lutyens-trust-winter-2025",
+      "from_type": "source",
+      "to": "munstead-heath",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-lutyens-trust-winter-2025",
+      "from_type": "source",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "east-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "runwick",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "the-bourne",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "from_type": "source",
+      "to": "upper-hale",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-museum-of-farnham-wikipedia",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-museum-of-farnham-wikipedia",
+      "from_type": "source",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-museum-of-farnham-wikipedia",
+      "from_type": "source",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-museum-of-farnham-wikipedia",
+      "from_type": "source",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-our-story-farnham-district-museum-society",
+      "from_type": "source",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-our-story-farnham-district-museum-society",
+      "from_type": "source",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-our-story-farnham-district-museum-society",
+      "from_type": "source",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-our-story-farnham-district-museum-society",
+      "from_type": "source",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-pdf-export-photo-88-annotated-auto-place-picture0-compressed-docling",
+      "from_type": "source",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "chelsea",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "hampstead-garden-suburb",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "london",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "new-delhi",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "from_type": "source",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-rowhook-manor-warnham-1026917-historic-england",
+      "from_type": "source",
+      "to": "bognor-road",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-rowhook-manor-warnham-1026917-historic-england",
+      "from_type": "source",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-rowhook-manor-warnham-1026917-historic-england",
+      "from_type": "source",
+      "to": "warnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-source-2-3-4-west-street-farnham-1258090-historic-england-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-2-3-4-west-street-farnham-1258090-historic-england-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-2-3-4-west-street-farnham-1258090-historic-england-buildings",
+      "from_type": "collection",
+      "to": "source-2-3-4-west-street-farnham-1258090-historic-england",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-amy-anderson-saves-the-castle-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-amy-anderson-saves-the-castle-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-amy-anderson-saves-the-castle-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "source-amy-anderson-saves-the-castle-farnham-castle-trust",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-daneshill-david-walter-hoare-school-diary-buildings",
+      "from_type": "collection",
+      "to": "source-daneshill-david-walter-hoare-school-diary",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-edwin-lutyens-1869-1944-buildings",
+      "from_type": "collection",
+      "to": "source-edwin-lutyens-1869-1944",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears-buildings",
+      "from_type": "collection",
+      "to": "source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-mavis-standing-the-real-story-farnham-castle-trust-buildings",
+      "from_type": "collection",
+      "to": "source-mavis-standing-the-real-story-farnham-castle-trust",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-our-story-farnham-district-museum-society-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-our-story-farnham-district-museum-society-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-our-story-farnham-district-museum-society-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-our-story-farnham-district-museum-society-buildings",
+      "from_type": "collection",
+      "to": "source-our-story-farnham-district-museum-society",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust-buildings",
+      "from_type": "collection",
+      "to": "source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-alexi-francis-buildings",
+      "from_type": "collection",
+      "to": "source-watts-chapel-alexi-francis",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-source-watts-chapel-surrey-fold-gently-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-surrey-fold-gently-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-source-watts-chapel-surrey-fold-gently-buildings",
+      "from_type": "collection",
+      "to": "source-watts-chapel-surrey-fold-gently",
+      "to_type": "source",
+      "label": "evidenced by"
+    },
+    {
+      "from": "source-watts-cemetery-chapel-wikipedia",
+      "from_type": "source",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-cemetery-chapel-wikipedia",
+      "from_type": "source",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "clayton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "hardham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "preston-park",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-alexi-francis",
+      "from_type": "source",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-compton-village-website",
+      "from_type": "source",
+      "to": "compton-village",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-compton-village-website",
+      "from_type": "source",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-surrey-fold-gently",
+      "from_type": "source",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-chapel-surrey-fold-gently",
+      "from_type": "source",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-chapel-surrey-fold-gently",
+      "from_type": "source",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "source-watts-memorial-chapel-compton-1029541-historic-england",
+      "from_type": "source",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "source-watts-memorial-chapel-compton-1029541-historic-england",
+      "from_type": "source",
+      "to": "down-lane",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "source-watts-memorial-chapel-compton-1029541-historic-england",
+      "from_type": "source",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "south-lodge",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "st-andrew-s",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "st-andrews-church",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "st-botolphs-church-hardham",
+      "from_type": "building",
+      "to": "hardham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "st-peter-s-church-preston-park",
+      "from_type": "building",
+      "to": "preston-park",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "street-castle-street-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-castle-street-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-castle-street-buildings",
+      "from_type": "collection",
+      "to": "castle-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "street-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-daneshill-buildings",
+      "from_type": "collection",
+      "to": "daneshill",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-unknown-buildings",
+      "from_type": "collection",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "street-west-street-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-west-street-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-west-street-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-west-street-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "street-west-street-buildings",
+      "from_type": "collection",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "surrey",
+      "from_type": "place",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "the-chestnuts",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "the-royal-hospital-chelsea",
+      "from_type": "building",
+      "to": "chelsea",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-architectural-feature-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-associative-trail-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-building-entity-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-place-entity-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "1099-west-street",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "basing-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "bishop-s-palace",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "clayton-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "coombes-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "cottages-at-shere",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "crooksbury",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "daneshill-brick-and-tile-company",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "daneshill-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "daneshill-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "daneshill-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "east-garden-wall-to-willmer-house-facing-on-to-bishops-mead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "farnham-castle-comprising-castle-buildings-to-the-south-only",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "farnham-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "farnham-library-vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "fig-tree-court",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "gardener-s-cottage",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "goddards",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "limnerslease",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "munstead-wood",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "norman-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "red-house-at-frith-hill",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "south-lodge",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "st-andrew-s",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "st-andrews-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "st-botolphs-church-hardham",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "st-peter-s-church-preston-park",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "stourhead",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "the-chestnuts",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "the-royal-hospital-chelsea",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "vernon-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "watts-cemetery-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-and-cemetery",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "watts-memorial-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "waverley-abbey-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "wellhead-at-watts-chapel",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "west-street-farnham-1258090",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "willmer-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "theme-theme-source-documents-buildings",
+      "from_type": "collection",
+      "to": "windows-on-the-daneshill-brickworks",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "tilford-institute",
+      "from_type": "building",
+      "to": "unknown",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "milford-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "park-hatch",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "shere-cottages",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "tilford-institute",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "farnham-liberal-club",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "rake-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "red-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "busbridge-church",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "unknown",
+      "from_type": "street",
+      "to": "fulbrook-house",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "vernon-house",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "warnham",
+      "from_type": "place",
+      "to": "rowhook-manor",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "watts-cemetery-chapel",
+      "from_type": "building",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "watts-chapel",
+      "from_type": "building",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "watts-chapel-and-cemetery",
+      "from_type": "building",
+      "to": "compton-village",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "watts-chapel-in-surrey",
+      "from_type": "building",
+      "to": "surrey",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "watts-chapel-in-surrey",
+      "from_type": "building",
+      "to": "arts-and-crafts",
+      "to_type": "theme",
+      "label": "associated theme"
+    },
+    {
+      "from": "watts-memorial-chapel",
+      "from_type": "building",
+      "to": "compton",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "watts-memorial-chapel",
+      "from_type": "building",
+      "to": "down-lane",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "waverley-abbey-house",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "waverley-surrey",
+      "from_type": "place",
+      "to": "grade-ii-listed-buildings-in-waverley-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "wellhead-at-watts-chapel",
+      "from_type": "building",
+      "to": "watts-chapel-in-surrey",
+      "to_type": "building",
+      "label": "related building"
+    },
+    {
+      "from": "west-street-farnham-1258090",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "west-street-farnham-1258090",
+      "from_type": "building",
+      "to": "west-street",
+      "to_type": "street",
+      "label": "associated street"
+    },
+    {
+      "from": "willmer-house",
+      "from_type": "building",
+      "to": "farnham",
+      "to_type": "place",
+      "label": "associated place"
+    },
+    {
+      "from": "windows-on-the-daneshill-brickworks",
+      "from_type": "building",
+      "to": "basingstoke",
+      "to_type": "place",
+      "label": "associated place"
+    }
+  ]
+}

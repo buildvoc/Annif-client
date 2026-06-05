@@ -1,215 +1,49 @@
 #!/usr/bin/env python3
-import json
-import os
 import re
 from pathlib import Path
 from datetime import date
-
-import requests
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from pocketflow import Flow
-from nodes import IdentifyAbstractions, AnalyzeRelationships
-
-
-class SafeIdentifyAbstractions(IdentifyAbstractions):
-    def prep(self, shared):
-        self._files_for_fallback = shared.get("files", [])
-        return super().prep(shared)
-
-    def exec_fallback(self, prep_res, exc):
-        print(f"IdentifyAbstractions failed; using file-based fallback abstractions: {exc}")
-        out = []
-        for i, (path, content) in enumerate(self._files_for_fallback[:50]):
-            name = Path(path).stem.replace("-", " ").replace("_", " ").title()
-            out.append({
-                "name": name,
-                "description": f"Wiki page used as fallback abstraction for collection analysis: {path}",
-                "files": [i],
-            })
-        return out
-
-
-class SafeAnalyzeRelationships(AnalyzeRelationships):
-    def exec_fallback(self, prep_res, exc):
-        print(f"AnalyzeRelationships failed; continuing with empty relationships: {exc}")
-        return {
-            "summary": "Needs verification: relationship analysis failed.",
-            "relationships": [],
-        }
-
 
 ROOT = Path(".")
 WIKI = ROOT / "wiki"
 OUTPUT = ROOT / "output"
 
+def read(path):
+    return path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
 
-def slug(text):
-    text = str(text or "").lower()
-    text = re.sub(r"[^a-z0-9]+", "-", text)
-    return text.strip("-") or "page"
+def title(path):
+    for line in read(path).splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return path.stem.replace("-", " ").title()
 
+def wikilinks(text):
+    return re.findall(r"\[\[([^\]]+)\]\]", text)
 
-def read_pages(*dirs):
-    pages = []
-    for d in dirs:
-        base = WIKI / d
-        if not base.exists():
-            continue
-        for p in sorted(base.glob("*.md")):
-            pages.append((str(p), p.read_text(encoding="utf-8", errors="replace")))
-    return pages
-
-
-def call_ollama_json(prompt):
-    base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
-    model = os.getenv("OLLAMA_MODEL", "gemma3:4b-it-q4_K_M")
-    r = requests.post(
-        base_url + "/api/generate",
-        json={
-            "model": model,
-            "prompt": prompt,
-            "stream": False,
-            "format": "json",
-            "options": {"temperature": 0, "num_ctx": 4096},
-        },
-        timeout=900,
-    )
-    r.raise_for_status()
-    return r.json().get("response", "")
-
+def page_slugs(folder):
+    base = WIKI / folder
+    return {p.stem: p for p in base.glob("*.md")} if base.exists() else {}
 
 def replace_index_collections(collections):
     index = WIKI / "index.md"
-    text = index.read_text(encoding="utf-8") if index.exists() else "# Building Memex Wiki Index\n\n"
-
-    block = "## Collections\n" + (
-        "\n".join(f"- [[{c['slug']}]] — {c['title']}" for c in collections)
-        if collections else "- None identified."
-    ) + "\n"
-
+    text = read(index) or "# Building Memex Wiki Index\n\n"
+    block = "## Collections\n" + "\n".join(f"- [[{c}]]" for c in sorted(collections)) + "\n"
     if "## Collections" in text:
         text = re.sub(r"## Collections\n[\s\S]*?(?=\n## |\Z)", block, text)
     else:
         text = text.rstrip() + "\n\n" + block
-
     index.write_text(text, encoding="utf-8")
 
+def write_collection(slug, heading, reason, members, trail_lines):
+    members = sorted(set(members))
+    if len(members) < 2:
+        return None
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    (WIKI / "collections").mkdir(parents=True, exist_ok=True)
+    out = WIKI / "collections" / f"{slug}.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
 
-    pages = read_pages("sources", "buildings", "places", "streets", "themes")
-    if not pages:
-        raise SystemExit("No wiki pages found for second pass")
+    out.write_text(f"""# Collection: {heading}
 
-    shared = {
-        "files": pages,
-        "project_name": "building-memex-collections",
-        "language": "English",
-        "use_cache": False,
-        "max_abstraction_num": 50,
-    }
-
-    identify = SafeIdentifyAbstractions(max_retries=2, wait=5)
-    analyze = SafeAnalyzeRelationships(max_retries=2, wait=5)
-    identify >> analyze
-    Flow(start=identify).run(shared)
-
-    abstractions = shared.get("abstractions", [])
-    relationships = shared.get("relationships", {})
-
-    (OUTPUT / "collections_second_pass_abstractions.json").write_text(
-        json.dumps(abstractions, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-    (OUTPUT / "collections_second_pass_relationships.json").write_text(
-        json.dumps(relationships, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
-
-    building_pages = sorted((WIKI / "buildings").glob("*.md"))
-    building_slugs = [p.stem for p in building_pages]
-
-    source_context = "\n\n".join(
-        f"## {path}\n{content[:4000]}" for path, content in pages
-    )
-
-    prompt = f"""
-Return JSON only.
-
-Task: create collection pages for a Building Memex wiki.
-
-You must return an object with a "collections" array.
-If there are existing building pages, create at least one collection.
-
-Use ONLY the supplied wiki/source text.
-Do not invent buildings.
-Members must be selected only from this existing building slug list:
-{json.dumps(building_slugs, ensure_ascii=False)}
-
-Use AnalyzeRelationships output to help group related buildings/sources/themes:
-{json.dumps(relationships, indent=2, ensure_ascii=False)}
-
-Return this exact JSON shape:
-{{
-  "collections": [
-    {{
-      "slug": "lowercase-hyphen-collection-name",
-      "title": "Readable collection title",
-      "summary": "source-backed reason this collection exists",
-      "members": ["existing-building-slug"],
-      "source_pages": ["wiki/sources/source-name.md"],
-      "inclusion_rules": ["rule"],
-      "associative_trails": ["trail sentence"]
-    }}
-  ]
-}}
-
-Rules:
-- Create collections only when evidence supports membership.
-- Do not create empty collections.
-- If unsure, use no collection.
-- Do not use prose outside JSON.
-
-Wiki/source text:
-{source_context}
-"""
-
-    response = call_ollama_json(prompt)
-    (OUTPUT / "collections_second_pass_response.txt").write_text(response, encoding="utf-8")
-
-    data = json.loads(response)
-    collections = data.get("collections", [])
-
-    if not collections and building_slugs:
-        collections = [
-            {
-                "slug": "existing-building-source-set",
-                "title": "Existing Building Source Set",
-                "summary": "Fallback collection grouping existing building pages for review.",
-                "members": building_slugs,
-                "source_pages": [],
-                "inclusion_rules": ["Existing building page present in wiki/buildings."],
-                "associative_trails": ["Second-pass fallback collection created because LLM returned no collections."]
-            }
-        ]
-
-    valid = []
-
-    for c in collections:
-        members = [m for m in c.get("members", []) if m in building_slugs]
-        if not members:
-            continue
-
-        c_slug = slug(c.get("slug") or c.get("title"))
-        title = c.get("title") or c_slug.replace("-", " ").title()
-        source_pages = c.get("source_pages", [])
-        rules = c.get("inclusion_rules", [])
-        trails = c.get("associative_trails", [])
-
-        content = f"""# Collection: {title}
-
-**Summary**: {c.get("summary", "Needs verification.")}
+**Reason**: {reason}
 
 **Last updated**: {date.today().isoformat()}
 
@@ -219,39 +53,154 @@ Wiki/source text:
 
 """ + "\n".join(f"- [[{m}]]" for m in members) + """
 
-## Sources
-
-""" + ("\n".join(f"- {s}" for s in source_pages) if source_pages else "- Needs verification: source pages not supplied.") + """
-
-## Inclusion rules
-
-""" + ("\n".join(f"- {r}" for r in rules) if rules else "- Needs verification: inclusion rules not supplied.") + """
-
 ## Associative trails
 
-""" + ("\n".join(f"- {t}" for t in trails) if trails else "- Needs verification: no trails supplied.") + "\n"
+""" + "\n".join(f"- {t}" for t in trail_lines) + "\n", encoding="utf-8")
 
-        out = WIKI / "collections" / f"{c_slug}.md"
-        out.write_text(content, encoding="utf-8")
-        print("wrote", out)
-        valid.append({"slug": c_slug, "title": title})
+    print("wrote", out)
+    return slug
 
-    if valid:
-        replace_index_collections(valid)
-    else:
-        print("No new collections returned; preserving existing index Collections section")
+def ensure_missing_theme_pages():
+    """Create placeholder theme pages for unresolved wiki links that look like theme slugs."""
+    existing = {p.stem for p in WIKI.rglob("*.md")}
+    missing = set()
+
+    for page in WIKI.rglob("*.md"):
+        text = read(page)
+        for link in wikilinks(text):
+            if link in existing:
+                continue
+            # Only auto-create concept/theme-like links, not buildings/places/sources.
+            if (
+                link.startswith("theme-")
+                or link in {"arts-and-crafts", "architectural-heritage"}
+                or "architecture" in link
+                or "heritage" in link
+                or "craft" in link
+            ):
+                missing.add(link)
+
+    theme_dir = WIKI / "themes"
+    theme_dir.mkdir(parents=True, exist_ok=True)
+
+    for slug in sorted(missing):
+        title = slug
+        if title.startswith("theme-"):
+            title = title[6:]
+        title = title.replace("-", " ").title()
+
+        out = theme_dir / f"{slug}.md"
+        if not out.exists():
+            out.write_text(f"""# Theme: {title}
+
+**Summary**: Auto-created theme page for unresolved associative trail link.
+
+**Status**: needs verification
+
+## Related pages
+
+""", encoding="utf-8")
+            print("created missing theme", out)
+
+
+def main():
+    OUTPUT.mkdir(exist_ok=True)
+    (WIKI / "collections").mkdir(parents=True, exist_ok=True)
+
+    buildings = page_slugs("buildings")
+    places = page_slugs("places")
+    streets = page_slugs("streets")
+    themes = page_slugs("themes")
+    sources = page_slugs("sources")
+
+    if not buildings:
+        raise SystemExit("No building pages found for second pass")
+
+    written = []
+
+    # building -> linked place/street/theme/source trails
+    groups = {
+        "place": {},
+        "street": {},
+        "theme": {},
+        "source": {},
+    }
+
+    for b_slug, b_path in buildings.items():
+        text = read(b_path)
+        links = set(wikilinks(text))
+
+        for p in links & set(places):
+            groups["place"].setdefault(p, []).append(b_slug)
+
+        for s in links & set(streets):
+            groups["street"].setdefault(s, []).append(b_slug)
+
+        for t in links & set(themes):
+            groups["theme"].setdefault(t, []).append(b_slug)
+
+        for src in links & set(sources):
+            groups["source"].setdefault(src, []).append(b_slug)
+
+        # Also infer source trails from raw/docling-json source paths inside building page
+        for raw_name in re.findall(r"raw/docling-json/([^ )\n]+)", text):
+            raw_slug = "source-" + re.sub(r"[^a-z0-9]+", "-", raw_name.lower())
+            raw_slug = raw_slug.replace("-annotated-arch-materials-description-classification-json", "").strip("-")
+            if raw_slug in sources:
+                groups["source"].setdefault(raw_slug, []).append(b_slug)
+
+    for p_slug, members in sorted(groups["place"].items()):
+        c = write_collection(
+            f"place-{p_slug}-buildings",
+            f"Buildings associated with {title(places[p_slug])}",
+            "Buildings linked to the same place page.",
+            members,
+            [f"[[{m}]] → [[{p_slug}]] — associated place" for m in sorted(set(members))]
+        )
+        if c: written.append(c)
+
+    for s_slug, members in sorted(groups["street"].items()):
+        c = write_collection(
+            f"street-{s_slug}-buildings",
+            f"Buildings associated with {title(streets[s_slug])}",
+            "Buildings linked to the same street page.",
+            members,
+            [f"[[{m}]] → [[{s_slug}]] — associated street" for m in sorted(set(members))]
+        )
+        if c: written.append(c)
+
+    for t_slug, members in sorted(groups["theme"].items()):
+        c = write_collection(
+            f"theme-{t_slug}-buildings",
+            f"Buildings associated with {title(themes[t_slug])}",
+            "Buildings linked to the same theme page.",
+            members,
+            [f"[[{m}]] → [[{t_slug}]] — shared theme" for m in sorted(set(members))]
+        )
+        if c: written.append(c)
+
+    for src_slug, members in sorted(groups["source"].items()):
+        c = write_collection(
+            f"source-{src_slug}-buildings",
+            f"Buildings evidenced by {title(sources[src_slug])}",
+            "Buildings connected to the same source page.",
+            members,
+            [f"[[{src_slug}]] → [[{m}]] — evidence source" for m in sorted(set(members))]
+        )
+        if c: written.append(c)
+
+    replace_index_collections(written)
 
     log = WIKI / "log.md"
     if not log.exists():
         log.write_text("# Building Memex Wiki Log\n", encoding="utf-8")
     with log.open("a", encoding="utf-8") as f:
-        f.write(f"\n## {date.today().isoformat()} — Second pass collections\n\n")
-        f.write(f"**Collections written**: {len(valid)}\n")
-        for c in valid:
-            f.write(f"- [[{c['slug']}]]\n")
+        f.write(f"\n## {date.today().isoformat()} — Deterministic second-pass trails and collections\n\n")
+        f.write(f"**Collections written**: {len(written)}\n")
+        for c in written:
+            f.write(f"- [[{c}]]\n")
 
-    print("collections written:", len(valid))
-
+    print("collections written:", len(written))
 
 if __name__ == "__main__":
     main()

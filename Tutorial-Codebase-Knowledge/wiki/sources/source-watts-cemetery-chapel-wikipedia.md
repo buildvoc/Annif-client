@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Watts_Cemetery_Chapel_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -43,4 +43,5 @@
 
 ## Related pages
 
-- Needs verification: no related entity matched.
+- [compton](../places/compton.md)
+- [watts-cemetery-chapel](../buildings/watts-cemetery-chapel.md)

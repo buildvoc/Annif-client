@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Wrought_Iron_Screen_Before_Forecourt_to_Vernon_House_Farnham_1259745_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-09
+**Last ingested**: 2026-05-24
 
 ---
 
@@ -35,6 +35,4 @@
 
 ## Related pages
 
-- [[farnham-west-street]]
-- [[west-street]]
-- [[wrought-iron-screen-before-forecourt-to-vernon-house]]
+- Needs verification: no related entity matched.
