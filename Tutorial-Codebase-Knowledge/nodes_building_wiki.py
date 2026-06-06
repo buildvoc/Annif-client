@@ -1,4 +1,6 @@
 import json
+import urllib.request
+import urllib.error
 import os
 import re
 import requests
@@ -47,6 +49,80 @@ def normalise_list(value):
         return [value.strip()]
     return []
 
+
+
+def backend_rag_post_json(path, payload, timeout=120):
+    api_base = os.environ.get("BACKEND_RAG_API_BASE", "http://192.168.1.142:8001").rstrip("/")
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(
+        f"{api_base}{path}",
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+def picture_evidence_section_for_doc(doc):
+    source_file = Path(str(doc.get("name", ""))).name
+    if not source_file.endswith(".json"):
+        return ""
+
+    section = [
+        "---",
+        "",
+        "## Backend-rag picture evidence",
+        "",
+        f"- API source_file: `{source_file}`",
+    ]
+
+    try:
+        inv = backend_rag_post_json(
+            "/api/pictures",
+            {"source_file": source_file, "query": "", "limit": 50},
+            timeout=60,
+        )
+        pics = inv.get("results", [])
+        section.append(f"- Picture inventory count: `{len(pics)}`")
+        for pic in pics[:12]:
+            section.append(
+                f"- page `{pic.get('page_no')}` | `{pic.get('picture_ref')}` | "
+                f"class `{pic.get('picture_class')}` | "
+                f"caption `{pic.get('caption') or ''}` | "
+                f"docling `{str(pic.get('docling_description') or '')[:240]}`"
+            )
+    except Exception as e:
+        section.append(f"- Picture inventory error: `{e}`")
+        pics = []
+
+    try:
+        desc = backend_rag_post_json(
+            "/api/describe-pictures",
+            {
+                "source_file": source_file,
+                "query": "building church flint map plaque interior exterior statue",
+                "limit": 5,
+                "model": os.environ.get("BACKEND_RAG_VISION_MODEL", "gemma4:e4b"),
+            },
+            timeout=300,
+        )
+        descs = desc.get("results", [])
+        section.append(f"- Gemma4 description count: `{len(descs)}`")
+        for d in descs:
+            section.append(
+                f"- visual page `{d.get('page_no')}` | `{d.get('picture_ref')}` | "
+                f"class `{d.get('picture_class')}` | "
+                f"{str(d.get('gemma4_description') or '')[:500]}"
+            )
+    except Exception as e:
+        section.append(f"- Gemma4 description error: `{e}`")
+
+    section += [
+        "",
+        "Evidence rule: picture metadata and Gemma4 descriptions support visual association only; they are not authoritative identity, address, coordinate, listing, or dating evidence.",
+        "",
+    ]
+    return "\n".join(section)
 
 def rel_raw(doc):
     return f"raw/docling-json/{doc['name']}"
@@ -596,6 +672,8 @@ def build_wiki_payload(docs, entity_plan, abstractions, relationships):
 ## Extracted text snippets
 
 """ + "\n".join(f"- {t}" for t in doc["texts"][:30]) + """
+
+""" + picture_evidence_section_for_doc(doc) + """
 
 ## Related pages
 

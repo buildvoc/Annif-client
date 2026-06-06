@@ -32,7 +32,7 @@ def main():
         limit = min(args.batch_size, args.total - offset)
         inner = (
             "cd /app && "
-            "PYTHONDONTWRITEBYTECODE=1 python scripts/llm_ingest_building_wiki.py "
+            "PYTHONDONTWRITEBYTECODE=1 python scripts/llm_02_pass_ingest_building_wiki.py "
             f"--raw-dir {args.raw_dir} "
             f"--schema {args.schema} "
             f"--offset {offset} "

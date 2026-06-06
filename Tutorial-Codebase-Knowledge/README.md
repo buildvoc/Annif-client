@@ -14,7 +14,7 @@ Run the first-pass ingest to create source, building, place, street, collection,
 ```bash
 docker-compose exec -T tutorial-generator bash -lc '
 cd /app
-PYTHONDONTWRITEBYTECODE=1 python scripts/llm_ingest_building_wiki.py \
+PYTHONDONTWRITEBYTECODE=1 python scripts/llm_02_pass_ingest_building_wiki.py \
   --raw-dir /app/raw/docling-json \
   --schema /app/schema/BUILDING_WIKI.md \
   --no-cache
@@ -45,7 +45,7 @@ Run the second pass to review existing wiki pages and create/update collections:
 ```bash
 docker-compose exec -T tutorial-generator bash -lc '
 cd /app
-PYTHONDONTWRITEBYTECODE=1 python scripts/llm_second_pass_collections.py
+PYTHONDONTWRITEBYTECODE=1 python scripts/llm_05_pass_second_pass_collections.py
 '
 ```
 
