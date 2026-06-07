@@ -1,101 +1,95 @@
-# Annif-client
+## Building Memex Wiki Workflow
 
-This is a minimal Python 3.x client library for accessing the
-[Annif](http://annif.org) REST API which can be used for automated subject
-indexing and classification of text documents.
+This branch includes a DoclingDocument-to-wiki workflow for creating a structured Building Memex from source documents.
 
-## Installation
+### Inputs
 
-The easiest way to install is via pip:
+- `raw/docling-json/` — immutable DoclingDocument JSON source files.
+- `schema/BUILDING_WIKI.md` — wiki page rules and source-backed writing constraints.
 
-    pip3 install annif-client
+### First pass: entity wiki creation
 
-## Dependencies
+Run the first-pass ingest to create source, building, place, street, collection, and theme pages:
 
-The library depends on the
-[requests](http://docs.python-requests.org/en/master/#) module which is used
-for HTTP/REST access. If you install this via pip, the dependencies will be
-handled automatically.
+```bash
+docker-compose exec -T tutorial-generator bash -lc '
+cd /app
+PYTHONDONTWRITEBYTECODE=1 python scripts/llm_02_pass_ingest_building_wiki.py \
+  --raw-dir /app/raw/docling-json \
+  --schema /app/schema/BUILDING_WIKI.md \
+  --no-cache
+'
+```
 
-## How to use
+The first pass uses the existing Tutorial-Codebase-Knowledge nodes:
 
-The client library comes with examples demonstrating its usage. You can invoke
-the example by running the [annif_client.py](annif_client.py) script.
+1. `FetchDoclingDocuments`
+2. `IdentifyAbstractions`
+3. `AnalyzeRelationships`
+4. `ExtractBuildingWikiPages`
+5. `WriteBuildingWiki`
 
-In your own code, you can use the AnnifClient class like this:
+Generated pages are written to:
 
-    from annif_client import AnnifClient
+- `wiki/sources/`
+- `wiki/buildings/`
+- `wiki/places/`
+- `wiki/streets/`
+- `wiki/collections/`
+- `wiki/themes/`
 
-    # then you can create your own client
-    annif = AnnifClient()
+### Second pass: collection creation
 
-## Example invocation
+Run the second pass to review existing wiki pages and create/update collections:
 
-Here is the output from a typical example session:
+```bash
+docker-compose exec -T tutorial-generator bash -lc '
+cd /app
+PYTHONDONTWRITEBYTECODE=1 python scripts/llm_05_pass_second_pass_collections.py
+'
+```
 
-    $ python3 annif_client.py
-    Demonstrating usage of AnnifClient
+The second pass reads existing wiki pages, runs `IdentifyAbstractions` and `AnalyzeRelationships`, then asks Ollama JSON mode to create collection pages using only existing building slugs as members.
 
-    * Creating an AnnifClient object
-    Now we have an AnnifClient object: AnnifClient(api_base='http://api.annif.org/v1/')
+### Validation
 
-    * Finding the available projects
-    Project id: yso-fi           lang: fi  name: YSO ensemble Finnish
-    Project id: yso-sv           lang: sv  name: YSO ensemble Swedish
-    Project id: yso-en           lang: en  name: YSO ensemble English
-    Project id: tfidf-fi         lang: fi  name: TF-IDF Finnish
-    Project id: tfidf-sv         lang: sv  name: TF-IDF Swedish
-    Project id: tfidf-en         lang: en  name: TF-IDF English
-    Project id: fasttext-fi      lang: fi  name: fastText Finnish
-    Project id: fasttext-sv      lang: sv  name: fastText Swedish
-    Project id: fasttext-en      lang: en  name: fastText English
-    Project id: maui-fi          lang: fi  name: Maui Finnish
-    Project id: maui-sv          lang: sv  name: Maui Swedish
-    Project id: maui-en          lang: en  name: Maui English
-    Project id: annif-api-fi     lang: fi  name: Annif prototype API Finnish
-    Project id: annif-api-sv     lang: sv  name: Annif prototype API Swedish
-    Project id: annif-api-en     lang: en  name: Annif prototype API English
-    Project id: ykl-fasttext-fi  lang: fi  name: YKL fastText Finnish
+Check the wiki for broken links and page-format issues:
 
-    * Looking up information about a specific project
-    Project id: yso-en           lang: en  name: YSO ensemble English
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import re
 
-    * Analyzing a short text from a string
-    <http://www.yso.fi/onto/yso/p2228>	0.2595	red fox
-    <http://www.yso.fi/onto/yso/p5319>	0.2039	dog
-    <http://www.yso.fi/onto/yso/p8122>	0.1946	laziness
-    <http://www.yso.fi/onto/yso/p25726>	0.1285	brown
-    <http://www.yso.fi/onto/yso/p4760>	0.1220	triple jump
-    <http://www.yso.fi/onto/yso/p4758>	0.1194	long jump
-    <http://www.yso.fi/onto/yso/p2229>	0.1109	canines
-    <http://www.yso.fi/onto/yso/p10636>	0.1094	blue fox
-    <http://www.yso.fi/onto/yso/p4759>	0.1068	high jump
-    <http://www.yso.fi/onto/yso/p28336>	0.0911	animal training
+issues = []
+for p in Path("wiki").rglob("*.md"):
+    s = p.read_text(encoding="utf-8", errors="replace")
+    if not s.strip():
+        issues.append((p, "empty file"))
+    if not s.lstrip().startswith("# "):
+        issues.append((p, "missing H1"))
+    for link in re.findall(r"\[\[([^\]]+)\]\]", s):
+        if not list(Path("wiki").rglob(link + ".md")):
+            issues.append((p, f"broken link [[{link}]]"))
 
-    * Analyzing a longer text from a file, with a limit on number of results
-    <http://www.yso.fi/onto/yso/p16495>	0.3651	licences (permits)
-    <http://www.yso.fi/onto/yso/p2346>	0.1656	copyright
-    <http://www.yso.fi/onto/yso/p11657>	0.1566	national libraries
-    <http://www.yso.fi/onto/yso/p6068>	0.1461	Apache
-    <http://www.yso.fi/onto/yso/p14833>	0.1220	copies
-    
-    
-  # Annif-mobile
-  
- Try the demo at https://m.text-analytics.buildvoc.co.uk/
- 
- Instructions for using the app
-1. First, take a picture of a document (or a part of it such as the introduction section) using your mobile device. 
-Then the app will automatically:
+print("issues:", len(issues))
+for p, msg in issues[:100]:
+    print(f"{p}: {msg}")
+PY
+```
 
-1. Convert it to text using Optical Character Recognition (OCR) technology.
+### Ollama configuration
 
-3. Analyse the text using Annif
-Present you with a list of suggested subjects of interest that have been detected in the article. Also will provide you with search results for fire safety guidance.
+Set the model in `.env`:
 
-## OCR Function
-  Take photo of text content with a webcam (code snippet from Colab), run optical character recognition on it with Tesseract (wrapper for Google’s Tesseract-OCR), and send the text to Annif.
+```env
+LLM_PROVIDER=ollama
+OLLAMA_BASE_URL=http://host.docker.internal:11434
+OLLAMA_MODEL=gemma4:12b
+```
 
-## License
+For remote Ollama, replace `OLLAMA_BASE_URL` with the reachable host, for example:
 
-The code is published under the [Apache 2.0](LICENSE.txt) license.
+```env
+OLLAMA_BASE_URL=http://192.168.1.178:11434
+```
+
