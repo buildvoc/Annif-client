@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fire Safety Analytics</title>
+    <link
+      rel="favicon.ico"
+      type="image/jpg"
+      href="https://m.text-analytics.buildvoc.co.uk/favicon.ico"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="/compressor.min.js"></script>
+    <style type="text/css">
+      .ui-content {
+        padding: 0;
+      }
+
+      .ui-state-active {
+        background-color: #38c;
+      }
+
+      .ui-textinput-text {
+        border: none;
+      }
+
+      .capture-presentation-button .ui-textinput {
+        margin: 0;
+      }
+
+      .navbar {
+        position: fixed;
+        bottom: 40.5px;
+        width: 100%;
+      }
+
+      .navbar-icon {
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+      }
+
+      .navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .navbar ul li {
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border: 1px solid black;
+        text-align: center;
+        flex-grow: 1;
+        flex-basis: 16.6%;
+      }
+
+      .navbar ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        text-shadow: none;
+      }
+
+      .navbar ul li a:hover {
+        color: black;
+      }
+
+      .image-control {
+        position: fixed;
+        bottom: 130px;
+        width: 100%;
+      }
+
+      .ui-block-a {
+        padding-right: 0.25em;
+      }
+
+      .ui-block-b {
+        padding-left: 0.25em;
+      }
+
+      .imagefileblock .ui-textinput-text {
+        border-style: none;
+      }
+
+      #image,
+      #text,
+      #topics {
+        height: calc(100vh - 200px);
+      }
+
+      #imagefile,
+      #imagefile-upload,
+      #imagefile-capture-multiple {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+
+      #previewimg {
+        width: 100%;
+      }
+
+      label.select {
+        display: none;
+      }
+
+      .projectselector {
+        margin: 0.5em 0;
+        padding: 0;
+      }
+
+      .ui-button {
+        font-size: 12px;
+      }
+
+      #responsivevoiceattribution {
+        float: right;
+        padding: 0.2em;
+      }
+
+      #previewtext {
+        margin: 0.5rem auto;
+        width: calc(100% - 1rem);
+        min-height: 250px;
+      }
+
+      .capture-presentation-button,
+      .upload-button,
+      .copy-button {
+        cursor: pointer;
+      }
+
+      .overlay-container {
+        opacity: 0;
+        max-height: 0;
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.32);
+        z-index: 10000;
+        justify-content: center;
+        transition: opacity 0.3s ease-in-out;
+        overflow-y: hidden;
+      }
+
+      .active {
+        opacity: 1;
+        max-height: 100vh;
+      }
+
+      .information-box {
+        width: 85%;
+        height: fit-content;
+        max-height: 75%;
+        margin-top: 4rem;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        border-radius: 15px;
+        overflow-y: scroll;
+      }
+
+      .icons-information-list li {
+        margin: 0.8rem 0;
+      }
+
+      .icons-information-list li img {
+        vertical-align: middle;
+        padding-right: 5px;
+      }
+
+      .info-icon {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        z-index: 10000000;
+        cursor: pointer;
+      }
+
+      .enable-post-to-vocabseditor {
+        width: 30px;
+        height: 30px;
+        z-index: 10000000;
+        border-radius: 50%;
+      }
+
+      .enable-post-to-vocabseditor button{
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        background-color: red;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+      }
+
+      #results {
+        list-style: none;
+        padding-left: 7px;
+      }
+
+      #results li a {
+        padding-left: 7px;
+      }
+
+      meter { 
+        width: 24px;
+        border: none;
+        border-radius: 0;
+        height: 18px;
+        background-color: #ccc;
+        box-shadow: 0 12px 3px -5px #e6e6e6 inset;
+      }
+
+      meter::-webkit-meter-bar {
+        border: none;
+        border-radius: 0;
+        height: 18px;
+        background-color: #ccc;
+        box-shadow: 0 12px 3px -5px #e6e6e6 inset;
+      }
+
+      meter::-webkit-meter-optimum-value, meter::-moz-meter-optimum {
+        background: #f5d085;
+      }
+
+      meter::-webkit-meter-suboptimum-value, meter::-moz-sub-optimum {
+        background: #b4c365;
+      }
+
+      meter::-webkit-meter-even-less-good-value, meter::-moz-meter-sub-sub-optimum {
+        background: #5cb85c;
+      }
+
+    </style>
+    <script>
+      var presentationTextResults = [];
+      var clickTimer;
+      var OCR_BACKEND_URL = "cgi-bin/ocr.cgi";
+      var ANNIF_BASE_URL = "https://text-analytics.buildvoc.co.uk/v1/";
+      var enablePostToVocabseditor = false;
+
+      // hardcoded projects for now
+      // TODO read available projects from API instead
+      var PROJECTS = {
+        "nn-omikuji-ensemble-en": {
+          name: "Neural Network,Omikuji & MLLM",
+          language: "en",
+        },
+        "bldg-ensemble-omikuji-mllm-en": {
+          name: "Omikuji & MLLM",
+          language: "en",
+        },
+        "bldg-tfidf-en": {
+          name: "Terms Frequency(TFIDF)",
+          language: "en",
+        },
+      };
+
+      // which voice setting to use for Responsive Voice synthesis, per language
+      var VOICE_PER_LANGUAGE = {
+        fi: "Finnish Female",
+        sv: "Swedish Female",
+        en: "UK English Female",
+      };
+
+      $(function () {
+        const resizeObserver = new ResizeObserver((entries) => {
+        const properHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.body.clientHeight)
+          $('.overlay-container').height(properHeight);
+        })
+        $('body').click(function (e) {
+          if(!$('.overlay-container').hasClass('active'))
+            return;
+          if(!$(e.target).closest('.information-box').length && !$(e.target).is('.infotmation-box')) {
+            $(".info-icon").click();
+          }     
+        });
+        resizeObserver.observe($('.information-box')[0]);
+        $("#tabs").tabs({
+          activate: function (event, ui) {
+            responsiveVoice.cancel();
+          },
+        });
+        $.each(PROJECTS, function (project_id, project_data) {
+          $("#project").append(
+            $("<option>").attr("value", project_id).append(project_data.name)
+          );
+        });
+        $("#project").selectmenu("refresh");
+        $(".copy-button").on("click", function () {
+          var textToBeCopied = $("#previewtext").val() + "\n" + getTopicsText();
+          copyToClipboard(textToBeCopied);
+        });
+        $(".upload-button").on("click", function (e) {
+          $("#imagefile-upload").click();
+        });
+        $("#imagefile-upload").on("click", function (e) {
+          e.stopPropagation();
+        });
+        $(".capture-presentation-button").on("click", function (e) {
+          $("#imagefile-capture-multiple").click();
+        });
+        $("#imagefile-capture-multiple").on("click", function (e) {
+          e.stopPropagation();
+        });
+        $("#imagefile-capture-multiple").on("change", function (e) {
+          handleImagePresentation(this.files);
+        });
+        $(".topics-button").on("click", function (e) {
+          if (presentationTextResults.length !== 0) {
+            endPresentation();
+          }
+        });
+
+        $('.info-icon').on('click', function(e){
+          e.stopPropagation();
+          $('.overlay-container').toggleClass('active');
+        })
+        $('.enable-post-to-vocabseditor button').on('click', function(e){
+          if(enablePostToVocabseditor){
+            e.target.style = `background-color: red;`;
+            enablePostToVocabseditor = false;
+          }
+          else{
+            e.target.style = `background-color: green;`;
+            enablePostToVocabseditor = true;
+          }
+        });
+
+      });
+
+      function current_language() {
+        var project = $("#project").val();
+        return PROJECTS[project].language;
+      }
+
+      function handleImagePresentation(files) {
+        new Compressor(files[0], {
+          quality: 0.2,
+          success(compressedImage) {
+            $.mobile.loading("show");
+            compressedImage = new File([compressedImage], compressedImage.name);
+            console.log(compressedImage);
+            var formData = new FormData();
+            formData.append("imagefile", compressedImage);
+            formData.append("language", current_language());
+            jQuery.ajax({
+              url: OCR_BACKEND_URL,
+              data: formData,
+              cache: false,
+              contentType: false,
+              processData: false,
+              type: "POST",
+              success: function (result) {
+                presentationTextResults.push(result);
+                var fullText = presentationTextResults.reduce(
+                  (prevText, text) => prevText + '\n' + text,
+                  ""
+                );
+                $("#previewtext").val(fullText);
+                $("#previewtext").keyup();
+                $('a[href="#text"]').trigger("click");
+                $.mobile.loading('hide');
+              },
+            });
+            var img = document.getElementById("previewimg");
+            var reader = new FileReader();
+            reader.onload = (function (aImg) {
+              return function (e) {
+                aImg.src = e.target.result;
+              };
+            })(img);
+            reader.readAsDataURL(compressedImage);
+          }
+        });
+      }
+
+      function handleImage(files) {
+        new Compressor(files[0], {
+          quality: 0.2,
+          success(compressedImage){
+            $.mobile.loading("show");
+            compressedImage = new File([compressedImage], compressedImage.name);
+            console.log(compressedImage);
+            var formData = new FormData();
+            formData.append("imagefile", compressedImage);
+            formData.append("language", current_language());
+            jQuery.ajax({
+              url: OCR_BACKEND_URL,
+              data: formData,
+              cache: false,
+              contentType: false,
+              processData: false,
+              type: "POST",
+              success: function (result) {
+                $("#previewtext").val(result);
+                $("#previewtext").keyup();
+                $('a[href="#text"]').trigger("click");
+                autoindex();
+              },
+            });
+            var img = document.getElementById("previewimg");
+            var reader = new FileReader();
+            reader.onload = (function (aImg) {
+              return function (e) {
+                aImg.src = e.target.result;
+              };
+            })(img);
+            reader.readAsDataURL(compressedImage);
+          }
+        });
+      }
+
+      function autoindex() {
+        $.mobile.loading("show");
+        let uris = [];
+        let scores = [];
+        $.ajax({
+          url: ANNIF_BASE_URL + "projects/" + $("#project").val() + "/suggest",
+          method: "POST",
+          data: { text: $("#previewtext").val() },
+          success: function (data) {
+            $("#results").empty();
+            var labels = [];
+            $.each(data.results, function (idx, value) {
+              uris.push(value.uri);
+              scores.push(value.score.toFixed(2));
+              $("#results").append(
+                $("<li>").append(
+                  $("<meter>").attr("low", "0.33").attr("high", "0.66").attr("optimum", "1.0").attr("value", value.score),
+                  $("<a>").attr("href", value.uri).append(value.label)
+                )
+              );
+              labels.push(value.label);
+            });
+            $.mobile.loading("hide");
+            $('a[href="#topics"]').trigger("click");
+            var labellist = labels.join(". ");
+            if(enablePostToVocabseditor)
+              postToVocabseditor($("#previewtext").val(), uris, scores, current_language());
+            responsiveVoice.speak(
+              labellist,
+              VOICE_PER_LANGUAGE[current_language()]
+            );
+            $.mobile.loading("hide");
+          },
+        });
+
+      }
+
+      function endPresentation() {
+        var fullText = presentationTextResults.reduce(
+          (prevText, text) => prevText + '\n' + text,
+          ""
+        );
+        $.mobile.loading("show");
+        let uris = [];
+        let scores = [];
+        $.ajax({
+          url: ANNIF_BASE_URL + "projects/" + $("#project").val() + "/suggest",
+          method: "POST",
+          data: { text: fullText },
+          success: function (data) {
+            $("#results").empty();
+            var labels = [];
+            $.each(data.results, function (idx, value) {
+              uris.push(value.uri);
+              scores.push(value.score.toFixed(2));
+              $("#results").append(
+                $("<li>").append(
+                  $("<meter>").attr("low", "0.33").attr("high", "0.66").attr("optimum", "1.0").attr("value", value.score),
+                  $("<a>").attr("href", value.uri).append(value.label)
+                )
+              );
+              labels.push(value.label);
+            });
+            var labellist = labels.join(". ");
+            if(enablePostToVocabseditor)
+              postToVocabseditor(fullText, uris, scores, current_language());
+            responsiveVoice.speak(
+              labellist,
+              VOICE_PER_LANGUAGE[current_language()]
+            );
+            $.mobile.loading("hide");
+          },
+        });
+        
+        $("#previewtext").val(result);
+        presentationTextResults = [];
+      }
+
+      function postToVocabseditor(text, uris, scores, lang){
+        $.mobile.loading("show");
+        $.ajax({
+          url: "https://vocabseditor.buildvoc.co.uk/vocabs/concepts/import_from_annif_mobile/",
+          method: "POST",
+          data: JSON.stringify({
+            text,
+            uris,
+            scores,
+            lang,
+          }),
+          success(){
+            $.mobile.loading("hide");
+          }, 
+          error(){
+            $.mobile.loading("hide");
+          }
+        });
+      }
+
+      function getTopicsText() {
+        var topicsText = "";
+        var topicsList = $("#results");
+        topicsList.find("a").each(function () {
+          var currentTopic = this.innerText;
+          topicsText += "#" + currentTopic.replace(/\s+/g, "-");
+          topicsText += "\n";
+        });
+        return topicsText;
+      }
+
+      function copyToClipboard(textToBeCopied) {
+        var $temp = $("<textarea>");
+        $("body").append($temp);
+        $temp.val(textToBeCopied).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+    </script>
+  </head>
+  <body>
+    <div class="overlay-container">
+      <div class="information-box">
+        <h2>AI for indexing fire safety printed materials</h2>
+        <p>This app was made available to you free of charge  by Phil Stacey with the support from <b><a style="text-decoration: none" href="https://www.digitalocean.com/"> DigitalOcean.</a></b></p>
+
+        <p>The purpose of the app is to showcase of Text Analytics in Fire Safety to newcomers.</p>
+
+        <p>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="54px" height="40px" viewBox="0 1 14 14" style="vertical-align: middle; padding-right: 2px; "> <path style="fill:#000" d="M12,2.5H9.908c-0.206-0.581-0.756-1-1.408-1h-3c-0.652,0-1.202,0.419-1.408,1H2c-1.104,0-2,0.896-2,2 v6c0,1.104,0.896,2,2,2h10c1.104,0,2-0.896,2-2v-6C14,3.396,13.104,2.5,12,2.5z M7,10.5c-1.657,0-3-1.344-3-3c0-1.657,1.343-3,3-3 s3,1.343,3,3C10,9.156,8.657,10.5,7,10.5z M7,5.5c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2c1.104,0,2-0.896,2-2 C9,6.396,8.104,5.5,7,5.5z"/></svg> First, take a picture of a document (or a part of it such as the introduction section) using your mobile device. Then the app will automatically:</p>
+        <ul class="icons-information-list" style="list-style-type:none; padding: 0">
+        <li><img src="/scanned-text.svg"width="50" height="70">  Convert it to text using Optical Character Recognition (OCR) technology with <a style="text-decoration: none" href="https://en.wikipedia.org/wiki/Tesseract_(software)">Tesseract</a></li>
+        <li><img src="/suggested-topics.svg"width="50" height="70">Analyse the text using <a style="text-decoration: none" href="https://annif.org/">Annif</a></li>
+        <li style="margin: 0.7rem 0;">
+          Present you with a list of suggested subjects of interest that have been detected in the article links to data dictionary <a style="text-decoration: none" href="https://skosmos.org/">Skosmos</a></li>
+        </li>
+        <li><img src="/upload-files.svg"width="50" height="70">Upload a screenshot</li>
+        <li><img src="/capture-presentation.svg"width="50" height="70">Take a picture of the first presentation slide, then second next press <img src="/scanned-text.svg"width="50" height="70"> See captured text<img src="/suggested-topics.svg"width="50" height="70" style="padding-right: 0; padding-left: 7px;"> to see suggested subjects</li>
+        <li><img src="/export-to-notes.png"width="50" height="50">Copy text and suggested subjects to notes</li>
+        <div class="enable-post-to-vocabseditor" title="Enable posting to vocabseditor.">
+          <button>
+    
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="info-icon">
+      <svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" class="svg-inline--fa fa-circle-info fa-2x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: #38c;"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"></path></svg>
+    </div>
+    <div data-role="page">
+      <div data-role="main" class="ui-content">
+        <div data-role="tabs" id="tabs">
+          <div class="navbar">
+            <ul>
+              <li class="capture-button" title="Capture an image">
+                <a href="#image">
+                  <div
+                    style="
+                      margin: 0 auto;
+                      background-color: black;
+                      display: block;
+                      background-size: 21px;
+                      position: relative;
+                      top: 1px;
+                    "
+                    class="navbar-icon ui-button-icon ui-icon ui-icon-camera"
+                  ></div>
+                </a>
+              </li>
+              <li class="text-button" title="Show extracted text">
+                <a href="#text">
+                  <div
+                    class="navbar-icon"
+                    style="
+                      background-image: url('/scanned-text.svg');
+                      position: relative;
+                      top: 2px;
+                    "
+                  ></div>
+                </a>
+              </li>
+              <li class="topics-button" title="Show extracted topics">
+                <a href="#topics">
+                  <div
+                    class="navbar-icon"
+                    style="
+                      background-image: url('/suggested-topics.svg');
+                      position: relative;
+                      top: 4px;
+                    "
+                  ></div>
+                </a>
+              </li>
+              <li class="upload-button" title="Upload an image">
+                <input
+                  id="imagefile-upload"
+                  name="imagefile"
+                  type="file"
+                  accept="image/*"
+                  onchange="handleImage(this.files)"
+                />
+                <div
+                  class="navbar-icon"
+                  style="
+                    background-image: url('/upload-files.svg');
+                    background-size: 35px;
+                    position: relative;
+                    top: -4px;
+                  "
+                ></div>
+              </li>
+              <li class="copy-button" title="Copy to clipboard">
+                <div
+                  class="navbar-icon"
+                  style="
+                    background-image: url('/export-to-notes.png');
+                    background-size: 35px 30px;
+                    position: relative;
+                    top: 5px;
+                  "
+                ></div>
+              </li>
+              <li class="capture-presentation-button" title="Start a presentation">
+                <input
+                  id="imagefile-capture-multiple"
+                  name="imagefile"
+                  type="file"
+                  accept="image/*"
+                  capture="camera"
+                />
+                <div
+                  class="navbar-icon"
+                  style="
+                    background-image: url('/capture-presentation.svg');
+                    position: relative;
+                    top: 5px;
+                  "
+                ></div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="image" class="ui-content">
+            <div class="ui-grid-a image-control">
+              <div class="ui-block-a imagefileblock">
+                <input
+                  id="imagefile"
+                  name="imagefile"
+                  type="file"
+                  accept="image/*"
+                  capture="camera"
+                  onchange="handleImage(this.files)"
+                />
+                <label
+                  for="imagefile"
+                  data-role="button"
+                  data-theme="b"
+                  data-icon="ui-icon-camera"
+                  >Take a picture</label
+                >
+              </div>
+
+              <div class="ui-block-b">
+                <div class="ui-field-contain projectselector">
+                  <label for="project" class="select">Language/Project:</label>
+                  <select name="project" id="project"></select>
+                </div>
+              </div>
+            </div>
+
+            <div id="preview">
+              <img id="previewimg" />
+            </div>
+          </div>
+          <div id="text" class="ui-content">
+            <textarea id="previewtext" rows="40" cols="80"> </textarea>
+          </div>
+          <div id="topics" class="ui-content">
+            <ul id="results"></ul>
+          </div>
+        </div>
+      </div>
+      <!-- /content -->
+      <div data-role="toolbar" data-type="footer" data-position="fixed">
+        <div id="responsivevoiceattribution">
+          <div
+            style="
+              width: 300px;
+              vertical-align: top;
+              font-family: Arial;
+              font-size: 9pt;
+              line-height: normal;
+            "
+          >
+            <a rel="license" href="//responsivevoice.org/"
+              ><img
+                title="ResponsiveVoice Text To Speech"
+                src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png"
+                style="float: left; padding-right: 2px" /></a
+            ><span xmlns:dct="https://purl.org/dc/terms/" property="dct:title"
+              ><a
+                href="//responsivevoice.org/"
+                target="_blank"
+                title="ResponsiveVoice Text To Speech"
+                >ResponsiveVoice</a
+              ></span
+            >
+            used under
+            <a
+              rel="license"
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+              title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License"
+              >Non-Commercial License</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

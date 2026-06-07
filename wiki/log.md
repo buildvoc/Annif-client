@@ -1,1 +1,0 @@
-# Building Memex Wiki Log
