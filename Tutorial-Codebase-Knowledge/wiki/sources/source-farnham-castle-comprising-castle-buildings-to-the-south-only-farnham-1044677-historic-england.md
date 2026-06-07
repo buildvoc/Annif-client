@@ -68,3 +68,19 @@ Evidence rule: picture metadata and Gemma4 descriptions support visual associati
 - [castle-complex](../collections/castle-complex.md)
 - [castle-hill](../places/castle-hill.md)
 - [farnham-castle](../buildings/farnham-castle.md)
+
+## Picture evidence associated trails
+
+**Summary**: Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+
+**Evidence rule**: picture evidence supports visual association only; it is not authoritative identity, address, coordinate, listing, or dating evidence.
+
+### Associated pages
+- [castle-hill](../places/castle-hill.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [castle-street](../streets/castle-street.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [farham](../places/farham.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [farnham](../places/farnham.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+
+### Uncertainties
+- LLM failed: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x79712981f340>: Failed to establish a new connection: [Errno -2] Name or service not known'))

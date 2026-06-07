@@ -1,0 +1,324 @@
+# Collection: Picture Evidence Associated Trails
+
+**Summary**: LLM-reviewed associated trails from all available source-page and raw Docling picture evidence.
+
+**Last updated**: 2026-06-07T18:07:34
+
+---
+
+## Members
+
+- [source-2-3-4-west-street-farnham-1258090-historic-england](../sources/source-2-3-4-west-street-farnham-1258090-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [1099-west-street](../buildings/1099-west-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-7-farnham](../sources/source-7-farnham.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [abbey-st](../streets/abbey-st.md) — `uncertain_association`
+  - [downing-street](../streets/downing-street.md) — `uncertain_association`
+- [source-a-brief-history-farnham-castle-trust](../sources/source-a-brief-history-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+  - [farnham-castle-site](../places/farnham-castle-site.md) — `uncertain_association`
+- [source-a-brief-history-of-willmer-house-home-of-the-museum-of-farnham-farnham-maltings](../sources/source-a-brief-history-of-willmer-house-home-of-the-museum-of-farnham-farnham-maltings.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-s-mead](../places/bishop-s-mead.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-amy-anderson-saves-the-castle-farnham-castle-trust](../sources/source-amy-anderson-saves-the-castle-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+  - [farnham-castle-site](../places/farnham-castle-site.md) — `uncertain_association`
+- [source-arcaid-images](../sources/source-arcaid-images.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [basingstoke](../places/basingstoke.md) — `uncertain_association`
+  - [daneshill-brickworks](../buildings/daneshill-brickworks.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-architecture-misfit-35-edwin-lutyens-misfits-architecture](../sources/source-architecture-misfit-35-edwin-lutyens-misfits-architecture.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [crooksbury](../places/crooksbury.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-bibliography-the-lutyens-trust](../sources/source-bibliography-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [britannic-house](../buildings/britannic-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-bishops-at-the-castle-farnham-castle-trust](../sources/source-bishops-at-the-castle-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+  - [farnham-castle-site](../places/farnham-castle-site.md) — `uncertain_association`
+- [source-camouflage-development-farnham-castle-trust](../sources/source-camouflage-development-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnborough-airfield](../places/farnborough-airfield.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+- [source-chronology-the-lutyens-trust](../sources/source-chronology-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [berrydown](../buildings/berrydown.md) — `uncertain_association`
+  - [britannic-house](../buildings/britannic-house.md) — `uncertain_association`
+  - [buckinghamshire](../places/buckinghamshire.md) — `uncertain_association`
+  - [chinthurst-hill](../buildings/chinthurst-hill.md) — `uncertain_association`
+- [source-church-of-st-joan-of-arc-farnham-surrey](../sources/source-church-of-st-joan-of-arc-farnham-surrey.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [church-of-st-joan-of-arc-farnham](../buildings/church-of-st-joan-of-arc-farnham.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-colin-amerys-invaluable-contribution-to-the-restoration-of-stowe-the-lutyens-trust](../sources/source-colin-amerys-invaluable-contribution-to-the-restoration-of-stowe-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [buckinghamshire](../places/buckinghamshire.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-damaged-brick-paving-in-goddards-garden-has-been-expertly-restored-the-lutyens-trust](../sources/source-damaged-brick-paving-in-goddards-garden-has-been-expertly-restored-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-daneshill-david-walter-hoare-school-diary](../sources/source-daneshill-david-walter-hoare-school-diary.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [daneshill-house](../buildings/daneshill-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-daneshill-house-old-basing-and-lychpit-1339563-historic-england](../sources/source-daneshill-house-old-basing-and-lychpit-1339563-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [basingstoke](../places/basingstoke.md) — `uncertain_association`
+  - [daneshill-house](../buildings/daneshill-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-discover-the-watts-gallery-and-memorial-chapel-surrey](../sources/source-discover-the-watts-gallery-and-memorial-chapel-surrey.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-east-garden-wall-to-willmer-house-facing-on-to-bishops-mead-farnham-1273425-historic-england](../sources/source-east-garden-wall-to-willmer-house-facing-on-to-bishops-mead-farnham-1273425-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [1099-west-street](../buildings/1099-west-street.md) — `uncertain_association`
+  - [bishop-s-mead](../places/bishop-s-mead.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-edwin-lutyens-1869-1944](../sources/source-edwin-lutyens-1869-1944.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [crooksbury](../places/crooksbury.md) — `uncertain_association`
+  - [elstead](../places/elstead.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-famous-people-the-farnham-society](../sources/source-famous-people-the-farnham-society.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+- [source-farnham-castle-comprising-castle-buildings-to-the-south-only-farnham-1044677-historic-england](../sources/source-farnham-castle-comprising-castle-buildings-to-the-south-only-farnham-1044677-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [castle-hill](../places/castle-hill.md) — `uncertain_association`
+  - [castle-street](../streets/castle-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+- [source-farnham-castle-farnham-1012181-historic-england](../sources/source-farnham-castle-farnham-1012181-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+- [source-farnham-library-vernon-house-farnham-1258122-historic-england](../sources/source-farnham-library-vernon-house-farnham-1258122-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-library-vernon-house](../buildings/farnham-library-vernon-house.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-farnham-surrey-history](../sources/source-farnham-surrey-history.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [castle-street](../streets/castle-street.md) — `uncertain_association`
+  - [east-street](../streets/east-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+- [source-farnham-the-earlier-historic-period](../sources/source-farnham-the-earlier-historic-period.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [castle-street](../streets/castle-street.md) — `uncertain_association`
+  - [downing-street](../streets/downing-street.md) — `uncertain_association`
+- [source-farnham-wikipedia](../sources/source-farnham-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [alice-holt-forest](../places/alice-holt-forest.md) — `uncertain_association`
+- [source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia](../sources/source-grade-ii-listed-buildings-in-waverley-surrey-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [castle-street](../streets/castle-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-history-and-origins-farnham-craft-town](../sources/source-history-and-origins-farnham-craft-town.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [alice-holt-forest](../places/alice-holt-forest.md) — `uncertain_association`
+  - [castle-street](../streets/castle-street.md) — `uncertain_association`
+- [source-history-of-st-andrews-church-st-andrews-church-farnham](../sources/source-history-of-st-andrews-church-st-andrews-church-farnham.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears](../sources/source-how-tudor-brickwork-inspired-a-lutyens-masterpiece-spears.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [basingstoke](../places/basingstoke.md) — `uncertain_association`
+  - [daneshill-house](../buildings/daneshill-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-inside-watts-chapel-a-little-known-arts-and-crafts-delight-the-world-of-interiors](../sources/source-inside-watts-chapel-a-little-known-arts-and-crafts-delight-the-world-of-interiors.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-key-dates-farnham-castle-trust](../sources/source-key-dates-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+  - [farnham-castle-site](../places/farnham-castle-site.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-lectures-the-lutyens-trust-docling](../sources/source-lectures-the-lutyens-trust-docling.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [britannic-house](../buildings/britannic-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-lutyens-trust-winter-2025](../sources/source-lutyens-trust-winter-2025.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-manor-house-the-daneshill-house-hampshire-garden-trust-research](../sources/source-manor-house-the-daneshill-house-hampshire-garden-trust-research.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [basingstoke](../places/basingstoke.md) — `uncertain_association`
+  - [daneshill-brickworks](../buildings/daneshill-brickworks.md) — `uncertain_association`
+  - [daneshill-house](../buildings/daneshill-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-mavis-standing-the-real-story-farnham-castle-trust](../sources/source-mavis-standing-the-real-story-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [east-street](../streets/east-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-museum-of-farnham-wikipedia](../sources/source-museum-of-farnham-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-maltings](../places/farnham-maltings.md) — `uncertain_association`
+- [source-our-story-farnham-district-museum-society](../sources/source-our-story-farnham-district-museum-society.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-pdf-export-photo-85-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials-json](../sources/source-pdf-export-photo-85-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials-json.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-pdf-export-photo-85-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials](../sources/source-pdf-export-photo-85-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+  - [megans-on-west-street](../buildings/megans-on-west-street.md) — `uncertain_association`
+- [source-pdf-export-photo-86-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials-json](../sources/source-pdf-export-photo-86-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials-json.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-pdf-export-photo-86-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials](../sources/source-pdf-export-photo-86-annotated-auto-place-picture0-compressed-docling-annotated-arch-materials.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+  - [megans-on-west-street](../buildings/megans-on-west-street.md) — `uncertain_association`
+- [source-pdf-export-photo-88-annotated-auto-place-picture0-compressed-docling](../sources/source-pdf-export-photo-88-annotated-auto-place-picture0-compressed-docling.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-pdf-export-photo-93-annotated-auto-place-picture0-compressed-docling](../sources/source-pdf-export-photo-93-annotated-auto-place-picture0-compressed-docling.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-maltings](../places/farnham-maltings.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust](../sources/source-recent-visits-fig-tree-court-surrey-and-the-royal-hospital-chelsea-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [crooksbury](../places/crooksbury.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-rowhook-manor-warnham-1026917-historic-england](../sources/source-rowhook-manor-warnham-1026917-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bognor-road](../streets/bognor-road.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+  - [horsham](../places/horsham.md) — `uncertain_association`
+- [source-st-andrews-church-farnham-wikipedia](../sources/source-st-andrews-church-farnham-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-the-castles-royal-visitors-farnham-castle-trust](../sources/source-the-castles-royal-visitors-farnham-castle-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-palace](../buildings/bishop-palace.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-castle](../buildings/farnham-castle.md) — `uncertain_association`
+- [source-the-church-of-st-andrew-farnham-1044627-historic-england](../sources/source-the-church-of-st-andrew-farnham-1044627-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-the-conservation-of-watts-chapel-watts-gallery](../sources/source-the-conservation-of-watts-chapel-watts-gallery.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-the-manor-house-in-1428-west-horsley-place-pdf-20260217t195429z](../sources/source-the-manor-house-in-1428-west-horsley-place-pdf-20260217t195429z.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-the-story-of-st-andrews-a5-booklet](../sources/source-the-story-of-st-andrews-a5-booklet.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-three-architects-lectures-examining-lutyenss-multifaceted-work-his-influence-on-architecture-today-the-lutyens-trust](../sources/source-three-architects-lectures-examining-lutyenss-multifaceted-work-his-influence-on-architecture-today-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [berrydown](../buildings/berrydown.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-tour-of-bma-house-tavistock-square-london-the-lutyens-trust](../sources/source-tour-of-bma-house-tavistock-square-london-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bma-house](../buildings/bma-house.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-tour-of-edwin-lutyenss-work-in-kent-the-lutyens-trust](../sources/source-tour-of-edwin-lutyenss-work-in-kent-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [barham-court](../buildings/barham-court.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-watts-cemetery-chapel-watts-gallery](../sources/source-watts-cemetery-chapel-watts-gallery.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [down-lane](../streets/down-lane.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-watts-cemetery-chapel-wikipedia](../sources/source-watts-cemetery-chapel-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [compton-village](../places/compton-village.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-watts-chapel-alexi-francis](../sources/source-watts-chapel-alexi-francis.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-watts-chapel-compton-village-website](../sources/source-watts-chapel-compton-village-website.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [compton-village](../places/compton-village.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-watts-chapel-surrey-fold-gently](../sources/source-watts-chapel-surrey-fold-gently.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [compton-village](../places/compton-village.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-watts-memorial-chapel-compton-1029541-historic-england](../sources/source-watts-memorial-chapel-compton-1029541-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [down-lane](../streets/down-lane.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-webinars-the-lutyens-trust](../sources/source-webinars-the-lutyens-trust.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [alnwick](../places/alnwick.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-well-head-in-grounds-of-watts-memorial-chapel-compton-1188387-historic-england](../sources/source-well-head-in-grounds-of-watts-memorial-chapel-compton-1188387-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [compton](../places/compton.md) — `uncertain_association`
+  - [down-lane](../streets/down-lane.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-willmer-house-farnham-1258470-historic-england](../sources/source-willmer-house-farnham-1258470-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-willmer-house-museum-38-west-street-farnham-surrey-archaeological-society](../sources/source-willmer-house-museum-38-west-street-farnham-surrey-archaeological-society.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`
+- [source-willmer-house-wikipedia](../sources/source-willmer-house-wikipedia.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-willmer-house](../sources/source-willmer-house.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [bishop-s-mead](../places/bishop-s-mead.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+- [source-wrought-iron-screen-before-forecourt-to-vernon-house-farnham-1259745-historic-england](../sources/source-wrought-iron-screen-before-forecourt-to-vernon-house-farnham-1259745-historic-england.md) — Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+  - [1099-west-street](../buildings/1099-west-street.md) — `uncertain_association`
+  - [farham](../places/farham.md) — `uncertain_association`
+  - [farnham](../places/farnham.md) — `uncertain_association`
+  - [farnham-town](../places/farnham-town.md) — `uncertain_association`

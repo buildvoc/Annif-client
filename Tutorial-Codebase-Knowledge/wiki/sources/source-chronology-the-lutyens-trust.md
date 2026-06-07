@@ -86,3 +86,18 @@ Evidence rule: picture metadata and Gemma4 descriptions support visual associati
 - [tavistock-street](../streets/tavistock-street.md)
 - [the-corner](../buildings/the-corner.md)
 - [the-pleasaunce](../buildings/the-pleasaunce.md)
+
+## Picture evidence associated trails
+
+**Summary**: Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+
+**Evidence rule**: picture evidence supports visual association only; it is not authoritative identity, address, coordinate, listing, or dating evidence.
+
+### Associated pages
+- [berrydown](../buildings/berrydown.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [britannic-house](../buildings/britannic-house.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [buckinghamshire](../places/buckinghamshire.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [chinthurst-hill](../buildings/chinthurst-hill.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+
+### Uncertainties
+- LLM failed: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7971298f8760>: Failed to establish a new connection: [Errno -2] Name or service not known'))

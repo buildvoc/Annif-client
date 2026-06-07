@@ -75,3 +75,16 @@ Evidence rule: picture metadata and Gemma4 descriptions support visual associati
 - [st-andrews-parish-church-complex](../collections/st-andrews-parish-church-complex.md)
 - [st-andrews-parish-church](../buildings/st-andrews-parish-church.md)
 - [upper-church-lane](../streets/upper-church-lane.md)
+
+## Picture evidence associated trails
+
+**Summary**: Picture evidence reviewed; deterministic candidate trail fallback used where LLM returned no supported links.
+
+**Evidence rule**: picture evidence supports visual association only; it is not authoritative identity, address, coordinate, listing, or dating evidence.
+
+### Associated pages
+- [farham](../places/farham.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+- [farnham](../places/farnham.md) — `uncertain_association` — Candidate target appears in source text, captions, picture metadata, or existing related links; picture evidence requires manual verification.
+
+### Uncertainties
+- LLM failed: HTTPConnectionPool(host='host.docker.internal', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7971298f8d90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
