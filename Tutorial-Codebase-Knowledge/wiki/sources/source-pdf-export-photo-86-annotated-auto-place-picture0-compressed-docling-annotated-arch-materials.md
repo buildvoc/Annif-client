@@ -2,7 +2,7 @@
 
 **Raw file**: `raw/docling-json/PDF_EXPORT_PHOTO_86.annotated.auto_place.picture0_compressed.docling.annotated.arch_materials.json`  
 **Status**: processed PDF_EXPORT picture evidence  
-**Processed at**: 2026-05-24
+**Processed at**: 2026-06-07
 
 ## Picture metadata
 

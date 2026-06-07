@@ -1,6 +1,6 @@
-# West Street
+# Farnham
 
-**Summary**: Street where 1099 West Street is located.
+**Summary**: Location of the listed building at 1099 West Street.
 
 **Sources**:
 raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
@@ -11,4 +11,4 @@ raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.ar
 
 ## Related buildings
 
-- [[1099-west-street]]
+- Needs verification: no related buildings.

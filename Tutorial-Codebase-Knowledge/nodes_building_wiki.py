@@ -96,27 +96,31 @@ def picture_evidence_section_for_doc(doc):
     except Exception as e:
         section.append(f"- Picture inventory error: `{e}`")
 
-    try:
-        desc = backend_rag_post_json(
-            "/api/describe-pictures",
-            {
-                "source_file": source_file,
-                "query": "",
-                "limit": 5,
-                "model": os.environ.get("BACKEND_RAG_VISION_MODEL", "gemma4:12b"),
-            },
-            timeout=300,
-        )
-        descs = desc.get("results", [])
-        section.append(f"- Gemma4 description count: `{len(descs)}`")
-        for d in descs:
-            section.append(
-                f"- visual page `{d.get('page_no')}` | `{d.get('picture_ref')}` | "
-                f"class `{d.get('picture_class')}` | "
-                f"{str(d.get('gemma4_description') or '')[:500]}"
+    if os.environ.get("SKIP_GEMMA_DESCRIPTIONS", "").lower() in {"1", "true", "yes"}:
+        section.append("- Gemma4 description count: `0`")
+        section.append("- Gemma4 description status: `skipped by SKIP_GEMMA_DESCRIPTIONS`")
+    else:
+        try:
+            desc = backend_rag_post_json(
+                "/api/describe-pictures",
+                {
+                    "source_file": source_file,
+                    "query": "",
+                    "limit": 5,
+                    "model": os.environ.get("BACKEND_RAG_VISION_MODEL", "gemma4:12b"),
+                },
+                timeout=300,
             )
-    except Exception as e:
-        section.append(f"- Gemma4 description error: `{e}`")
+            descs = desc.get("results", [])
+            section.append(f"- Gemma4 description count: `{len(descs)}`")
+            for d in descs:
+                section.append(
+                    f"- visual page `{d.get('page_no')}` | `{d.get('picture_ref')}` | "
+                    f"class `{d.get('picture_class')}` | "
+                    f"{str(d.get('gemma4_description') or '')[:500]}"
+                )
+        except Exception as e:
+            section.append(f"- Gemma4 description error: `{e}`")
 
     section += [
         "",
@@ -142,7 +146,7 @@ def call_ollama_json(prompt):
             "format": "json",
             "options": {
                 "temperature": 0,
-                "num_ctx": 4096,
+                "num_ctx": int(os.environ.get("OLLAMA_NUM_CTX", "4096")),
             },
         },
         timeout=900,
@@ -331,6 +335,49 @@ class SafeAnalyzeRelationships(AnalyzeRelationships):
             "relationships": [],
         }
 
+
+
+def deterministic_pass1_plan(docs):
+    building_terms = {
+        "church", "chapel", "castle", "house", "hall", "museum", "library",
+        "manor", "wall", "building", "institute", "cemetery", "tower"
+    }
+    buildings = []
+
+    for doc in docs:
+        name = doc["name"]
+        title = source_title_from_name(name)
+        title_slug = slug(title).replace("-wikipedia", "")
+        if not any(term in title_slug for term in building_terms):
+            continue
+
+        place_slug = "farnham" if "farnham" in title_slug else ""
+        collection_slug = f"{title_slug}-evidence"
+
+        buildings.append({
+            "slug": title_slug,
+            "title": title,
+            "status": "needs verification",
+            "summary": "Deterministic Pass 1 source-title entity; requires later LLM/source validation.",
+            "source_names": [name],
+            "place_slug": place_slug,
+            "street_slug": "",
+            "collection_slugs": [collection_slug],
+            "theme_slugs": ["building-entity", "source-documents"],
+            "keywords": [title.lower()],
+            "claims": [{
+                "text": f"Source filename/title identifies {title}.",
+                "source_name": name
+            }],
+            "uncertainties": ["Pass 1 deterministic entity requires validation in later passes."]
+        })
+
+    return {
+        "buildings": buildings,
+        "places": [],
+        "streets": [],
+        "collections": []
+    }
 
 def normalise_entity_plan(plan, docs):
     docs_by_name = {doc["name"]: doc for doc in docs}
@@ -552,26 +599,19 @@ JSON shape:
 Rules:
 {schema}
 
-Existing abstraction extraction:
-{json.dumps(abstractions or [], indent=2, ensure_ascii=False)}
-
-Existing relationship analysis:
-{json.dumps(relationships or {}, indent=2, ensure_ascii=False)}
-
 Sources:
-{make_source_blocks(docs, limit=45)}
+{make_source_blocks(docs, limit=int(os.environ.get("PASS1_ENTITY_CONTEXT_LIMIT", "18")))}
 """
-
     print("Extracting entity plan using LLM per source...")
     Path("output").mkdir(exist_ok=True)
 
     merged = {"buildings": [], "places": [], "streets": [], "collections": []}
     responses = []
 
-    all_sources = make_source_blocks(docs, limit=45)
+    all_sources = make_source_blocks(docs, limit=int(os.environ.get("PASS1_ENTITY_CONTEXT_LIMIT", "18")))
 
     for doc in docs:
-        one_source = make_source_blocks([doc], limit=80)
+        one_source = make_source_blocks([doc], limit=int(os.environ.get("PASS1_ENTITY_SOURCE_LIMIT", "22")))
         single_prompt = prompt.replace(all_sources, one_source)
 
         try:

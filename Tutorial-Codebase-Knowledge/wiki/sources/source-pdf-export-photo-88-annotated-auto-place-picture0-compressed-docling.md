@@ -1,17 +1,18 @@
-# Source: PDF EXPORT PHOTO 88.annotated.auto place.picture0 compressed.docling
+# Source: PDF EXPORT PHOTO 88.annotated.auto place.picture0 compressed.docling.annotated.arch materials.description classification
 
-**Summary**: Source page generated from DoclingDocument JSON.
+**Raw file**: `raw/docling-json/PDF_EXPORT_PHOTO_88.annotated.auto_place.picture0_compressed.docling.annotated.arch_materials.description_classification.json`  
+**Status**: processed PDF_EXPORT picture evidence  
+**Processed at**: 2026-06-07
 
-**Raw file**: raw/docling-json/PDF_EXPORT_PHOTO_88.annotated.auto_place.picture0_compressed.docling.annotated.arch_materials.description_classification.json
+## Picture metadata
 
-**Last ingested**: 2026-06-05
-
----
-
-## Extracted text snippets
-
-- Megan's on West Street
+- Place: `St Andrews Church`
+- Materials context: `lead`
+- Picture classification: `other`
+- Page: `1`
+- Bounding box: `{'l': 15.785534858703613, 't': 78.0322265625, 'r': 186.4229736328125, 'b': 21.615966796875, 'coord_origin': 'BOTTOMLEFT'}`
 
 ## Related pages
 
-- [[west-street]]
+- No matched building page yet.
+

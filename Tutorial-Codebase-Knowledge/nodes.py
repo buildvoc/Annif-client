@@ -139,6 +139,15 @@ class IdentifyAbstractions(Node):
             use_cache,
             max_abstraction_num,
         ) = prep_res  # Unpack all parameters
+        if os.environ.get("BUILDING_MEMEX_SKIP_LEGACY_LLM", "1").lower() in {"1", "true", "yes"}:
+            print("Skipping legacy abstraction LLM; using safe Building Memex abstractions")
+            return [
+                {"name": "source documents", "description": "Source documents ingested in Pass 1.", "files": [0]},
+                {"name": "building entity", "description": "Building entities extracted from source evidence.", "files": [0]},
+                {"name": "place entity", "description": "Place entities extracted from source evidence.", "files": [0]},
+                {"name": "architectural feature", "description": "Architecture/material evidence from source text and picture metadata.", "files": [0]},
+                {"name": "associative trail", "description": "Source to building/place/collection links.", "files": [0]},
+            ]
         print(f"Identifying abstractions using LLM...")
 
         # Add language instruction and hints only if not English
@@ -309,6 +318,9 @@ class AnalyzeRelationships(Node):
             language,
             use_cache,
          ) = prep_res  # Unpack use_cache
+        if os.environ.get("BUILDING_MEMEX_SKIP_LEGACY_LLM", "1").lower() in {"1", "true", "yes"}:
+            print("Skipping legacy relationship LLM; using entity-plan relationships later")
+            return {}
         print(f"Analyzing relationships using LLM...")
 
         # Add language instruction and hints only if not English
