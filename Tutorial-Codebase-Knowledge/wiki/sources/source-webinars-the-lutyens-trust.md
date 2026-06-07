@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Webinars_The_Lutyens_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 

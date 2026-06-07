@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Well_Head_in_Grounds_of_Watts_Memorial_Chapel_Compton_1188387_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -41,4 +41,6 @@
 
 ## Related pages
 
-- Needs verification: no related entity matched.
+- [[compton]]
+- [[down-lane]]
+- [[well-head-in-grounds-of-watts-memorial-chapel-compton]]

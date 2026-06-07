@@ -1,13 +1,13 @@
 # Windows on the Daneshill Brickworks
 
-**Summary**: The windows on the Daneshill Brickworks were designed and built by Sir Edwin Lutyens in 1905.
+**Summary**: The windows were designed and built by Sir Edwin Lutyens in 1905.
 
 **Status**: confirmed
 
 **Sources**:
 - raw/docling-json/Arcaid_Images.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## Relationships
 
-- In place: [basingstoke](../places/basingstoke.md)
+- In place: [[basingstoke]]
 
 ## Associative trails
 
@@ -28,11 +28,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -40,4 +40,4 @@
 
 ## Related pages
 
-- In place: [basingstoke](../places/basingstoke.md)
+- In place: [[basingstoke]]

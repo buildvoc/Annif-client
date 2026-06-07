@@ -7,7 +7,7 @@
 **Sources**:
 - raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
@@ -16,6 +16,8 @@
 - Claim/snippet: Watts's second wife, Mary, was also an artist and she designed Watts Cemetery Chapel when Compton Parish Council bought the land for a new cemetery in 1895.
   - Source: raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
 - Claim/snippet: This extraordinary circular building covered in celtic and art nouveau decoration is open daily to the public.
+  - Source: raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
+- Claim/snippet: Watts Chapel & Cemetery is managed and maintained by the Watts Gallery Trust on behalf of Compton Parish Council.
   - Source: raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
 - Claim/snippet: Watts Chapel - Christmas Tree
   - Source: raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
@@ -28,7 +30,7 @@
 
 ## Relationships
 
-- In place: [compton-village](../places/compton-village.md)
+- In place: [[compton-village]]
 
 ## Associative trails
 
@@ -36,11 +38,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -48,4 +50,4 @@
 
 ## Related pages
 
-- In place: [compton-village](../places/compton-village.md)
+- In place: [[compton-village]]

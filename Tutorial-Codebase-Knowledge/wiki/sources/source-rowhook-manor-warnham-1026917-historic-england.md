@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Rowhook_Manor_Warnham_1026917_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -29,6 +29,7 @@
 
 ## Related pages
 
-- [bognor-road](../streets/bognor-road.md)
-- [rowhook-manor](../buildings/rowhook-manor.md)
-- [warnham](../places/warnham.md)
+- [[bognor-road]]
+- [[horsham]]
+- [[rowhook-manor]]
+- [[warnham]]

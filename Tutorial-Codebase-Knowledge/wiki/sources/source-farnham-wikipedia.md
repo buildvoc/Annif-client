@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Farnham_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 

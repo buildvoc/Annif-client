@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Farnham_The_Earlier_Historic_period.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,4 +43,4 @@
 
 ## Related pages
 
-- [st-andrew-s](../buildings/st-andrew-s.md)
+- Needs verification: no related entity matched.

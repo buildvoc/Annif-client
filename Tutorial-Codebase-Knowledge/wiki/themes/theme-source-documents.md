@@ -9,7 +9,7 @@
 
 ## Related buildings
 
-- Needs verification: no related buildings.
+- [[st-andrews-church-farnham]]
 
 ## Related themes
 

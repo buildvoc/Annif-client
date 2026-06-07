@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Recent_Visits_Fig_Tree_Court_Surrey_and_The_Royal_Hospital_Chelsea_The_Lutyens_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -30,10 +30,4 @@
 
 ## Related pages
 
-- [chelsea](../places/chelsea.md)
-- [crooksbury](../buildings/crooksbury.md)
-- [fig-tree-court](../buildings/fig-tree-court.md)
-- [hampstead-garden-suburb](../places/hampstead-garden-suburb.md)
-- [london](../places/london.md)
-- [new-delhi](../places/new-delhi.md)
-- [the-royal-hospital-chelsea](../buildings/the-royal-hospital-chelsea.md)
+- Needs verification: no related entity matched.

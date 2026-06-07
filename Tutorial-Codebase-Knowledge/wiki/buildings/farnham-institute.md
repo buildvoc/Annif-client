@@ -7,7 +7,7 @@
 **Sources**:
 - raw/docling-json/Our_Story_Farnham_District_Museum_Society.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## Relationships
 
-- In place: [farnham](../places/farnham.md)
+- In place: [[farnham]]
 
 ## Associative trails
 
@@ -42,11 +42,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -54,4 +54,4 @@
 
 ## Related pages
 
-- In place: [farnham](../places/farnham.md)
+- In place: [[farnham]]

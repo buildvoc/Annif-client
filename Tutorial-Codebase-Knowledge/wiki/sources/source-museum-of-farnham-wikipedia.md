@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Museum_of_Farnham_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -35,7 +35,4 @@
 
 ## Related pages
 
-- [farnham](../places/farnham.md)
-- [surrey](../places/surrey.md)
-- [west-street](../streets/west-street.md)
-- [willmer-house](../buildings/willmer-house.md)
+- [[museum-of-farnham]]

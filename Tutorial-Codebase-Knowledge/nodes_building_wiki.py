@@ -45,6 +45,8 @@ def normalise_list(value):
         return []
     if isinstance(value, list):
         return [v for v in value if v not in (None, "")]
+    if isinstance(value, dict):
+        return [value]
     if isinstance(value, str) and value.strip():
         return [value.strip()]
     return []
@@ -93,16 +95,15 @@ def picture_evidence_section_for_doc(doc):
             )
     except Exception as e:
         section.append(f"- Picture inventory error: `{e}`")
-        pics = []
 
     try:
         desc = backend_rag_post_json(
             "/api/describe-pictures",
             {
                 "source_file": source_file,
-                "query": "building church flint map plaque interior exterior statue",
+                "query": "",
                 "limit": 5,
-                "model": os.environ.get("BACKEND_RAG_VISION_MODEL", "gemma4:e4b"),
+                "model": os.environ.get("BACKEND_RAG_VISION_MODEL", "gemma4:12b"),
             },
             timeout=300,
         )
@@ -130,7 +131,7 @@ def rel_raw(doc):
 
 def call_ollama_json(prompt):
     base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").rstrip("/")
-    model = os.getenv("OLLAMA_MODEL", "gemma3:4b-it-q4_K_M")
+    model = os.getenv("OLLAMA_MODEL", "gemma4:12b")
 
     response = requests.post(
         base_url + "/api/generate",
@@ -147,7 +148,12 @@ def call_ollama_json(prompt):
         timeout=900,
     )
     response.raise_for_status()
-    return response.json().get("response", "")
+    text = response.json().get("response", "")
+    Path("output").mkdir(exist_ok=True)
+    Path("output/last_ollama_json_response.txt").write_text(text, encoding="utf-8")
+    if not extract_json_dict(text):
+        print("WARNING: Ollama returned no parseable JSON; see output/last_ollama_json_response.txt")
+    return text
 
 
 def source_title_from_name(name):
@@ -334,6 +340,25 @@ def normalise_entity_plan(plan, docs):
         "streets": [],
         "collections": [],
     }
+
+    if not normalise_list(plan.get("buildings")) and len(docs) == 1:
+        doc = docs[0]
+        fallback_title = source_title_from_name(doc["name"])
+        if "st andrews church" in slug(fallback_title).replace("-", " ") or "st-andrews-church" in slug(fallback_title):
+            plan["buildings"] = [{
+                "slug": "st-andrews-church-farnham",
+                "title": "St Andrew's Church, Farnham",
+                "status": "needs verification",
+                "summary": "Deterministic fallback from source title after LLM entity JSON parsing failed.",
+                "source_names": [doc["name"]],
+                "place_slug": "farnham",
+                "street_slug": "",
+                "collection_slugs": ["st-andrews-church-evidence"],
+                "theme_slugs": ["building-entity", "source-documents"],
+                "keywords": ["st andrews church", "farnham", "church"],
+                "claims": [{"text": "Source file title identifies St Andrews Church, Farnham.", "source_name": doc["name"]}],
+                "uncertainties": ["Fallback entity requires verification against source text and authoritative records."]
+            }]
 
     for raw in normalise_list(plan.get("buildings")):
         if isinstance(raw, str):
@@ -556,7 +581,7 @@ Sources:
             continue
         responses.append("## " + doc["name"] + "\n" + response + "\n")
 
-        plan = extract_json_dict(response)
+        plan = extract_json_dict(response, required_key="buildings")
         if not isinstance(plan, dict):
             print("WARNING: no valid JSON entity plan for " + doc["name"])
             continue

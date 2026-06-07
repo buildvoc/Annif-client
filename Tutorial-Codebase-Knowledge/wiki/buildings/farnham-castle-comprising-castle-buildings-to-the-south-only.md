@@ -7,18 +7,12 @@
 **Sources**:
 - raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Evidence snippets
 
-- Claim/snippet: The Castle has been the property of the Bishops of Winchester since Saxon times continuously to 1927, remaining for some time since that date the residence of the Bishop of Guildford, and partly for diocesan use; now used by the Overseas Service College.
-  - Source: raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: The original stockade defence of the mound (rebuilt in stone in the C18), was probably by Henry of Blois, Bishop of Winchester 1129 to 117I.
-  - Source: raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: The group of the Castle, together with the whole of the Park, The Grange (Map No 2) and Castle Street, is very exceptional and should be considered as a unit for purposes of preservation.
-  - Source: raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
 - Claim/snippet: Farnham Castle (Comprising Castle Buildings to the South Only)
   - Source: raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
 - Claim/snippet: (https://historicengland.org.uk/listing/the-list/)
@@ -44,8 +38,8 @@
 
 ## Relationships
 
-- In place: [farnham](../places/farnham.md)
-- On street: [castle-street](../streets/castle-street.md)
+- In place: [[farnham]]
+- On street: [[castle-street]]
 
 ## Associative trails
 
@@ -53,11 +47,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -65,5 +59,5 @@
 
 ## Related pages
 
-- In place: [farnham](../places/farnham.md)
-- On street: [castle-street](../streets/castle-street.md)
+- In place: [[farnham]]
+- On street: [[castle-street]]

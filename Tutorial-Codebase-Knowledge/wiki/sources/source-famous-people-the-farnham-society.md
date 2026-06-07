@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Famous_people_The_Farnham_Society.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,4 +43,4 @@
 
 ## Related pages
 
-- [farnham-castle](../buildings/farnham-castle.md)
+- Needs verification: no related entity matched.

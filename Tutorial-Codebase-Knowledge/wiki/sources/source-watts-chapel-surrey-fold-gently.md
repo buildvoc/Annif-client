@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Watts_Chapel_Surrey_Fold_Gently.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,6 +43,4 @@
 
 ## Related pages
 
-- [surrey](../places/surrey.md)
-- [watts-chapel-in-surrey](../buildings/watts-chapel-in-surrey.md)
-- [wellhead-at-watts-chapel](../buildings/wellhead-at-watts-chapel.md)
+- Needs verification: no related entity matched.

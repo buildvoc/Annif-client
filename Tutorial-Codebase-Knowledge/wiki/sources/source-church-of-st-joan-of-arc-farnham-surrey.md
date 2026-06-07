@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Church_of_St_Joan_of_Arc_Farnham_Surrey.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 

@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Daneshill_David_Walter_Hoare_school_diary.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -19,8 +19,5 @@
 
 ## Related pages
 
-- [daneshill-brick-and-tile-company](../buildings/daneshill-brick-and-tile-company.md)
-- [daneshill-cottage](../buildings/daneshill-cottage.md)
-- [daneshill-house](../buildings/daneshill-house.md)
-- [daneshill-lodge](../buildings/daneshill-lodge.md)
-- [daneshill](../streets/daneshill.md)
+- [[daneshill-house]]
+- [[daneshill]]

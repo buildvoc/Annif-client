@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Farnham_Castle_Farnham_1012181_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -40,5 +40,4 @@
 
 ## Related pages
 
-- [farnham-castle](../buildings/farnham-castle.md)
-- [farnham](../places/farnham.md)
+- [[farnham-castle]]

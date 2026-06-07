@@ -7,7 +7,7 @@
 **Sources**:
 - raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## Relationships
 
-- In place: [compton](../places/compton.md)
+- In place: [[compton]]
 
 ## Associative trails
 
@@ -38,11 +38,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -50,4 +50,4 @@
 
 ## Related pages
 
-- In place: [compton](../places/compton.md)
+- In place: [[compton]]

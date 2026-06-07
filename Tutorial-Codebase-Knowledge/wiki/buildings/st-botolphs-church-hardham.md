@@ -7,15 +7,23 @@
 **Sources**:
 - raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Evidence snippets
 
-- Claim/snippet: Adam and Eve wall painting at St Botolphʼs Church, Hardham
+- Claim/snippet: Posts tagged 'Watts Chapel'
+  - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
+- Claim/snippet: Posted on April 24, 2012 by Alexi -3 Comments
   - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 - Claim/snippet: Churches, chapels and frescos
+  - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
+- Claim/snippet: Iʼve had a yearnin g for a faded sort of beauty. Wantin g to satisfy my need, I
+  - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
+- Claim/snippet: googled angels , caves and frescos and found two roman frescos from Italy that I particularly like. One is of a Winged Figure and the other, The Three Graces .
+  - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
+- Claim/snippet: Itʼs the ethereal beauty of the frescos that I like, somewhat wabi sabi?
   - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 - Claim/snippet: But there are frescos closer to home, one in a church just down the road, St Peterʼs in Preston Park. There are several other medieval churches close to Brighton that have well kept twelfth century wall paintings, these are at Clayton, Coombes and Hardham. Recently, I visited them and took photos.
   - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
@@ -31,10 +39,12 @@
   - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 - Claim/snippet: In the mood for church art, I made a trip to Watts Chapel in Compton, Surrey. It is a gem of a place. Designed in the nineteenth century by Mary Watts, the wife of George Frederic Watts, a well known Victorian artist, the chapel is of many styles including Art Nouveau, Celtic, Romanesque and Egyptian. It is shaped like a Byzantine Greek Cross and features many decorative mouldings and friezes.
   - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
+- Claim/snippet: Watts Chapel Tree of Life
+  - Source: raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 
 ## Relationships
 
-- In place: [hardham](../places/hardham.md)
+- In place: [[hardham]]
 
 ## Associative trails
 
@@ -42,11 +52,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -54,4 +64,4 @@
 
 ## Related pages
 
-- In place: [hardham](../places/hardham.md)
+- In place: [[hardham]]

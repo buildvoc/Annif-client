@@ -1,14 +1,14 @@
 # Preston Park
 
-**Summary**: St Peter's in Preston Park is a church with well kept twelfth century wall paintings.
+**Summary**: Needs verification: place page derived from LLM entity relationship.
 
 **Sources**:
 raw/docling-json/Watts_Chapel_Alexi_Francis.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Related buildings
 
-- [st-peter-s-church-preston-park](../buildings/st-peter-s-church-preston-park.md)
+- [[st-peter-s-church-preston-park]]

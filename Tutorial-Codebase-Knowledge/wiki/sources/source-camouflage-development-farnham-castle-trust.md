@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Camouflage_development_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -31,7 +31,4 @@
 
 ## Related pages
 
-- [farnborough](../places/farnborough.md)
-- [farnham-castle](../buildings/farnham-castle.md)
-- [farnham](../places/farnham.md)
-- [london](../places/london.md)
+- Needs verification: no related entity matched.

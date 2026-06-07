@@ -1,14 +1,14 @@
 # Basingstoke
 
-**Summary**: Daneshill House is located outside Basingstoke.
+**Summary**: The location mentioned in the source is Basingstoke.
 
 **Sources**:
-raw/docling-json/How_Tudor_brickwork_inspired_a_Lutyens_masterpiece_Spears.annotated.arch_materials.description_classification.json
+raw/docling-json/Arcaid_Images.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Related buildings
 
-- [daneshill-house](../buildings/daneshill-house.md)
+- [[windows-on-the-daneshill-brickworks]]

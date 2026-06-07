@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/History_of_St_Andrews_Church_St_Andrews_Church_Farnham.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -21,5 +21,4 @@
 
 ## Related pages
 
-- [farnham](../places/farnham.md)
-- [st-andrews-church](../buildings/st-andrews-church.md)
+- Needs verification: no related entity matched.

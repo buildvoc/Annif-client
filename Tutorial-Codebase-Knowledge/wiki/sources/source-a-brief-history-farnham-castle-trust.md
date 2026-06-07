@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/A_brief_history_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -33,9 +33,4 @@
 
 ## Related pages
 
-- [farnham-castle](../buildings/farnham-castle.md)
-- [farnham](../places/farnham.md)
-- [guildford](../places/guildford.md)
-- [lincolnshire](../places/lincolnshire.md)
-- [winchester](../places/winchester.md)
-- [worcester](../places/worcester.md)
+- Needs verification: no related entity matched.

@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Inside_Watts_Chapel_ a_little_known_Arts_and_Crafts_delight_THE_WORLD_OF_INTERIORS.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,5 +43,4 @@
 
 ## Related pages
 
-- [compton](../places/compton.md)
-- [watts-chapel](../buildings/watts-chapel.md)
+- Needs verification: no related entity matched.

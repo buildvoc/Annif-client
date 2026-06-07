@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Colin_Amerys_Invaluable_Contribution_to_the_Restoration_of_Stowe_The_Lutyens_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -28,4 +28,5 @@
 
 ## Related pages
 
-- Needs verification: no related entity matched.
+- [[buckinghamshire]]
+- [[stowe-house]]

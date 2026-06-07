@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -20,6 +20,6 @@
 
 ## Related pages
 
-- [limnerslease](../buildings/limnerslease.md)
-- [surrey](../places/surrey.md)
-- [watts-memorial-chapel](../buildings/watts-memorial-chapel.md)
+- [[limnerslease]]
+- [[surrey]]
+- [[watts-memorial-chapel]]

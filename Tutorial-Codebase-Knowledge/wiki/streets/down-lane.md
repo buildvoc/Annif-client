@@ -1,14 +1,16 @@
 # Down Lane
 
-**Summary**: Watts Memorial Chapel is located at Down Lane.
+**Summary**: Watts Cemetery Chapel is a short walk from the Visitor Centre, on Down Lane.
 
 **Sources**:
-raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
+raw/docling-json/Watts_Cemetery_Chapel_Watts_Gallery.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Related buildings
 
-- [watts-memorial-chapel](../buildings/watts-memorial-chapel.md)
+- [[watts-cemetery-chapel]]
+- [[watts-memorial-chapel-compton]]
+- [[well-head-in-grounds-of-watts-memorial-chapel-compton]]

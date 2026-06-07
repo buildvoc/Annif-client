@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/History_and_Origins_Farnham_Craft_Town.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,5 +43,4 @@
 
 ## Related pages
 
-- [farnham-castle](../buildings/farnham-castle.md)
-- [vernon-house](../buildings/vernon-house.md)
+- Needs verification: no related entity matched.

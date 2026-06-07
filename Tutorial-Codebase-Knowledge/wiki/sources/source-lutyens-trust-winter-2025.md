@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Lutyens_Trust_Winter_2025.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -43,5 +43,4 @@
 
 ## Related pages
 
-- [munstead-heath](../places/munstead-heath.md)
-- [munstead-wood](../buildings/munstead-wood.md)
+- Needs verification: no related entity matched.

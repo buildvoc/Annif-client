@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Farnham_Castle_Comprising_Castle_Buildings_to_the_South_Only_Farnham_1044677_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -37,6 +37,4 @@
 
 ## Related pages
 
-- [castle-street](../streets/castle-street.md)
-- [farnham-castle-comprising-castle-buildings-to-the-south-only](../buildings/farnham-castle-comprising-castle-buildings-to-the-south-only.md)
-- [farnham](../places/farnham.md)
+- [[farnham-castle-comprising-castle-buildings-to-the-south-only]]

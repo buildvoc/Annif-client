@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/East_Garden_Wall_to_Willmer_House_Facing_on_to_Bishops_Mead_Farnham_1273425_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -35,6 +35,6 @@
 
 ## Related pages
 
-- [bishops-mead](../places/bishops-mead.md)
-- [east-garden-wall-to-willmer-house-facing-on-to-bishops-mead](../buildings/east-garden-wall-to-willmer-house-facing-on-to-bishops-mead.md)
-- [west-street](../streets/west-street.md)
+- [[bishops-mead]]
+- [[east-garden-wall-to-willmer-house-facing-on-to-bishops-mead]]
+- [[west-street]]

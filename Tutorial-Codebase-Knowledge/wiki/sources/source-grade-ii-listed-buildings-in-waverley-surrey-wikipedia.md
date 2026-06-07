@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Grade II_listed_buildings_in_Waverley_Surrey_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -24,7 +24,8 @@
 
 ## Related pages
 
-- [castle-street](../streets/castle-street.md)
-- [farnham](../places/farnham.md)
-- [grade-ii-listed-buildings-in-waverley-surrey](../buildings/grade-ii-listed-buildings-in-waverley-surrey.md)
-- [waverley-surrey](../places/waverley-surrey.md)
+- [[castle-street]]
+- [[farnham]]
+- [[grade-ii-listed-buildings-in-waverley-surrey]]
+- [[surrey]]
+- [[waverley-surrey]]

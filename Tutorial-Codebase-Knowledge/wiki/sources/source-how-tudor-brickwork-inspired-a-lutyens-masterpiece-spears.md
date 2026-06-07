@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/How_Tudor_brickwork_inspired_a_Lutyens_masterpiece_Spears.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -34,7 +34,4 @@
 
 ## Related pages
 
-- [basing-house](../buildings/basing-house.md)
-- [basingstoke](../places/basingstoke.md)
-- [daneshill-house](../buildings/daneshill-house.md)
-- [stourhead](../buildings/stourhead.md)
+- Needs verification: no related entity matched.

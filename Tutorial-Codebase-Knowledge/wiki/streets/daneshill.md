@@ -1,14 +1,14 @@
 # Daneshill
 
-**Summary**: Daneshill is part of the location associated with Daneshill House.
+**Summary**: Daneshill is part of the address associated with the listed building.
 
 **Sources**:
-raw/docling-json/Daneshill_House_Old_Basing_and_Lychpit_1339563_Historic_England.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+
+**Last updated**: 2026-06-05
 
 ---
 
 ## Related buildings
 
-- [daneshill-house](../buildings/daneshill-house.md)
+- [[daneshill-house]]

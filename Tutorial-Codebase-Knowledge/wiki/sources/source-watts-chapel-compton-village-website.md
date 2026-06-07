@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Watts_Chapel_Compton_Village_Website.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -19,5 +19,5 @@
 
 ## Related pages
 
-- [compton-village](../places/compton-village.md)
-- [watts-chapel-and-cemetery](../buildings/watts-chapel-and-cemetery.md)
+- [[compton-village]]
+- [[watts-chapel-and-cemetery]]

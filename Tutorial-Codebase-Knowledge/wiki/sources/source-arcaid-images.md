@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Arcaid_Images.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -16,5 +16,5 @@
 
 ## Related pages
 
-- [basingstoke](../places/basingstoke.md)
-- [windows-on-the-daneshill-brickworks](../buildings/windows-on-the-daneshill-brickworks.md)
+- [[basingstoke]]
+- [[windows-on-the-daneshill-brickworks]]

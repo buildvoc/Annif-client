@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Key_dates_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -17,5 +17,5 @@
 
 ## Related pages
 
-- [farnham-castle](../buildings/farnham-castle.md)
-- [farnham](../places/farnham.md)
+- [[farnham-castle]]
+- [[farnham]]

@@ -7,13 +7,13 @@
 **Sources**:
 - raw/docling-json/Grade II_listed_buildings_in_Waverley_Surrey_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Evidence snippets
 
-- Claim/snippet: This page is a list of the 95 Grade II* listed buildings in the district of Waverley in Surrey.
+- Claim/snippet: There are 95 Grade II* listed buildings in Waverley, with the largest number, 44, in the town of Farnham which is one of three towns in the district.
   - Source: raw/docling-json/Grade II_listed_buildings_in_Waverley_Surrey_Wikipedia.annotated.arch_materials.description_classification.json
 - Claim/snippet: Castle Street in Farnham has 17 Grade II* listed buildings, leading architectural historian Alec Clifton-Taylor to note that "for sheer visual delight, this street has few equals in all England".
   - Source: raw/docling-json/Grade II_listed_buildings_in_Waverley_Surrey_Wikipedia.annotated.arch_materials.description_classification.json
@@ -32,8 +32,8 @@
 
 ## Relationships
 
-- In place: [waverley-surrey](../places/waverley-surrey.md)
-- On street: [castle-street](../streets/castle-street.md)
+- In place: [[waverley-surrey]]
+- On street: [[castle-street]]
 
 ## Associative trails
 
@@ -41,11 +41,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -53,5 +53,5 @@
 
 ## Related pages
 
-- In place: [waverley-surrey](../places/waverley-surrey.md)
-- On street: [castle-street](../streets/castle-street.md)
+- In place: [[waverley-surrey]]
+- On street: [[castle-street]]

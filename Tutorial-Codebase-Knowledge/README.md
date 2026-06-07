@@ -84,7 +84,7 @@ Set the model in `.env`:
 ```env
 LLM_PROVIDER=ollama
 OLLAMA_BASE_URL=http://host.docker.internal:11434
-OLLAMA_MODEL=gemma3:4b-it-q4_K_M
+OLLAMA_MODEL=gemma4:12b
 ```
 
 For remote Ollama, replace `OLLAMA_BASE_URL` with the reachable host, for example:

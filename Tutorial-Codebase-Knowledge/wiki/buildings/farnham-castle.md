@@ -1,21 +1,19 @@
 # Farnham Castle
 
-**Summary**: Mavis Standing wrote about her memories of living at Farnham Castle.
+**Summary**: Mavis Standing lived at Farnham Castle, which was divided into two parts: the Bishop's residence and a Retreat House.
 
 **Status**: confirmed
 
 **Sources**:
 - raw/docling-json/Mavis_Standing_the_real_story_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Evidence snippets
 
-- Claim/snippet: Welcome to Farnham Castle and Bishop's Palace
-  - Source: raw/docling-json/Mavis_Standing_the_real_story_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
-- Claim/snippet: We moved to Farnham Castle in 1949 when my dad became chauffeur gardener to Bishop MontgomeryCampbell who had recently been enthroned as the new Bishop of the Diocese of Guildford.
+- Claim/snippet: The Castle was then divided into two, half being the Bishop' residence and part being a Retreat House.
   - Source: raw/docling-json/Mavis_Standing_the_real_story_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 - Claim/snippet: Welcome to Farnham Castle and Bishop's Palace
   - Source: raw/docling-json/Mavis_Standing_the_real_story_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
@@ -34,7 +32,8 @@
 
 ## Relationships
 
-- In place: [farnham](../places/farnham.md)
+- In place: [[farnham]]
+- On street: [[empty]]
 
 ## Associative trails
 
@@ -42,11 +41,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -54,4 +53,5 @@
 
 ## Related pages
 
-- In place: [farnham](../places/farnham.md)
+- In place: [[farnham]]
+- On street: [[empty]]

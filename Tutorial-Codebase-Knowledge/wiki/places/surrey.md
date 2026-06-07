@@ -1,14 +1,15 @@
 # Surrey
 
-**Summary**: The Watts Chapel in Surrey is located in the village of Compton near Guildford.
+**Summary**: Surrey is a county that contains the district of Waverley.
 
 **Sources**:
-raw/docling-json/Watts_Chapel_Surrey_Fold_Gently.annotated.arch_materials.description_classification.json
+raw/docling-json/Grade II_listed_buildings_in_Waverley_Surrey_Wikipedia.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Related buildings
 
-- [watts-chapel-in-surrey](../buildings/watts-chapel-in-surrey.md)
+- [[watts-memorial-chapel]]
+- [[limnerslease]]

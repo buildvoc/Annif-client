@@ -1,39 +1,36 @@
 # Watts Memorial Chapel
 
-**Summary**: Built by Mary Seton Watts and the villagers of Compton between 1896 and 1898, the chapel was decorated in 1901.
+**Summary**: Watts Memorial Chapel is one of the great buildings of the UK, mixing Art Nouveau, Celtic, and Romanesque styles.
 
 **Status**: confirmed
 
 **Sources**:
-- raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
+- raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
 
-**Last updated**: 2026-05-24
+**Last updated**: 2026-06-05
 
 ---
 
 ## Evidence snippets
 
-- Claim/snippet: Mortuary chapel for new cemetery.
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Built by Mary Seton Watts and the villagers of Compton between 1896 and 1898, interior decorated in 1901.
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Local red brick with rubbed and cut brick decorations, pantiled roof.
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Greek cross plan within a circle.
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Interior: Decorated in Art Nouveau style with complex symbolism.
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Altar inscribed "This chapel designed by Mrs Watts, wife of G F Watts OMRA, was built in 1896 by her and the people of Compton. It is dedicated to the memory of all who rest near its walls."
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Mortuary chapel for new cemetery. Built by Mary Seton Watts and the villagers of Compton between 1896 and 1898, interior decorated in 1901. Local red brick with rubbed and cut brick decorations, pantiled roof. Greek cross plan within a circle. Each arm of the cross has two round- arched headed windows on the end with one step surrounds, Romanesque style. Foliage capitals to tall jamb shafts and open gable end over. Buttress to base of arms have paired shafts with Romanesque capitals and
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Interior: Decorated in Art Nouveau style with complex symbolism. The plan is a circle with four deep embrasures representing the arms of the cross, vaulted over by pairs of thick parallel ribs (cf. Monks' Kitchen, Durham). Gesso decoration in sombre blues and reds of elongated angels carrying cameos in ornate frames looping down and linked to form a chain. More angels above with cherubs' heads on the ribs of the vault. Tree of life motif with roots intertwined to form a dado frieze around the bottom of the wall, at the top of the wall benches. Altar recess gilded containing "The All Rewarding" by G F Watts. Altar inscribed "This chapel designed by Mrs Watts, wife of G F Watts OMRA, was built in 1896 by her and the people of Compton. It is dedicated to the memory of all who rest near its walls.'
-  - Source: raw/docling-json/Watts_Memorial_Chapel_Compton_1029541_Historic_England.annotated.arch_materials.description_classification.json
+- Claim/snippet: Watts Memorial Chapel is one of the great buildings of the UK.
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: Mary Watts came up with a mixture of Art Nouveau, Celtic and Romanesque styles to create a stunning building.
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: WATTS MEMORIAL CHAPEL
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: Watts Memorial Chapel is one of the great buildings of the UK. It is tiny but perfect packed with detail. Mary Watts came up with a mixture of Art Nouveau, Celtic and Romanesque styles to create a stunning building. On the outside the terracotta bricks and richly patterned walls prepare you for the riot of angels inside. The building is tiny, any more than four people and you feel crowded, but every inch of the interior is covered with glowing colours. Angels look down on you.
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: Angels in Watts Memorial Chapel
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: This is a memorial chapel, designed for the contemplation of the afterlife. Those angels would look after your loved ones. Surrounding the the Memorial Chapel is the Compton graveyard, many of the craftspeople who helped make the chapel are buried here. Several of the tombstones are made using the same terracotta as the Chapel itself. At the top of the hill is a colonnade with the graves of GF Watts and Mary Watts. What beautiful and peaceful place to spend eternity.
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
+- Claim/snippet: Watts Memorial chapel
+  - Source: raw/docling-json/Discover_the_Watts_Gallery_and_Memorial_Chapel_Surrey.annotated.arch_materials.description_classification.json
 
 ## Relationships
 
-- In place: [compton](../places/compton.md)
-- On street: [down-lane](../streets/down-lane.md)
+- In place: [[surrey]]
 
 ## Associative trails
 
@@ -41,11 +38,11 @@
 
 ## Theme pages
 
-- [theme-source-documents](../themes/theme-source-documents.md)
-- [theme-building-entity](../themes/theme-building-entity.md)
-- [theme-place-entity](../themes/theme-place-entity.md)
-- [theme-architectural-feature](../themes/theme-architectural-feature.md)
-- [theme-associative-trail](../themes/theme-associative-trail.md)
+- [[theme-source-documents]]
+- [[theme-building-entity]]
+- [[theme-place-entity]]
+- [[theme-architectural-feature]]
+- [[theme-associative-trail]]
 
 ## Uncertainty
 
@@ -53,5 +50,4 @@
 
 ## Related pages
 
-- In place: [compton](../places/compton.md)
-- On street: [down-lane](../streets/down-lane.md)
+- In place: [[surrey]]

@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Amy_Anderson_saves_the_castle_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -39,8 +39,4 @@
 
 ## Related pages
 
-- [bishop-s-palace](../buildings/bishop-s-palace.md)
-- [farnham-castle](../buildings/farnham-castle.md)
-- [farnham](../places/farnham.md)
-- [norman-chapel](../buildings/norman-chapel.md)
-- [waverley-abbey-house](../buildings/waverley-abbey-house.md)
+- [[farnham-castle]]

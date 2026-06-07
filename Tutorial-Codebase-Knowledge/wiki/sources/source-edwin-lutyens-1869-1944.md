@@ -4,7 +4,7 @@
 
 **Raw file**: raw/docling-json/Edwin_Lutyens_1869_1944.annotated.arch_materials.description_classification.json
 
-**Last ingested**: 2026-05-24
+**Last ingested**: 2026-06-05
 
 ---
 
@@ -33,17 +33,7 @@
 
 ## Related pages
 
-- [busbridge-church](../buildings/busbridge-church.md)
-- [busbridge](../places/busbridge.md)
-- [elstead](../places/elstead.md)
-- [farnham-liberal-club](../buildings/farnham-liberal-club.md)
-- [frith-hill](../places/frith-hill.md)
-- [fulbrook-house](../buildings/fulbrook-house.md)
-- [milford-house](../buildings/milford-house.md)
-- [milford](../places/milford.md)
-- [park-hatch](../buildings/park-hatch.md)
-- [rake-manor](../buildings/rake-manor.md)
-- [red-house](../buildings/red-house.md)
-- [shere-cottages](../buildings/shere-cottages.md)
-- [tilford-institute](../buildings/tilford-institute.md)
-- [unknown](../streets/unknown.md)
+- [[cottages-at-shere]]
+- [[milford-house]]
+- [[park-hatch]]
+- [[unknown]]
