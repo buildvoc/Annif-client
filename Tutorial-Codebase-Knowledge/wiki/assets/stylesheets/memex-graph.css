@@ -1,0 +1,80 @@
+/* Memex Wiki typed graph colours + legend filters */
+
+.nodes .node.node--hidden,
+.links .link.edge--hidden {
+  display: none !important;
+}
+
+.nodes .node.node--building circle { fill: #b6402a !important; }
+.nodes .node.node--place circle { fill: #356859 !important; }
+.nodes .node.node--street circle { fill: #c08a2d !important; }
+.nodes .node.node--theme circle { fill: #4f6d7a !important; }
+.nodes .node.node--source circle { fill: #8a8175 !important; }
+.nodes .node.node--collection circle { fill: #8b3a2f !important; }
+
+.nodes .node.node--connected circle {
+  fill: #9c9488 !important;
+  opacity: 0.85 !important;
+}
+
+.nodes .node.node--filtered,
+.links .link.edge--filtered {
+  opacity: 0.08 !important;
+}
+
+.nodes .node.current circle {
+  fill: #2f2a24 !important;
+  stroke: #fffaf0 !important;
+  stroke-width: 3px !important;
+}
+
+.nodes .node text {
+  fill: #2f2a24 !important;
+  paint-order: stroke;
+  stroke: #fffaf0;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  font-size: 0.68rem !important;
+}
+
+.memex-graph-legend {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.35rem;
+  background: rgba(255, 250, 240, 0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.memex-graph-legend button {
+  border: 0;
+  background: transparent;
+  color: #2f2a24;
+  cursor: pointer;
+  font-size: 0.68rem;
+}
+
+.memex-graph-legend button.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.memex-graph-legend b {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  margin-right: 0.25rem;
+  border-radius: 50%;
+}
+
+.legend-building { background: #b6402a; }
+.legend-place { background: #356859; }
+.legend-street { background: #c08a2d; }
+.legend-theme { background: #4f6d7a; }
+.legend-source { background: #8a8175; }
+.legend-collection { background: #8b3a2f; }

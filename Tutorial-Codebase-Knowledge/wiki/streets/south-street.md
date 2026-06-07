@@ -1,6 +1,6 @@
 # South Street
 
-**Summary**: By public transport or by car, this walk starts in the car park in South Street, next to Sainsbury's supermarket.
+**Summary**: A street where the walk starts in a car park.
 
 **Sources**:
 raw/docling-json/7_Farnham.annotated.arch_materials.description_classification.json

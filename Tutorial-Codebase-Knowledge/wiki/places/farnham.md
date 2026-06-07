@@ -1,9 +1,9 @@
 # Farnham
 
-**Summary**: The location where Farnham Castle is situated.
+**Summary**: Farnham is a town in Surrey, England.
 
 **Sources**:
-raw/docling-json/A_brief_history_Farnham_Castle_Trust.annotated.arch_materials.description_classification.json
+raw/docling-json/Willmer_House_Wikipedia.annotated.arch_materials.description_classification.json
 
 **Last updated**: 2026-06-07
 
@@ -11,4 +11,5 @@ raw/docling-json/A_brief_history_Farnham_Castle_Trust.annotated.arch_materials.d
 
 ## Related buildings
 
-- Needs verification: no related buildings.
+- [willmer-house](../buildings/willmer-house.md)
+- [willmer-house](../buildings/willmer-house.md)

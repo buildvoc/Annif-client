@@ -49,14 +49,18 @@
 - page `5` | `#/pictures/9` | class `building_element` | caption `` | docling `The image shows a historical plaque with text that details the life and achievements of William Cobbett, including his service in the military, political career, and contributions to literature.`
 - page `6` | `#/pictures/10` | class `other` | caption `` | docling `The image shows a black metal sign with a decorative frame, featuring an illustration of a man in a top hat and coat holding a cane, with the text "THE CRICKETERS" below it.`
 - page `6` | `#/pictures/11` | class `building_element` | caption `` | docling `The image shows a bronze statue of a man on horseback with a dog at his feet, set against a light-colored building with a window and a black metal railing.`
-- Gemma4 description count: `0`
-- Gemma4 description status: `skipped by SKIP_GEMMA_DESCRIPTIONS`
+- Gemma4 description count: `5`
+- visual page `1` | `#/pictures/0` | class `other` | A gray-scale image features a play button symbol (a triangle inside a rounded rectangle) followed by the text "YOU TUBE" in all capital letters.
+- visual page `1` | `#/pictures/1` | class `other` | A light gray silhouette of a bird is positioned to the left of the text "TWITTER" in all capital letters.
+- visual page `1` | `#/pictures/2` | class `map` | A horizontal rectangular crop of a white background with the words "Farnham's finest" in a gray, cursive font.
+- visual page `2` | `#/pictures/3` | class `other` | A cropped image depicts the head and shoulders of a man in a painterly style. He has short, brown hair with a fringe across his forehead and a short beard and mustache. He is wearing a light-colored garment that appears to have a hood or collar. There is no text visible in the image.
+- visual page `2` | `#/pictures/4` | class `building_interior` | A wide set of gray, weathered stone or concrete steps leads upward through a wooded area. The steps have small patches of grass and vegetation growing between them. Both sides of the path are flanked by dense green foliage, including trees and bushes. A low-profile chain-link fence with wooden posts runs along portions of the side edges. To the right, there is a section of railing. Sunlight filters through the leaves, creating dappled shadows on the ground and steps. No text is visible in the im
 
 Evidence rule: picture metadata and Gemma4 descriptions support visual association only; they are not authoritative identity, address, coordinate, listing, or dating evidence.
 
 
 ## Related pages
 
-- [[bishop-palace-complex]]
-- [[farnham-castle]]
-- [[farnham]]
+- [farnham-castle-complex](../collections/farnham-castle-complex.md)
+- [farnham-castle](../buildings/farnham-castle.md)
+- [farnham](../places/farnham.md)

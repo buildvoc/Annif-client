@@ -1,9 +1,9 @@
 # Farnham
 
-**Summary**: Location of the listed building at 1099 West Street.
+**Summary**: The location of the Church of St Andrew.
 
 **Sources**:
-raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
+raw/docling-json/The_Church_of_St_Andrew_Farnham_1044627_Historic_England.annotated.arch_materials.description_classification.json
 
 **Last updated**: 2026-06-07
 
@@ -11,4 +11,4 @@ raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.ar
 
 ## Related buildings
 
-- Needs verification: no related buildings.
+- [the-church-of-st-andrew](../buildings/the-church-of-st-andrew.md)

@@ -59,15 +59,26 @@
 - page `5` | `#/pictures/9` | class `building_element` | caption `` | docling `The image shows a historical plaque with text that details the life and achievements of William Cobbett, including his service in the military, political career, and contributions to literature.`
 - page `6` | `#/pictures/10` | class `other` | caption `` | docling `The image shows a black metal sign with a decorative frame, featuring an illustration of a man in a top hat and coat holding a cane, with the text "THE CRICKETERS" below it.`
 - page `6` | `#/pictures/11` | class `building_element` | caption `` | docling `The image shows a bronze statue of a man on horseback with a dog at his feet, set against a light-colored building with a window and a black metal railing.`
-- Gemma4 description count: `0`
-- Gemma4 description status: `skipped by SKIP_GEMMA_DESCRIPTIONS`
+- Gemma4 description count: `5`
+- visual page `1` | `#/pictures/0` | class `other` | A horizontal, rectangular image showing the YouTube logo and name in a light gray color against a white background. On the left is a rounded square containing a triangle pointing right (the "play" button). To its right, the word "YOUTUBE" is written in all capital letters.
+- visual page `1` | `#/pictures/1` | class `other` | The image consists of a light gray Twitter bird logo followed by the word "TWITTER" written in all-capital letters, also in a light gray color.
+- visual page `1` | `#/pictures/2` | class `map` | A rectangular image with white background features the text "Farnham's finest" in a black, italicized script font.
+- visual page `2` | `#/pictures/3` | class `other` | A close-up cropped image shows a portrait of a man's head and shoulders, depicted in an artistic style similar to a fresco or painting. The man has short, dark hair and a beard that follows his jawline. He has a serious facial expression and is looking slightly to the right. He is wearing a light-colored garment with a wide collar or hood. The background is plain and muted in tone. No text is visible in the image.
+- visual page `2` | `#/pictures/4` | class `building_interior` | A wide set of dark-colored steps with light-colored dividers between them is in the foreground of this image. These stairs lead up to a path that continues into a lush area of trees and green foliage. Large rocks are placed along the sides of the lower sections of the path. On the right side, there is a wooden post-and-rail fence. Several people can be seen standing near the top of the upper set of stairs in the distance. No text is visible.
 
 Evidence rule: picture metadata and Gemma4 descriptions support visual association only; they are not authoritative identity, address, coordinate, listing, or dating evidence.
 
 
 ## Related pages
 
-- [[farnham]]
-- [[pubs-and-eating-places]]
-- [[south-street]]
-- [[the-william-cobbett-pub]]
+- [abbey-st](../streets/abbey-st.md)
+- [cobbett-birthplace-and-inns](../collections/cobbett-birthplace-and-inns.md)
+- [farnham-market-gardens](../places/farnham-market-gardens.md)
+- [lamb-inn](../buildings/lamb-inn.md)
+- [longbridge](../streets/longbridge.md)
+- [south-street](../streets/south-street.md)
+- [the-jolly-farmer](../buildings/the-jolly-farmer.md)
+- [the-wey-valley](../places/the-wey-valley.md)
+- [the-wey](../places/the-wey.md)
+- [the-william-cobbett-pub](../buildings/the-william-cobbett-pub.md)
+- [union-street](../streets/union-street.md)

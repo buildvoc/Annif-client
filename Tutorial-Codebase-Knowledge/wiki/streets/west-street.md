@@ -1,9 +1,9 @@
 # West Street
 
-**Summary**: Street where 1099 West Street is located.
+**Summary**: The street where the Wrought Iron Screen Before Forecourt to Vernon House is located.
 
 **Sources**:
-raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
+
 
 **Last updated**: 2026-06-07
 
@@ -11,4 +11,4 @@ raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.ar
 
 ## Related buildings
 
-- [[1099-west-street]]
+- Needs verification: no related buildings.

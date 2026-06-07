@@ -49,15 +49,17 @@
 - page `5` | `#/pictures/9` | class `building_element` | caption `` | docling `The image shows a historical plaque with text that details the life and achievements of William Cobbett, including his service in the military, political career, and contributions to literature.`
 - page `6` | `#/pictures/10` | class `other` | caption `` | docling `The image shows a black metal sign with a decorative frame, featuring an illustration of a man in a top hat and coat holding a cane, with the text "THE CRICKETERS" below it.`
 - page `6` | `#/pictures/11` | class `building_element` | caption `` | docling `The image shows a bronze statue of a man on horseback with a dog at his feet, set against a light-colored building with a window and a black metal railing.`
-- Gemma4 description count: `0`
-- Gemma4 description status: `skipped by SKIP_GEMMA_DESCRIPTIONS`
+- Gemma4 description count: `5`
+- visual page `1` | `#/pictures/0` | class `other` | A grayscale rectangular banner containing an icon and text. On the left side, there is a graphic of a play button (a triangle pointing to the right inside a rounded rectangular shape). To its right, the word "YOU TUBE" appears in all capital letters with a space between "YOU" and "TUBE".
+- visual page `1` | `#/pictures/1` | class `other` | The image features a light gray silhouette of a bird facing right, followed by the word "TWITTER" in all capital letters. Both the icon and the text are rendered in the same light gray color against a white background.
+- visual page `1` | `#/pictures/2` | class `map` | A wide, horizontal white banner contains the words "Farnham's finest" written in a gray, cursive font.
+- visual page `2` | `#/pictures/3` | class `other` | A close-up, cropped image depicts a painting of a man's face and upper shoulders. The man has short, dark hair and a full, light-colored beard that covers his chin and jawline. He is looking forward with a solemn expression. He is wearing what appears to be a light-colored garment with a thick collar or hood around the neck area. There is no text visible in the image.
+- visual page `2` | `#/pictures/4` | class `building_interior` | A wide set of worn wooden stairs leads upward through a lush, wooded area. In the foreground, several broad steps made of dark wood with some stone-like material on the edges are visible. A low wooden railing runs along both sides of the lower portion of the walkway. Above these initial steps, the path is bordered by foliage and dense green trees. No text is visible in the image.
 
 Evidence rule: picture metadata and Gemma4 descriptions support visual association only; they are not authoritative identity, address, coordinate, listing, or dating evidence.
 
 
 ## Related pages
 
-- [[1099-west-street]]
-- [[farham]]
-- [[historic-england-listings]]
-- [[west-street]]
+- [1099-west-street](../buildings/1099-west-street.md)
+- [farnham](../places/farnham.md)

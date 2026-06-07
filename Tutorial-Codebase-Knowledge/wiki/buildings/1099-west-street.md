@@ -13,18 +13,24 @@
 
 ## Evidence snippets
 
-- Claim/snippet: Listed on the National Heritage List for England.
+- Claim/snippet: Early C19. 3 storeus, 5 windows. Stuccoed.
   - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Early C19. 3 storeus, 5 windows. Stuccoed. Modern shop fronts.
-  - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_lang_description_classification.json
-- Claim/snippet: 1099 WEST STREET (South East Side) SU8346 NE 5/162 II
+- Claim/snippet: Modern shop fronts.
+  - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham1258090_Historic_England.annotated.arch_materials.description_classification.json
+- Claim/snippet: Listed on the National Heritage List for England. Search over 400,000 listed places
   - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
-- Claim/snippet: Early C19. 3 storeus, 5 windows. Stuccoed. Modern shop fronts. No 2 a lower frontage; windows in moulded architrave surrounds, eaves bracket cornice and slate roof. Nos 3 and 4 have a string course, cornice, parapet and thier 1st floor windows in round-headed arcading with architraves over on bracket. Over shop front to No.2, flat wooden hood supported on cur shaped brackets; low wrought iton balustrade over.
+- Claim/snippet: (https://historicengland.org.uk/listing/the-list/)
+  - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
+- Claim/snippet: Understanding list entries (https://historicengland.org.uk/listing/the-list/understanding-list-entries/)
+  - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
+- Claim/snippet: (https://historicengland.org.uk/listing/the-list/minor-amendments/)
+  - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
+- Claim/snippet: Listing NGR: SU8389546810
   - Source: raw/docling-json/2_3_4_WEST_STREET_Farnham_1258090_Historic_England.annotated.arch_materials.description_classification.json
 
 ## Relationships
 
-- On street: [[west-street]]
+- On street: [west-street](../streets/west-street.md)
 
 ## Associative trails
 
@@ -40,4 +46,4 @@
 
 ## Related pages
 
-- On street: [[west-street]]
+- On street: [west-street](../streets/west-street.md)
